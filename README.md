@@ -1,7 +1,5 @@
 # HUGO Document Processing & Extraction Repository
 
-This repository consolidates the pipeline for document pre-processing, large language model (LLM) based text extraction, and post-processing/validation. 
-
 ## Repository Structure
 
 - **`PreProcessing/`**: Contains scripts to batch process PDF documents. This phase handles PDF parsing, text extraction (using MinerU), figure detection, and metadata retrieval (via CrossRef API).
@@ -13,11 +11,7 @@ This repository consolidates the pipeline for document pre-processing, large lan
 
 ## Installation Guide
 
-The entire pipeline can be run using a unified conda environment.
-
 ### 1. Environment Setup
-
-It is highly recommended to use Miniconda or Anaconda. Create a new environment named `hugoEnv` running Python 3.10:
 
 ```bash
 conda create -n hugoEnv python=3.10
@@ -25,8 +19,6 @@ conda activate hugoEnv
 ```
 
 ### 2. Install Dependencies
-
-Install the core components, including MinerU for PDF parsing, and standard data science libraries:
 
 ```bash
 pip install --upgrade pip
@@ -37,7 +29,7 @@ pip install PyPDF2 pandas openai numpy pymatgen tqdm matplotlib scipy
 
 ### 3. API Keys
 
-Create an `openAiToken.txt` file in the **root** of the `HUGO` repository containing your OpenAI API key. This is required by both the pre-processing parsing scripts and the main extraction notebooks.
+Create an `openAiToken.txt` file in the **root** of the `HUGO` repository containing your OpenAI API key. This is neccesary for pre-processing and extraction.
 
 ---
 
@@ -60,7 +52,7 @@ Navigate to `Extraction/`.
 
 1. Open `dataExtraction2.ipynb` in Jupyter Notebook or JupyterLab.
 2. The notebook will automatically read the parsed markdown from `SourceArticles/Extractions/` and the metadata from `SourceArticles/Analysis/articlesAnalyzed.json`.
-3. The notebook uses prompts located in `../HUGO-CS/prompts/` to guide the LLM extraction. 
+3. The notebook uses prompts located in `HUGO-CS/prompts/` to guide the LLM extraction. 
 4. Execute the cells to process the articles and generate the final structured JSON database.
 
 ### Step 3: Post-Processing & Validation
@@ -69,3 +61,15 @@ Navigate to `PostProcessing/`.
 Run the review notebooks to clean the extracted JSON results:
 - `CategoricalStringProcessing.ipynb`: Standardizes categorical strings (e.g., fixing typos and mapping to standardized terms).
 - `MaterialCompositionProcessing.ipynb`: Checks and standardizes chemical and material compositions extracted by the model.
+
+
+## HUGO-CS Dataset
+
+### Dataset
+The HUGO-CS dataset can be found in the `HUGO-CS/Dataset` directory. This dataset contains all meta-data, categorical string mapping and continuous composition processing. Please note that a further processed version of this with standardized unit conversions, as well as a version prior to categorical/continuous string processing can also be found in `HUGO-CS/Dataset/AdditionalVersions`.
+
+### Ground Truth Labels
+The ground truth labels for the HUGO-CS dataset can be found in the `HUGO-CS/GroundTruth/HRM_Flagged` and `HUGO-CS/GroundTruth/Held_Out_Val`.
+
+### Support Files
+Additional files for HUGO-CS, such as the extraction prompt, the string replacement dictionary, and the schema template can be found in  `HUGO-CS/SupportFiles`.
