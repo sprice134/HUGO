@@ -1,0 +1,22 @@
+Please read the article text provided between the triple backticks and then return exactly a JSON dictionary with the following fields (no extra keys, no commentary), considering only new experimental data (ignore any samples or plots that only review previously published work):
+
+1. data_category  
+   Decide which of the following best describes how experimental results are presented in the text vs. only in figures. Only consider the experiments or samples discussed, regardless of which specific metrics they report.
+
+   - 0 – No experimental results are reported or discussed in the text.  
+   - 1 – All experiments are fully discussed in the body text, with numeric values or ranges for each sample.  
+   - 2 – Some experiments are fully discussed in the text, but one or more samples have their results only referenced as “shown in Fig. …” with no numeric detail in the text.  
+   - 3 – All experimental results are only present in figures and not mentioned in the text.
+
+2. If data_category is 2, also include:  
+   - num_experiments: the **total number of distinct experimental conditions** whose results appear only in figures (e.g., if Fig. 11 compares microhardness for 3 different heat‐treatment conditions, num_experiments = 3; if Fig. 9 shows tensile‐test results for 4 different powder materials or spray parameters, num_experiments = 4).  
+   - figure_metrics: a list of the metric names that are reported only in figures, standardized to only these options (ignore all others):  
+     porosity, elongation, modulus, ultimate_tensile_strength, yield_strength, microhardness, nanohardness, deposition_efficiency.
+
+Output format — return exactly:
+
+{
+  "data_category": <integer 0–3>,
+  "num_experiments": <integer>,          // only if data_category == 2
+  "figure_metrics": [<string>, …]        // only if data_category == 2
+}

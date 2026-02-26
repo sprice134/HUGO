@@ -1,0 +1,77 @@
+Please perform the following analyses on the article text provided between the triple backticks and then return exactly a JSON dictionary with eight fields (no extra keys, no commentary):
+
+1. Cold‐Spray Discussion Detector
+    Decide whether the article contains a substantive discussion of cold spray or any cold‑spray variant (e.g., low‑pressure, high‑pressure, laser‑assisted). A one‑off mention or mere citation does not count—there must be actual analysis or description of the technique.
+        - If there is such a discussion → "YES". Otherwise → "NO".
+
+2. Mechanical‐Property Detector
+    Decide whether the article reports at least one experimentally‑measured mechanical property for a cold‑sprayed deposit (not for wrought powder, substrate or reference alloy). Count only these properties (and their standard symbols):
+        - Yield strength (YS, σYS, …)
+        - Ultimate tensile strength (UTS, σUTS, σmax, …)
+        - Elastic/Young’s modulus (E, YM, …)
+        - Elongation at break (elongation, E%, …)
+        - Deposit hardness, microhardness, or nanohardness (HV, HK, HRC, HRB, GPa, …)
+
+    Requirements:
+        - A numeric value for one of the above must be stated for a cold‑sprayed specimen.
+        - Ignore theoretical, simulated, or literature‑review values.
+        - Ignore any data for feedstock, substrate, or reference alloys.
+        - If any qualifying value is present → answer "YES". Otherwise → "NO".
+
+3. Survey‑Detector
+    Decide whether the article presents a survey of mechanical properties by citing numeric values for one or more of the above properties from at least four distinct published studies of cold‑sprayed deposits (not its own experiments).
+    Requirements:
+        - Citations must refer to other papers reporting cold‑sprayed deposit properties.
+        - Exclude any properties of substrates, feedstock, or reference alloys.
+        - If it cites ≥4 distinct studies → "YES". Otherwise → "NO".
+
+4. Powder Feedstock Recovery Detector
+    Decide whether the article discusses powder feedstock recovery in the context of cold spray or a cold‑spray variant (e.g., reclaiming or reusing powder).
+        - If it does → "YES". Otherwise → "NO".
+
+5. Alloy Design Detector
+    Decide whether the article discusses alloy design specifically for cold spray applications (e.g., development or optimization of feedstock alloys for cold spraying).
+        - If it does → "YES". Otherwise → "NO".
+
+6. Brittle Cold‐Spray Detector
+    Decide whether the article discusses brittle cold spray, such as cold spraying ceramics, glass, or other brittle materials (e.g., Al₂O₃).
+        - If it does → "YES". Otherwise → "NO".
+
+7. Keyword Extractor
+    Extract a comma‑separated list of unique keywords that capture the paper’s focus in these categories:
+        - Manufacturing process(es) (e.g. cold spray, laser powder bed fusion)
+        - Material(s) (generic and grade‑specific, e.g. Al 6061, Ti Grade 2)
+        - Additional methods (e.g. heat treatment, hot isostatic pressing)
+        - Results & metrics (e.g. fatigue life, wear resistance)
+        - Target applications (e.g. aerospace, biomedical)
+        - Aims of the paper (e.g. process modeling, review)
+        - Any other topics discussed substantially.
+    Rules:
+        - 10–100 keywords, no duplicates.
+        - Only include terms explicitly mentioned or clearly implied.
+        - Do not invent or include generic filler terms.
+
+8. Novelty Rating
+    Rate the novelty of the manuscript on a scale from 1 (not novel) to 10 (extremely novel), based on how original its approach, materials, or findings are compared to existing literature.
+        - Provide an integer 1–10.
+
+
+Output format - Return exactly the following JSON (without extra whitespace or comments):
+{
+  "cold_spray_discussed": "<YES or NO>",
+  "mechanical_property_present": "<YES or NO>",
+  "survey_property_present": "<YES or NO>",
+  "powder_feedstock_recovery": "<YES or NO>",
+  "alloy_design_discussed": "<YES or NO>",
+  "brittle_cold_spray_discussed": "<YES or NO>",
+  "keywords": ["keyword1","keyword2",…],
+  "novelty_score": <integer 1–10>
+  
+}
+
+
+
+
+
+
+

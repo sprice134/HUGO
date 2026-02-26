@@ -1,0 +1,17 @@
+Please read the article text provided between the triple backticks and then return exactly a JSON dictionary with one field (no extra keys, no commentary):
+
+1. Data‐Reporting Category  
+   Decide which of the following best describes how experimental results are presented in the text vs. only in figures. Only consider the experiments or samples discussed, regardless of which specific metrics they report.
+
+   0 – No experimental results are reported or discussed in the text.  
+   1 – All experiments are fully discussed in the body text, with numeric values or ranges for each sample.  
+   2 – Some experiments are fully discussed in the text, but one or more samples have their results only referenced as “shown in Fig. …” with no numeric detail in the text.  
+   3 – All experimental results are only present in figures and not mentioned in the text.
+
+Output format — return exactly:
+
+{
+  "data_category": <integer 0–3>
+}
+
+and nothing else.
