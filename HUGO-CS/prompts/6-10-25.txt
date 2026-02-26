@@ -1,0 +1,779 @@
+You are an expert information extraction system. You will read an academic or technical article about cold-sprayed alloys and produce a structured JSON output that follows a specific schema. If information is not present or cannot be inferred, leave that field blank. Do not invent or hallucinate data.
+
+I will provide you with the full text (or relevant parts) of a scientific/engineering article about cold-sprayed metals. For each distinct tensile experiment, setup, or set of test conditions mentioned, create a separate object in the "Experiments" array. Ignore fatigue or fracture experiments, focusing solely on tensile experiments and hardness testing. Additionally, focus specifically on cold sprayed values, ignoring experiments on wrought material. If none of the values in "resultsValues" are filled (i.e., no results data) for a given experiment, do not include that experiment in the output. From the text, extract the following data fields, in JSON format, with the exact keys/structure shown here:
+
+-----------------------------------------------------------------------------------
+SCHEMA EXPLANATION:
+
+1. "title": The complete article title, e.g., "Bulk fracture anisotropy in Cold-Sprayed Al 6061 deposits"
+2. "Experiments": A list (array) of experiment entries. Each experiment has:
+   - "preSprayedProperties": { ... }
+   - "experimentalProperties": { ... }
+   - "resultsValues": { ... }
+   - "Notes": Additional free-text notes
+
+   2a) "preSprayedProperties" block includes fields such as:
+        - Overall_Powder_Name: A short descriptive label for the entire feedstock or blend ("Pure Al", "Al-Al2O3", "Ti-6Al-4V", etc.).
+        - Majority_Powder_Material_Name: A generic identifier for the primary powder feedstock material used in the spray process (e.g., Al 6061, Pure Cu, 316L SS), identical to Overall_Powder_Name if only one feedstock is used with no blend.
+        - Majority_Powder_Primary_Element: The principal element of the primary powder (e.g., Al, Cu, Fe).
+        - Majority_Powder_Chemical_Composition: Detailed elemental or alloy composition of the primary powder (e.g. Mg 0.90 wt %, Si 0.64 wt %, Fe 0.38 wt %, Cu 0.26 wt %, Mn 0.03 wt %, Cr 0.21 wt %, Ti 0.02 wt %, Others 0.05 wt %, balance Al).
+        - Majority_Powder_Source: Supplier or manufacturer of the primary powder feedstock.
+        - Multiple_Powders_Binary: Was more than one powder used? Respond with True if a blend was employed or False otherwise.
+        - Secondary_Powder_Material_Name: A generic identifier for the secondary powder feedstock material, if used (e.g., Al2O3, TiO2, WC).
+        - Secondary_Powder_Primary_Element: The principal element of the secondary powder, if used (e.g., Al, Ti, W).
+        - Secondary_Powder_Chemical_Composition: Detailed elemental or compound composition of the secondary powder, if used (e.g., 60–70 wt% ZrO2 + 28–33 wt% SiO2).
+        - Secondary_Powder_Source: Supplier or manufacturer of the secondary powder feedstock.
+        - Tertiary_Powder_Material_Name: A generic identifier for the tertiary powder feedstock material, if used (e.g., Al2O3, TiO2, WC).
+        - Tertiary_Powder_Primary_Element: The principal element of the tertiary powder, if used (e.g., Al, Ti, W).
+        - Tertiary_Powder_Chemical_Composition: Detailed elemental or compound composition of the tertiary powder, if used (e.g., 60–70 wt% ZrO2 + 28–33 wt% SiO2).
+        - Tertiary_Powder_Source: Supplier or manufacturer of the tertiary powder feedstock.
+        - Powder_Blend_Ratio: The proportion of each powder feedstock in the blend, if reported. For example, if a feedstock consists of 75 wt% Al and 25 wt% Al₂O₃, then "75 wt% Al, 25 wt% Al2O3"   
+        - Powder_Blend_Atomic_Composition: The overall elemental makeup of the combined powder blend, if reported, of each element present. For example, a blend of 75 wt% Al (100 at% Al) and 25 wt% Al2O3 (52.9 at% Al, 47.1 at% O) might yield "Al 92.2 wt%, O 7.8 wt%".  
+        - Powder_Particle_Mean_Size_Value: The mean particle size of the powder, if reported. 
+        - Powder_Particle_Mean_Size_Units: The units used for Powder_Particle_Mean_Size_Value (e.g., µm, mm, etc.).
+        - Powder_Particle_STD_Size_Value: The powder's standard deviation for particle size, if reported. 
+        - Powder_Particle_STD_Size_Units: The units used for Powder_Particle_STD_Size_Value (e.g., µm, mm, etc.).
+        - Powder_Particle_Size_D10_Value: The particle size below which 10% of the powder volume is contained.
+        - Powder_Particle_Size_D10_Units: The units used for Powder_Particle_Size_D10_Value (e.g., µm, mm, etc.).
+        - Powder_Particle_Size_D50_Value: The median particle size of the powder, representing the 50% volume distribution.
+        - Powder_Particle_Size_D50_Units: The units used for Powder_Particle_Size_D50_Value (e.g., µm, mm, etc.).
+        - Powder_Particle_Size_D90_Value: The particle size below which 90% of the powder volume is contained.
+        - Powder_Particle_Size_D90_Units: The units used for Powder_Particle_Size_D90_Value (e.g., µm, mm, etc.).
+        - Powder_Particle_Min_Size_Value: The minimum reported particle size prior to spraying, if reported. 
+        - Powder_Particle_Min_Size_Units: The units used for Powder_Particle_Min_Size_Value (e.g., µm, mm, etc.).
+        - Powder_Particle_Max_Size_Value: The maximum reported particle size prior to spraying, if reported. 
+        - Powder_Particle_Max_Size_Units: The units used for Powder_Particle_Max_Size_Value (e.g., µm, mm, etc.).
+        - Powder_Morphology: The shape and surface features of the powder particles, including sphericity, ripples, grooves, and the presence of satellites.
+        - Powder_Particle_Size_Other: Any information relevant to powder size not captured by the mean, standard deviation, D10, D50, D90, minimum or maximum value or morphology. 
+        - Powder_Production_Method: Describes the process of manufacturing the powder (e.g., gas/water atomization, plasma spheroidization).
+        - Powder_Heat_Treatment_Binary: Was the powder heat-treated? Respond with True if heat treated or False otherwise.
+        - Powder_Heat_Treatment_Description: A description of the powder heat treatment, if present.
+        - Powder_Pre-treatment_Temperature_Value: The temperature used to heat-treat or dry the powder before spraying.
+        - Powder_Pre-treatment_Temperature_Units: The units used for Powder_Pre-treatment_Temperature_Value (e.g., °C, K, etc.).
+        - Powder_Pre-treatment_Duration_Value: The duration for which the powder is exposed to a pre-treatment temperature.
+        - Powder_Pre-treatment_Duration_Units: The units used for Powder_Pre-treatment_Duration_Value (e.g., hours, minutes, etc.).
+        - Powder_Pre-treatment_Cool_Down_Time_Value: The cooldown time following the pre-treatment.
+        - Powder_Pre-treatment_Cool_Down_Time_Units: The units used for Powder_Pre-treatment_Cool_Down_Time_Value (e.g., hours, minutes, etc.).
+        - Powder_Storage_Condition: The environmental condition (humidity, temperature, etc.) in which the powder is kept after pre-treatment.
+        - Substrate_Material_Name: A generic identifier for the substrate material the deposit applies to.
+        - Substrate_Material_Composition: A general description of the elemental or alloy makeup of the substrate material.
+        - Substrate_Thickness_Value: The physical thickness of the substrate used in the spraying process.
+        - Substrate_Thickness_Units: The units used for Substrate_Thickness_Value (e.g., mm, µm, etc.).
+        - Substrate_Surface_Preparation: How the substrate is cleaned/treated before spraying (e.g., grit blasting, solvent cleaning).
+        - Atmosphere_During_Heat_Treatment: Specifies the gaseous environment used (air, inert gas, etc.) during powder heat treatment.
+
+   2b) "experimentalProperties" block includes fields such as:
+        - Spraying_System_Model: The model/make of the cold spray system used for deposition (sometimes called Deposition System, Cold Spray System, or Spray Equipment Model).
+        - Nozzle_Material: The material from which the cold spray nozzle is constructed (e.g. Polybenzimidazole (PBI), Tungsten-carbide (WC)).
+        - Nozzle_Type: The general design/geometry of the nozzle used (e.g., convergent-divergent), sometimes called Spray Nozzle Type.
+        - Nozzle_Model: A specific model identifier or brand specification for the cold spray nozzle.
+        - Nozzle_Throat_Diameter_Value: The diameter of the nozzle's throat section, affecting gas/particle flow.
+        - Nozzle_Throat_Diameter_Units: The units used for Nozzle_Throat_Diameter_Value (e.g., mm).
+        - Nozzle_Exit_Diameter_Value: The diameter at the nozzle exit, which helps determine the spray footprint.
+        - Nozzle_Exit_Diameter_Units: The units used for Nozzle_Exit_Diameter_Value (e.g., mm).
+        - Nozzle_Length_Value: The overall length of the nozzle (sometimes subdivided into throat length, expansion length, etc.).
+        - Nozzle_Length_Units: The units used for Nozzle_Length_Value (e.g., mm).
+        - Nozzle_Expansion_Section_Length_Value: The length of the expansion portion of the nozzle (if separately noted).
+        - Nozzle_Expansion_Section_Length_Units: The units used for Nozzle_Expansion_Section_Length_Value (e.g., mm).
+        - Standoff_Distance_Value: The separation between the nozzle exit and the substrate during spraying.
+        - Standoff_Distance_Units: The units used for Standoff_Distance_Value (e.g., mm).
+        - Rastering_Speed_Value: Also called Robot Traverse Velocity or Gun Traverse Speed; the speed of the nozzle across the substrate.
+        - Rastering_Speed_Units: The units used for Rastering_Speed_Value (e.g., mm/s).
+        - Rastering_Step_Size_Value: The incremental offset between successive nozzle passes (sometimes called Index Spacing or Raster Pattern Line Separation).
+        - Rastering_Step_Size_Units: The units used for Rastering_Step_Size_Value (e.g., mm).
+        - Raster_Pattern: The programmed path used to cover the substrate (sometimes Robot Program Raster). If not numeric, store it as a string.
+        - Spray_Angle_Value: The angle at which the nozzle is oriented relative to the substrate surface.
+        - Spray_Angle_Units: The units used for Spray_Angle_Value (e.g., degrees).
+        - Process_Gas_Type: The propellant/accelerating gas used (e.g., N2, He, or air).
+        - Process_Gas_Pressure_Value: The operating pressure of the primary gas supply for cold spray (sometimes Pressure Set Point).
+        - Process_Gas_Pressure_Units: The units used for Process_Gas_Pressure_Value (e.g., MPa, psi).
+        - Process_Gas_Temperature_Value: The set-point temperature of the accelerating gas (sometimes Main Gas Temperature Set Point).
+        - Process_Gas_Temperature_Units: The units used for Process_Gas_Temperature_Value (e.g., °C, K).
+        - Process_Gas_Flow_Rate_Value: The volumetric flow of the gas that conveys the powder (sometimes combined with main gas flow).
+        - Process_Gas_Flow_Rate_Units: The units used for Process_Gas_Flow_Rate_Value (e.g., L/min).
+        - Powder_Feed_Rate_Value: The mass flow rate at which powder is delivered into the spray system (sometimes Mass Feed Rate or Powder Injection Feed Rate).
+        - Powder_Feed_Rate_Units: The units used for Powder_Feed_Rate_Value (e.g., g/min).
+        - Powder_Feeder_Rotation_Speed_Value: Revolutions per minute (RPM) of the powder feeder mechanism (sometimes Powder Feed RPM).
+        - Powder_Feeder_Rotation_Speed_Units: The units used for Powder_Feeder_Rotation_Speed_Value (e.g., RPM).
+        - Powder_Feeder_Vibrator_Status: Indicates whether a vibrating device is active to facilitate consistent powder flow (store as a string such as "On"/"Off," "Yes"/"No," etc.).
+        - Particle_Velocity_Value: The measured or estimated velocity of powder particles upon impacting the substrate (sometimes Particle Impact Velocity).
+        - Particle_Velocity_Units: The units used for Particle_Velocity_Value (e.g., m/s).
+        - Particle_Critical_Velocity_Value: The critical velocity of feedstock powder (if known).
+        - Particle_Critical_Velocity_Units: The units used for Particle_Critical_Velocity_Value (e.g., m/s).
+        - Particle_Critical_Velocity_Source: Was this value measured, simulated, or something else, and if so, how?
+        - Particle_Maximum_Velocity_Value: The maximum measured or estimated particle velocity (if provided).
+        - Particle_Maximum_Velocity_Units: The units used for Particle_Maximum_Velocity_Value (e.g., m/s).
+        - Particle_Minimum_Velocity_Value: The minimum measured or estimated particle velocity (if provided).
+        - Particle_Minimum_Velocity_Units: The units used for Particle_Minimum_Velocity_Value (e.g., m/s).
+        - Particle_Impact_Velocity_Value: If separately noted, the impact velocity specifically at the substrate surface.
+        - Particle_Impact_Velocity_Units: The units used for Particle_Impact_Velocity_Value (e.g., m/s).
+        - Particle_Temperature_At_Impact_Value: The temperature of particles at impact with the substrate. 
+        - Particle_Temperature_At_Impact_Units: The units for Particle_Temperature_At_Impact_Value (e.g., °C, K)
+        - Impact_Velocity_Ratio_Value: Ratio of actual impact velocity to the critical velocity needed for bonding (sometimes noted as V/V_cr).
+        - Impact_Velocity_Ratio_Units: For example, dimensionless or "–" (if no standard unit is specified).
+        - Deposit_Post_Treatment_Binary: Indicates whether the deposit underwent any post-spray heat treatment. Use "True" if a treatment was applied or "False" otherwise.
+        - Deposit_Post_Treatment_Description: A brief description of the post-treatment process (e.g., annealing, aging), if present.
+        - Deposit_Post_First_Treatment_Temperature_Value: The temperature at which the deposit was held during the first post-spray heat-treatment step.
+        - Deposit_Post_First_Treatment_Temperature_Units: The units for the first treatment temperature value (e.g., °C, K) if present.
+        - Deposit_Post_First_Treatment_Duration_Value: The duration for which the deposit was held at the first treatment temperature.
+        - Deposit_Post_First_Treatment_Duration_Units: The units for the first treatment duration (e.g., hours, minutes) if present.
+        - Deposit_Post_First_Treatment_Cool_Down_Time_Value: The time spent cooling immediately after completion of the first treatment step, if a controlled cooldown was applied.
+        - Deposit_Post_First_Treatment_Cool_Down_Time_Units: The units for the first treatment cooldown time (e.g., hours, minutes) if present.
+        - Deposit_Post_Second_Treatment_Temperature_Value: The temperature at which the deposit was held during the second post-spray heat-treatment step.
+        - Deposit_Post_Second_Treatment_Temperature_Units: The units for the second treatment temperature value (e.g., °C, K) if present.
+        - Deposit_Post_Second_Treatment_Duration_Value: The duration for which the deposit was held at the second treatment temperature.
+        - Deposit_Post_Second_Treatment_Duration_Units: The units for the second treatment duration (e.g., hours, minutes) if present.
+        - Deposit_Post_Second_Treatment_Cool_Down_Time_Value: The time spent cooling immediately after completion of the second treatment step, if a controlled cooldown was applied.
+        - Deposit_Post_Second_Treatment_Cool_Down_Time_Units: The units for the second treatment cooldown time (e.g., hours, minutes) if present.
+        - Deposit_Post_Third_Treatment_Temperature_Value: The temperature at which the deposit was held during the third post-spray heat-treatment step.
+        - Deposit_Post_Third_Treatment_Temperature_Units: The units for the third treatment temperature value (e.g., °C, K) if present.
+        - Deposit_Post_Third_Treatment_Duration_Value: The duration for which the deposit was held at the third treatment temperature.
+        - Deposit_Post_Third_Treatment_Duration_Units: The units for the third treatment duration (e.g., hours, minutes) if present.
+        - Deposit_Post_Third_Treatment_Cool_Down_Time_Value: The time spent cooling immediately after completion of the third treatment step, if a controlled cooldown was applied.
+        - Deposit_Post_Third_Treatment_Cool_Down_Time_Units: The units for the third treatment cooldown time (e.g., hours, minutes) if present.
+        - Laser_Assisted_Binary: Was Laser-Assisted Cold Spraying implemented? Respond with True if Laser Assistance was used or False otherwise.
+        - Laser_System: The model/make of the laser system used for laser‑assisted cold spray, if used.
+        - Laser_Beam_Type: The type of laser emission (e.g., continuous‑wave "CW" or pulsed) used to heat the deposit.
+        - Laser_Beam_Diameter_Value: The numeric diameter of the collimated laser beam at the focal plane.
+        - Laser_Beam_Diameter_Units: The units for the laser beam diameter (e.g., "mm").
+        - Cold_Spray_Spot_Diameter_Value: The numeric diameter of the cold‑spray gas/powder jet footprint on the substrate.
+        - Cold_Spray_Spot_Diameter_Units: The units for the cold‑spray spot diameter (e.g., "mm").
+        - Laser_Spray_Spot_Temperature_Value: The in‑situ temperature measured at the overlapping laser + spray impact zone.
+        - Laser_Spray_Spot_Temperature_Units: The units for the spray‑spot temperature measurement (e.g., "°C").
+        - Laser_Power_Value: The output power setting of the laser during deposition.
+        - Laser_Power_Units: The units for the laser power value (e.g., "kW").
+        - Microforging_Binary: Was micro‑forging assisted cold spray implemented? Respond with True if microforging was used or False otherwise.
+        - Microforging_Particle_Material: The material composition of the micro‑forging media co‑deposited with the primary powder.
+        - Microforging_Particle_Mean_Size_Value: The average diameter of the micro‑forging particles used in the blend.
+        - Microforging_Particle_Mean_Size_Units: The units for the mean size of the micro‑forging particles (e.g., "µm").
+        - Microforging_Particle_STD_Size_Value: The standard deviation of the micro‑forging particle size distribution.
+        - Microforging_Particle_STD_Size_Units: The units for the standard deviation of the micro‑forging particle sizes (e.g., "µm").
+        - Microforging_Particle_Volume_Fraction_Value: The volume fraction of micro‑forging particles mixed into the spray feedstock.
+        - Microforging_Particle_Volume_Fraction_Units: The units for the micro‑forging particle volume fraction (e.g., "vol.%").
+        - Microforging_Particle_Hardness_Value: The hardness of the micro‑forging media particles.
+        - Microforging_Particle_Hardness_Units: The units for the hardness of the micro‑forging particles (e.g., "HV").
+        - Microforging_Particle_Morphology: A description of the shape and surface features of the micro‑forging particles.
+        - Peening_Binary: Was secondary peening applied during or after deposition? Respond with True if peening was used or False otherwise.
+        - Peening_Media_Material: Material composition of the peening media (e.g., ZrO2 ceramic beads).
+        - Peening_Media_Mean_Size_Value: Average diameter of the peening media particles.
+        - Peening_Media_Mean_Size_Units: Units for Peening_Media_Mean_Size_Value (e.g., µm).
+        - Peening_Media_STD_Size_Value: Standard deviation of the peening media particle size distribution.
+        - Peening_Media_STD_Size_Units: Units for Peening_Media_STD_Size_Value (e.g., µm).
+        - Peening_Media_Volume_Fraction_Value: Volume fraction of peening media relative to spray powder feedstock.
+        - Peening_Media_Volume_Fraction_Units: Units for Peening_Media_Volume_Fraction_Value (e.g., vol.%).
+        - Peening_Pressure_Value: Gas pressure (or impact pressure) used for the peening step.
+        - Peening_Pressure_Units: Units for Peening_Pressure_Value (e.g., MPa, psi).
+        - Peening_Duration_Value: Duration of the peening application (e.g., total time in seconds, minutes).
+        - Peening_Duration_Units: Units for Peening_Duration_Value (e.g., seconds or minutes).
+        - Friction_Stir_Binary: Was friction-stir processing applied? Respond with True if friction stir was used or False otherwise.
+        - Friction_Stir_Tool_Material: Material of the FSW/FSP tool (e.g., H13 tool steel, WC-Co composite).
+        - Friction_Stir_Probe_Diameter_Value: Diameter of the rotating tool's probe (pin).
+        - Friction_Stir_Probe_Diameter_Units: Units for Friction_Stir_Probe_Diameter_Value (e.g., mm).
+        - Friction_Stir_Shoulder_Diameter_Value: Diameter of the tool's shoulder.
+        - Friction_Stir_Shoulder_Diameter_Units: Units for Friction_Stir_Shoulder_Diameter_Value (e.g., mm).
+        - Friction_Stir_Rotation_Speed_Value: Tool rotational speed during processing.
+        - Friction_Stir_Rotation_Speed_Units: Units for Friction_Stir_Rotation_Speed_Value (e.g., RPM).
+        - Friction_Stir_Travel_Speed_Value: Traverse (welding/plunging) speed of the tool.
+        - Friction_Stir_Travel_Speed_Units: Units for Friction_Stir_Travel_Speed_Value (e.g., mm/min).
+        - Friction_Stir_Tilt_Angle_Value: Tilt angle of the tool relative to the workpiece surface.
+        - Friction_Stir_Tilt_Angle_Units: Units for Friction_Stir_Tilt_Angle_Value (e.g., degrees).
+        - HIP_Binary: Was hot isostatic pressing applied to the powder or deposit? Respond “True” or “False.”
+        - HIP_System_Model: Make/model of the HIP unit used (e.g. Quintus QIH10).
+        - HIP_Temperature_Value: Temperature set‐point during HIP.
+        - HIP_Temperature_Units: Units for HIP_Temperature_Value (e.g., “°C”).
+        - HIP_Pressure_Value: Isostatic gas pressure used for HIP.
+        - HIP_Pressure_Units: Units for HIP_Pressure_Value (e.g., “MPa”).
+        - HIP_Duration_Value: Hold time at HIP conditions.
+        - HIP_Duration_Units: Units for HIP_Duration_Value (e.g., “h”, “min”).
+        - HIP_Atmosphere: Gas environment during HIP (e.g. “Ar”, “N₂”).
+        - Hot_Rolling_Binary: Was hot rolling applied? Respond “True” if yes, “False” otherwise.
+        - Hot_Rolling_System_Model: Make/model of the rolling mill or equipment used.
+        - Hot_Rolling_Temperature_Value: Temperature at which rolling was performed.
+        - Hot_Rolling_Temperature_Units: Units for Hot_Rolling_Temperature_Value (e.g., “°C”).
+        - Hot_Rolling_Reduction_Ratio_Value: The percent thickness reduction per pass (or total reduction).
+        - Hot_Rolling_Reduction_Ratio_Units: Units for Hot_Rolling_Reduction_Ratio_Value (e.g., “%”).
+        - Hot_Rolling_Speed_Value: Linear speed of the workpiece through the rolls.
+        - Hot_Rolling_Speed_Units: Units for Hot_Rolling_Speed_Value (e.g., “m/min”).
+        - Hot_Rolling_Pass_Count_Value: Number of rolling passes applied.
+        - Hot_Rolling_Pass_Count_Units: Units for Hot_Rolling_Pass_Count_Value (e.g., “passes”).
+        - Hot_Rolling_Atmosphere: Gaseous environment during rolling (e.g., “air”, “inert gas”).
+        - Deposition_Area_Dimensions: Physical dimensions of the intended deposit region on the substrate; if numeric, separate value and units; otherwise store as a string.
+        - Tensile_Specimen_Gauge_Length_Value: The length of the narrow (“gauge”) section of the tensile coupon over which strain is measured.
+        - Tensile_Specimen_Gauge_Length_Units: The units for the gauge length (typically “mm” or “in”).
+        - Tensile_Specimen_Gauge_Width_Value: The width of the gauge section of the tensile coupon (the dimension perpendicular to the loading axis).
+        - Tensile_Specimen_Gauge_Width_Units: The units for the gauge width (typically “mm” or “in”).
+        - Tensile_Specimen_Gauge_Thickness_Value: The thickness of the gauge section (the dimension through the thickness of the coupon).
+        - Tensile_Specimen_Gauge_Thickness_Units: The units for the gauge thickness (typically “mm” or “in”).
+        - Standard_for_Tensile_Testing: List the standards used for tensile testing. For example, "ASTM E8"
+        - Tensile_Test_Orientation: Direction of mechanical testing, if present (Long, Transverse, X, Y, etc.)
+        - Tensile_Test_Temperature_Value: The temperature at which the tensile test was performed.
+        - Tensile_Test_Temperature_Units: The units for the test temperature (typically “°C” or “K”).
+        - Deposit_Tensile_Test_Strain_Rate_Value: Crosshead (or strain) rate used during tensile testing (sometimes called Tensile Test Strain Rate).
+        - Deposit_Tensile_Test_Strain_Rate_Units: The units used for Deposit_Tensile_Test_Strain_Rate_Value (e.g., s^-1).
+        - Deposit_Microhardness_System: The make and model of the microhardness tester used to measure the deposit’s hardness at a microscale (for example, “Shimadzu HMV-2” or “Leitz Miniload”).
+        - Deposit_Microhardness_Indenter_Type: The geometry and material of the indenter employed in the microhardness test (for example, “Vickers diamond pyramid” or “Knoop diamond tip”).
+        - Deposit_Microhardness_Test_Load_Value: The load applied during microhardness testing.
+        - Deposit_Microhardness_Test_Load_Units: The units used for Deposit_Microhardness_Test_Load_Value (e.g., kgf, N).
+        - Deposit_Microhardness_Test_Dwell_Time_Value: The dwell time for the microhardness indentation load.
+        - Deposit_Microhardness_Test_Dwell_Time_Units: The units used for Deposit_Microhardness_Test_Dwell_Time_Value (e.g., s, sec).
+        - Deposit_Nanohardness_System: The make and model of the nanoindentation instrument used to assess the deposit’s hardness at the nanoscale (for example, “Hysitron TI 950 TriboIndenter” or “Agilent G200 Nano Indenter”)
+        - Deposit_Nanohardness_Indenter_Type: The type and geometry of the indenter used for nanohardness measurements (for example, “Berkovich diamond tip” or “cube corner diamond indenter”).
+        - Deposit_Nanohardness_Test_Load_Value: The load applied during Nanohardness testing.
+        - Deposit_Nanohardness_Test_Load_Units: The units used for Deposit_Nanohardness_Test_Load_Value (e.g., kgf, N).
+        - Deposit_Nanohardness_Test_Dwell_Time_Value: The dwell time for the Nanohardness indentation load.
+        - Deposit_Nanohardness_Test_Dwell_Time_Units: The units used for Deposit_Nanohardness_Test_Dwell_Time_Value (e.g., s, sec).
+        - Microtensile_Binary: Was the tensile testing conducted Microtensile testing? Respond with True if tensile testing was conducted on miniature or microtensile samples, or False otherwise.
+        - Additional_Manufacturing_Processes_Description: A description of any additional manufacturing processes that might affect performance, such as laser-assisted cold spray, micro-forging, friction stir, etc.
+
+   2c) "resultsValues" block includes fields such as:
+        - Porosity_Value: Percentage of voids in the deposit, indicating its density and consolidation.
+        - Porosity_Units: The units used for Porosity_Value (e.g., %).
+        - Elastic_Modulus_Value: Measured stiffness of the deposit, often from tensile testing (sometimes called Young's Modulus).
+        - Elastic_Modulus_Units: The units used for Elastic_Modulus_Value (e.g., GPa, MPa).
+        - Yield_Strength_Value: Stress at which the deposited material begins to plastically deform.
+        - Yield_Strength_Units: The units used for Yield_Strength_Value (e.g., MPa, psi).
+        - Ultimate_Tensile_Strength_Value: The ultimate tensile strenght (UTS), describing the maximum stress that a material can withstand while being stretched or pulled before breaking.
+        - Ultimate_Tensile_Strength_Units: The units used for Ultimate_Tensile_Strength_Value (e.g., MPa, psi).
+        - Elongation_at_Break_Value: Strain at fracture, reflecting the ductility of the deposited material.
+        - Elongation_at_Break_Units: The units used for Elongation_at_Break_Value (e.g., %, fraction).
+        - Deposit_Microhardness_Value: Hardness (e.g., Vickers) measured at micro-scale in the deposited material.
+        - Deposit_Microhardness_Units: The units used for Deposit_Microhardness_Value (e.g., HV, Vickers).
+        - Deposit_Nanohardness_Value: Hardness (e.g., Vickers) measured at nanoscale in the deposited material.
+        - Deposit_Nanohardness_Units: The units used for Deposit_Nanohardness_Value (e.g., HV, Vickers).
+        - Deposition_Efficiency_Value: Ratio of deposited material to total powder feed, indicating how effectively material is built up.
+        - Deposition_Efficiency_Units: The units used for Deposition_Efficiency_Value (e.g., %).
+        - Grain_Size_Value: Average grain size in the as-deposited microstructure (often from metallographic analysis).
+        - Grain_Size_Units: The units used for Grain_Size_Value (e.g., µm, nm).
+        - Microstructural_Features: Notable deposit characteristics—precipitate distribution, inter-particle boundaries, etc. (Store as a simple string if present.)
+        
+   2d) "Notes": A free text field for any extra or clarifying information including sample IDs or additional distinguishing information for improved readability.
+
+-----------------------------------------------------------------------------------
+INSTRUCTIONS FOR EXTRACTION:
+ - Read the text carefully for any mention of these fields.
+ - If there are multiple experiments, setups, or sets of results, produce a separate object in the "Experiments" array for each.
+ - Output every distinct cold-spray tensile experiment or test condition found in the text (subject only to the rule that at least one field inside resultsValues must be populated).
+ - Do not aggregate, summarise, abbreviate, truncate, collapse, or omit any experiment object, field, or value.
+ - Do not insert phrases such as "more experiments omitted," "objects removed for brevity," or similar.
+ - Ensure each experiment has a value for "Overall_Powder_Name" and "Majority_Powder_Material_Name".
+ - If a standard deviation is given, record this as X +/- Y. For example, 250 +/- 3.1.
+ - Leave missing data blank (""), but be sure to report all fields.
+ - Separate Primary, Secondary and Tertiary materials (if present) by blend. If the material is a compound, it can be left grouped together. 
+ - Make sure all "Binary" values, such as "Microforging_Binary" are labeled True or False, and not left blank. 
+ - If the article contains X of experiments, output X objects, size is not a reason to shorten the response.
+ - For booleans, use the string True/False, not null.
+
+
+-----------------------------------------------------------------------------------
+OUTPUT FORMAT:
+
+Produce valid JSON with the following top-level structure:
+{
+  "title": "...",
+  "Experiments": [
+    {
+      "preSprayedProperties": {...},
+      "experimentalProperties": {...},
+      "resultsValues": {...},
+      "Notes":"  "
+    },
+    (... Possibly more experiments if the article has multiple cold-spray experiments with non-empty resultsValues ...)
+  ]
+}
+
+-----------------------------------------------------------------------------------
+EXAMPLE OUTPUT:
+{
+"title": "Microstructure and Mechanical Property Evaluation of Aluminum F357 Powder for Cold Spray Applications",
+"Experiments": [
+    {
+        "preSprayedProperties": {
+            "Overall_Powder_Name": "Aluminum F357",
+            "Majority_Powder_Material_Name": "Aluminum F357",
+            "Majority_Powder_Primary_Element": "Al",
+            "Majority_Powder_Chemical_Composition": "Si 7.32 wt%, Fe 0.039 wt%, Cu 0.002 wt%, Mn 0.0036 wt%, Mg 0.58 wt%, Zn 0.0038 wt%, Ti 0.12 wt%, Others 0.007 wt%, balance Al",
+            "Majority_Powder_Source": "Equispheres (Ottawa, Ontario, Canada)",
+            "Multiple_Powders_Binary": "False",
+            "Secondary_Powder_Material_Name": "",
+            "Secondary_Powder_Primary_Element": "",
+            "Secondary_Powder_Chemical_Composition": "",
+            "Secondary_Powder_Source": "",
+            "Tertiary_Powder_Material_Name": "",
+            "Tertiary_Powder_Primary_Element": "",
+            "Tertiary_Powder_Chemical_Composition": "",
+            "Tertiary_Powder_Source": "",
+            "Powder_Blend_Ratio": "",
+            "Powder_Blend_Atomic_Composition": "",
+            "Powder_Particle_Mean_Size_Value": "56.7",
+            "Powder_Particle_Mean_Size_Units": "µm",
+            "Powder_Particle_STD_Size_Value": "",
+            "Powder_Particle_STD_Size_Units": "",
+            "Powder_Particle_Size_D10_Value": "47.6",
+            "Powder_Particle_Size_D10_Units": "µm",
+            "Powder_Particle_Size_D50_Value": "56.7",
+            "Powder_Particle_Size_D50_Units": "µm",
+            "Powder_Particle_Size_D90_Value": "73.01",
+            "Powder_Particle_Size_D90_Units": "µm",
+            "Powder_Particle_Min_Size_Value": "",
+            "Powder_Particle_Min_Size_Units": "",
+            "Powder_Particle_Max_Size_Value": "",
+            "Powder_Particle_Max_Size_Units": "",
+            "Powder_Morphology": "Nearly spherical particles with very few satellites",
+            "Powder_Particle_Size_Other": "",
+            "Powder_Production_Method": "Proprietary atomization (gas atomized)",
+            "Powder_Heat_Treatment_Binary": "True",
+            "Powder_Heat_Treatment_Description": "Powder heat-treated at 230 °C for 75 min (regular over-aging) prior to spraying",
+            "Powder_Pre-treatment_Temperature_Value": "230",
+            "Powder_Pre-treatment_Temperature_Units": "°C",
+            "Powder_Pre-treatment_Duration_Value": "75",
+            "Powder_Pre-treatment_Duration_Units": "min",
+            "Powder_Pre-treatment_Cool_Down_Time_Value": "",
+            "Powder_Pre-treatment_Cool_Down_Time_Units": "",
+            "Powder_Storage_Condition": "",
+            "Substrate_Material_Name": "Al 6061",
+            "Substrate_Material_Composition": "",
+            "Substrate_Thickness_Value": "",
+            "Substrate_Thickness_Units": "",
+            "Substrate_Surface_Preparation": "",
+            "Atmosphere_During_Heat_Treatment": "Dry nitrogen/vacuum cycling inside retort"
+        },
+
+        "experimentalProperties": {
+            "Spraying_System_Model": "VRC Gen III",
+            "Nozzle_Material": "",
+            "Nozzle_Type": "Converging–diverging",
+            "Nozzle_Model": "Nozzle #0071",
+            "Nozzle_Throat_Diameter_Value": "1.75",
+            "Nozzle_Throat_Diameter_Units": "mm",
+            "Nozzle_Exit_Diameter_Value": "5",
+            "Nozzle_Exit_Diameter_Units": "mm",
+            "Nozzle_Length_Value": "170",
+            "Nozzle_Length_Units": "mm",
+            "Nozzle_Expansion_Section_Length_Value": "152",
+            "Nozzle_Expansion_Section_Length_Units": "mm",
+            "Standoff_Distance_Value": "28.575",
+            "Standoff_Distance_Units": "mm",
+            "Rastering_Speed_Value": "200",
+            "Rastering_Speed_Units": "mm/s",
+            "Rastering_Step_Size_Value": "1",
+            "Rastering_Step_Size_Units": "mm",
+            "Raster_Pattern": "",
+            "Spray_Angle_Value": "",
+            "Spray_Angle_Units": "",
+            "Process_Gas_Type": "He",
+            "Process_Gas_Pressure_Value": "5",
+            "Process_Gas_Pressure_Units": "MPa",
+            "Process_Gas_Temperature_Value": "500",
+            "Process_Gas_Temperature_Units": "°C",
+            "Process_Gas_Flow_Rate_Value": "",
+            "Process_Gas_Flow_Rate_Units": "",
+            "Powder_Feed_Rate_Value": "",
+            "Powder_Feed_Rate_Units": "",
+            "Powder_Feeder_Rotation_Speed_Value": "",
+            "Powder_Feeder_Rotation_Speed_Units": "",
+            "Powder_Feeder_Vibrator_Status": "",
+            "Particle_Velocity_Value": "",
+            "Particle_Velocity_Units": "",
+            "Particle_Critical_Velocity_Value": "",
+            "Particle_Critical_Velocity_Units": "",
+            "Particle_Critical_Velocity_Source": "",
+            "Particle_Maximum_Velocity_Value": "",
+            "Particle_Maximum_Velocity_Units": "",
+            "Particle_Minimum_Velocity_Value": "",
+            "Particle_Minimum_Velocity_Units": "",
+            "Particle_Impact_Velocity_Value": "",
+            "Particle_Impact_Velocity_Units": "",
+            "Particle_Temperature_At_Impact_Value": "",
+            "Particle_Temperature_At_Impact_Units": "",
+            "Impact_Velocity_Ratio_Value": "",
+            "Impact_Velocity_Ratio_Units": "",
+            "Deposit_Post_Treatment_Binary": "False",
+            "Deposit_Post_Treatment_Description": "",
+            "Deposit_Post_First_Treatment_Temperature_Value": "",
+            "Deposit_Post_First_Treatment_Temperature_Units": "",
+            "Deposit_Post_First_Treatment_Duration_Value": "",
+            "Deposit_Post_First_Treatment_Duration_Units": "",
+            "Deposit_Post_First_Treatment_Cool_Down_Time_Value": "",
+            "Deposit_Post_First_Treatment_Cool_Down_Time_Units": "",
+            "Deposit_Post_Second_Treatment_Temperature_Value": "",
+            "Deposit_Post_Second_Treatment_Temperature_Units": "",
+            "Deposit_Post_Second_Treatment_Duration_Value": "",
+            "Deposit_Post_Second_Treatment_Duration_Units": "",
+            "Deposit_Post_Second_Treatment_Cool_Down_Time_Value": "",
+            "Deposit_Post_Second_Treatment_Cool_Down_Time_Units": "",
+            "Deposit_Post_Third_Treatment_Temperature_Value": "",
+            "Deposit_Post_Third_Treatment_Temperature_Units": "",
+            "Deposit_Post_Third_Treatment_Duration_Value": "",
+            "Deposit_Post_Third_Treatment_Duration_Units": "",
+            "Deposit_Post_Third_Treatment_Cool_Down_Time_Value": "",
+            "Deposit_Post_Third_Treatment_Cool_Down_Time_Units": "",
+            "Laser_Assisted_Binary": "False",
+            "Laser_System": "",
+            "Laser_Beam_Type": "",
+            "Laser_Beam_Diameter_Value": "",
+            "Laser_Beam_Diameter_Units": "",
+            "Cold_Spray_Spot_Diameter_Value": "",
+            "Cold_Spray_Spot_Diameter_Units": "",
+            "Laser_Spray_Spot_Temperature_Value": "",
+            "Laser_Spray_Spot_Temperature_Units": "",
+            "Laser_Power_Value": "",
+            "Laser_Power_Units": "",
+            "Microforging_Binary": "False",
+            "Microforging_Particle_Material": "",
+            "Microforging_Particle_Mean_Size_Value": "",
+            "Microforging_Particle_Mean_Size_Units": "",
+            "Microforging_Particle_STD_Size_Value": "",
+            "Microforging_Particle_STD_Size_Units": "",
+            "Microforging_Particle_Volume_Fraction_Value": "",
+            "Microforging_Particle_Volume_Fraction_Units": "",
+            "Microforging_Particle_Hardness_Value": "",
+            "Microforging_Particle_Hardness_Units": "",
+            "Microforging_Particle_Morphology": "",
+            "Peening_Binary": "False",
+            "Peening_Media_Material": "",
+            "Peening_Media_Mean_Size_Value": "",
+            "Peening_Media_Mean_Size_Units": "",
+            "Peening_Media_STD_Size_Value": "",
+            "Peening_Media_STD_Size_Units": "",
+            "Peening_Media_Volume_Fraction_Value": "",
+            "Peening_Media_Volume_Fraction_Units": "",
+            "Peening_Pressure_Value": "",
+            "Peening_Pressure_Units": "",
+            "Peening_Duration_Value": "",
+            "Peening_Duration_Units": "",
+            "Friction_Stir_Binary": "False",
+            "Friction_Stir_Tool_Material": "",
+            "Friction_Stir_Probe_Diameter_Value": "",
+            "Friction_Stir_Probe_Diameter_Units": "",
+            "Friction_Stir_Shoulder_Diameter_Value": "",
+            "Friction_Stir_Shoulder_Diameter_Units": "",
+            "Friction_Stir_Rotation_Speed_Value": "",
+            "Friction_Stir_Rotation_Speed_Units": "",
+            "Friction_Stir_Travel_Speed_Value": "",
+            "Friction_Stir_Travel_Speed_Units": "",
+            "Friction_Stir_Tilt_Angle_Value": "",
+            "Friction_Stir_Tilt_Angle_Units": "",
+            "HIP_Binary": "False",
+            "HIP_System_Model": "",
+            "HIP_Temperature_Value": "",
+            "HIP_Temperature_Units": "",
+            "HIP_Pressure_Value": "",
+            "HIP_Pressure_Units": "",
+            "HIP_Duration_Value": "",
+            "HIP_Duration_Units": "",
+            "HIP_Atmosphere": "",
+            "Hot_Rolling_Binary": "False",
+            "Hot_Rolling_System_Model": "",
+            "Hot_Rolling_Temperature_Value": "",
+            "Hot_Rolling_Temperature_Units": "",
+            "Hot_Rolling_Reduction_Ratio_Value": "",
+            "Hot_Rolling_Reduction_Ratio_Units": "",
+            "Hot_Rolling_Speed_Value": "",
+            "Hot_Rolling_Speed_Units": "",
+            "Hot_Rolling_Pass_Count_Value": "",
+            "Hot_Rolling_Pass_Count_Units": "",
+            "Hot_Rolling_Atmosphere": "",
+            "Deposition_Area_Dimensions": "",
+            "Tensile_Specimen_Gauge_Length_Value": "25.4",
+            "Tensile_Specimen_Gauge_Length_Units": "mm",
+            "Tensile_Specimen_Gauge_Width_Value": "",
+            "Tensile_Specimen_Gauge_Width_Units": "",
+            "Tensile_Specimen_Gauge_Thickness_Value": "",
+            "Tensile_Specimen_Gauge_Thickness_Units": "",
+            "Standard_for_Tensile_Testing": "ASTM E8/E8M",
+            "Tensile_Test_Orientation": "",
+            "Tensile_Test_Temperature_Value": "",
+            "Tensile_Test_Temperature_Units": "",
+            "Deposit_Tensile_Test_Strain_Rate_Value": "",
+            "Deposit_Tensile_Test_Strain_Rate_Units": "",
+            "Deposit_Microhardness_System": "",
+            "Deposit_Microhardness_Indenter_Type": "",
+            "Deposit_Microhardness_Test_Load_Value": "0.1",
+            "Deposit_Microhardness_Test_Load_Units": "kgf",
+            "Deposit_Microhardness_Test_Dwell_Time_Value": "10",
+            "Deposit_Microhardness_Test_Dwell_Time_Units": "s",
+            "Deposit_Nanohardness_System": "",
+            "Deposit_Nanohardness_Indenter_Type": "",
+            "Deposit_Nanohardness_Test_Load_Value": "",
+            "Deposit_Nanohardness_Test_Load_Units": "",
+            "Deposit_Nanohardness_Test_Dwell_Time_Value": "",
+            "Deposit_Nanohardness_Test_Dwell_Time_Units": "",
+            "Microtensile_Binary": "False",
+            "Additional_Manufacturing_Processes_Description": ""
+        },
+
+        "resultsValues": {
+            "Porosity_Value": "",
+            "Porosity_Units": "",
+            "Elastic_Modulus_Value": "",
+            "Elastic_Modulus_Units": "",
+            "Yield_Strength_Value": "262.28 ± 8.25",
+            "Yield_Strength_Units": "MPa",
+            "Ultimate_Tensile_Strength_Value": "293.97 ± 3.44",
+            "Ultimate_Tensile_Strength_Units": "MPa",
+            "Elongation_at_Break_Value": "8.91 ± 1.50",
+            "Elongation_at_Break_Units": "%",
+            "Deposit_Microhardness_Value": "1.014 ± 0.034",
+            "Deposit_Microhardness_Units": "GPa",
+            "Deposit_Nanohardness_Value": "",
+            "Deposit_Nanohardness_Units": "",
+            "Deposition_Efficiency_Value": "",
+            "Deposition_Efficiency_Units": "",
+            "Grain_Size_Value": "",
+            "Grain_Size_Units": "",
+            "Microstructural_Features": ""
+        },
+
+        "Notes": "Cold-sprayed deposit produced from Al F357 powder heat-treated at 230 °C for 75 min"
+    },
+    {
+        "preSprayedProperties": {
+            "Overall_Powder_Name": "Aluminum F357 + Al2O3",
+            "Majority_Powder_Material_Name": "Aluminum F357",
+            "Majority_Powder_Primary_Element": "Al",
+            "Majority_Powder_Chemical_Composition": "Si 7.32 wt%, Fe 0.039 wt%, Cu 0.002 wt%, Mn 0.0036 wt%, Mg 0.58 wt%, Zn 0.0038 wt%, Ti 0.12 wt%, Others 0.007 wt%, balance Al",
+            "Majority_Powder_Source": "Equispheres (Ottawa, Ontario, Canada)",
+            "Multiple_Powders_Binary": "True",
+            "Secondary_Powder_Material_Name": "Al2O3",
+            "Secondary_Powder_Primary_Element": "Al",
+            "Secondary_Powder_Chemical_Composition": "",
+            "Secondary_Powder_Source": "KOS (Kolo, Poland)",
+            "Tertiary_Powder_Material_Name": "",
+            "Tertiary_Powder_Primary_Element": "",
+            "Tertiary_Powder_Chemical_Composition": "",
+            "Tertiary_Powder_Source": "",
+            "Powder_Blend_Ratio": "90 wt% Aluminum F357, 10 wt% Al2O3",
+            "Powder_Blend_Atomic_Composition": "",
+            "Powder_Particle_Mean_Size_Value": "56.7",
+            "Powder_Particle_Mean_Size_Units": "µm",
+            "Powder_Particle_STD_Size_Value": "",
+            "Powder_Particle_STD_Size_Units": "",
+            "Powder_Particle_Size_D10_Value": "47.6",
+            "Powder_Particle_Size_D10_Units": "µm",
+            "Powder_Particle_Size_D50_Value": "56.7",
+            "Powder_Particle_Size_D50_Units": "µm",
+            "Powder_Particle_Size_D90_Value": "73.01",
+            "Powder_Particle_Size_D90_Units": "µm",
+            "Powder_Particle_Min_Size_Value": "45",
+            "Powder_Particle_Min_Size_Units": "µm",
+            "Powder_Particle_Max_Size_Value": "63",
+            "Powder_Particle_Max_Size_Units": "µm",
+            "Powder_Morphology": "Nearly spherical particles with very few satellites",
+            "Powder_Particle_Size_Other": "",
+            "Powder_Production_Method": "Proprietary atomization (gas atomized)",
+            "Powder_Heat_Treatment_Binary": "True",
+            "Powder_Heat_Treatment_Description": "Powder heat-treated at 385 °C for 6 h (degassing) prior to spraying",
+            "Powder_Pre-treatment_Temperature_Value": "385",
+            "Powder_Pre-treatment_Temperature_Units": "°C",
+            "Powder_Pre-treatment_Duration_Value": "6",
+            "Powder_Pre-treatment_Duration_Units": "h",
+            "Powder_Pre-treatment_Cool_Down_Time_Value": "",
+            "Powder_Pre-treatment_Cool_Down_Time_Units": "",
+            "Powder_Storage_Condition": "",
+            "Substrate_Material_Name": "Al 6061",
+            "Substrate_Material_Composition": "",
+            "Substrate_Thickness_Value": "",
+            "Substrate_Thickness_Units": "",
+            "Substrate_Surface_Preparation": "",
+            "Atmosphere_During_Heat_Treatment": "Dry nitrogen/vacuum cycling inside retort"
+        },
+
+        "experimentalProperties": {
+            "Spraying_System_Model": "VRC Gen III",
+            "Nozzle_Material": "",
+            "Nozzle_Type": "Converging–diverging",
+            "Nozzle_Model": "Nozzle #0071",
+            "Nozzle_Throat_Diameter_Value": "1.75",
+            "Nozzle_Throat_Diameter_Units": "mm",
+            "Nozzle_Exit_Diameter_Value": "5",
+            "Nozzle_Exit_Diameter_Units": "mm",
+            "Nozzle_Length_Value": "170",
+            "Nozzle_Length_Units": "mm",
+            "Nozzle_Expansion_Section_Length_Value": "152",
+            "Nozzle_Expansion_Section_Length_Units": "mm",
+            "Standoff_Distance_Value": "28.575",
+            "Standoff_Distance_Units": "mm",
+            "Rastering_Speed_Value": "200",
+            "Rastering_Speed_Units": "mm/s",
+            "Rastering_Step_Size_Value": "1",
+            "Rastering_Step_Size_Units": "mm",
+            "Raster_Pattern": "",
+            "Spray_Angle_Value": "",
+            "Spray_Angle_Units": "",
+            "Process_Gas_Type": "He",
+            "Process_Gas_Pressure_Value": "5",
+            "Process_Gas_Pressure_Units": "MPa",
+            "Process_Gas_Temperature_Value": "500",
+            "Process_Gas_Temperature_Units": "°C",
+            "Process_Gas_Flow_Rate_Value": "",
+            "Process_Gas_Flow_Rate_Units": "",
+            "Powder_Feed_Rate_Value": "",
+            "Powder_Feed_Rate_Units": "",
+            "Powder_Feeder_Rotation_Speed_Value": "",
+            "Powder_Feeder_Rotation_Speed_Units": "",
+            "Powder_Feeder_Vibrator_Status": "",
+            "Particle_Velocity_Value": "",
+            "Particle_Velocity_Units": "",
+            "Particle_Critical_Velocity_Value": "",
+            "Particle_Critical_Velocity_Units": "",
+            "Particle_Critical_Velocity_Source": "",
+            "Particle_Maximum_Velocity_Value": "",
+            "Particle_Maximum_Velocity_Units": "",
+            "Particle_Minimum_Velocity_Value": "",
+            "Particle_Minimum_Velocity_Units": "",
+            "Particle_Impact_Velocity_Value": "",
+            "Particle_Impact_Velocity_Units": "",
+            "Particle_Temperature_At_Impact_Value": "",
+            "Particle_Temperature_At_Impact_Units": "",
+            "Impact_Velocity_Ratio_Value": "",
+            "Impact_Velocity_Ratio_Units": "",
+            "Deposit_Post_Treatment_Binary": "True",
+            "Deposit_Post_Treatment_Description": "Hot-load sinter 610 °C × 5 h, furnace-cool to 530 °C × 1 h (solution), quench, age 150 °C × 1.5 h",
+            "Deposit_Post_First_Treatment_Temperature_Value": "610",
+            "Deposit_Post_First_Treatment_Temperature_Units": "°C",
+            "Deposit_Post_First_Treatment_Duration_Value": "5",
+            "Deposit_Post_First_Treatment_Duration_Units": "h",
+            "Deposit_Post_First_Treatment_Cool_Down_Time_Value": "",
+            "Deposit_Post_First_Treatment_Cool_Down_Time_Units": "",
+            "Deposit_Post_Second_Treatment_Temperature_Value": "530",
+            "Deposit_Post_Second_Treatment_Temperature_Units": "°C",
+            "Deposit_Post_Second_Treatment_Duration_Value": "1",
+            "Deposit_Post_Second_Treatment_Duration_Units": "h",
+            "Deposit_Post_Second_Treatment_Cool_Down_Time_Value": "",
+            "Deposit_Post_Second_Treatment_Cool_Down_Time_Units": "",
+            "Deposit_Post_Third_Treatment_Temperature_Value": "150",
+            "Deposit_Post_Third_Treatment_Temperature_Units": "°C",
+            "Deposit_Post_Third_Treatment_Duration_Value": "1.5",
+            "Deposit_Post_Third_Treatment_Duration_Units": "h",
+            "Deposit_Post_Third_Treatment_Cool_Down_Time_Value": "",
+            "Deposit_Post_Third_Treatment_Cool_Down_Time_Units": "",
+            "Laser_Assisted_Binary": "False",
+            "Laser_System": "",
+            "Laser_Beam_Type": "",
+            "Laser_Beam_Diameter_Value": "",
+            "Laser_Beam_Diameter_Units": "",
+            "Cold_Spray_Spot_Diameter_Value": "",
+            "Cold_Spray_Spot_Diameter_Units": "",
+            "Laser_Spray_Spot_Temperature_Value": "",
+            "Laser_Spray_Spot_Temperature_Units": "",
+            "Laser_Power_Value": "",
+            "Laser_Power_Units": "",
+            "Microforging_Binary": "False",
+            "Microforging_Particle_Material": "",
+            "Microforging_Particle_Mean_Size_Value": "",
+            "Microforging_Particle_Mean_Size_Units": "",
+            "Microforging_Particle_STD_Size_Value": "",
+            "Microforging_Particle_STD_Size_Units": "",
+            "Microforging_Particle_Volume_Fraction_Value": "",
+            "Microforging_Particle_Volume_Fraction_Units": "",
+            "Microforging_Particle_Hardness_Value": "",
+            "Microforging_Particle_Hardness_Units": "",
+            "Microforging_Particle_Morphology": "",
+            "Peening_Binary": "False",
+            "Peening_Media_Material": "",
+            "Peening_Media_Mean_Size_Value": "",
+            "Peening_Media_Mean_Size_Units": "",
+            "Peening_Media_STD_Size_Value": "",
+            "Peening_Media_STD_Size_Units": "",
+            "Peening_Media_Volume_Fraction_Value": "",
+            "Peening_Media_Volume_Fraction_Units": "",
+            "Peening_Pressure_Value": "",
+            "Peening_Pressure_Units": "",
+            "Peening_Duration_Value": "",
+            "Peening_Duration_Units": "",
+            "Friction_Stir_Binary": "False",
+            "Friction_Stir_Tool_Material": "",
+            "Friction_Stir_Probe_Diameter_Value": "",
+            "Friction_Stir_Probe_Diameter_Units": "",
+            "Friction_Stir_Shoulder_Diameter_Value": "",
+            "Friction_Stir_Shoulder_Diameter_Units": "",
+            "Friction_Stir_Rotation_Speed_Value": "",
+            "Friction_Stir_Rotation_Speed_Units": "",
+            "Friction_Stir_Travel_Speed_Value": "",
+            "Friction_Stir_Travel_Speed_Units": "",
+            "Friction_Stir_Tilt_Angle_Value": "",
+            "Friction_Stir_Tilt_Angle_Units": "",
+            "HIP_Binary": "False",
+            "HIP_System_Model": "",
+            "HIP_Temperature_Value": "",
+            "HIP_Temperature_Units": "",
+            "HIP_Pressure_Value": "",
+            "HIP_Pressure_Units": "",
+            "HIP_Duration_Value": "",
+            "HIP_Duration_Units": "",
+            "HIP_Atmosphere": "",
+            "Hot_Rolling_Binary": "False",
+            "Hot_Rolling_System_Model": "",
+            "Hot_Rolling_Temperature_Value": "",
+            "Hot_Rolling_Temperature_Units": "",
+            "Hot_Rolling_Reduction_Ratio_Value": "",
+            "Hot_Rolling_Reduction_Ratio_Units": "",
+            "Hot_Rolling_Speed_Value": "",
+            "Hot_Rolling_Speed_Units": "",
+            "Hot_Rolling_Pass_Count_Value": "",
+            "Hot_Rolling_Pass_Count_Units": "",
+            "Hot_Rolling_Atmosphere": "",
+            "Deposition_Area_Dimensions": "",
+            "Tensile_Specimen_Gauge_Length_Value": "25.4",
+            "Tensile_Specimen_Gauge_Length_Units": "mm",
+            "Tensile_Specimen_Gauge_Width_Value": "",
+            "Tensile_Specimen_Gauge_Width_Units": "",
+            "Tensile_Specimen_Gauge_Thickness_Value": "",
+            "Tensile_Specimen_Gauge_Thickness_Units": "",
+            "Standard_for_Tensile_Testing": "ASTM E8/E8M",
+            "Tensile_Test_Orientation": "",
+            "Tensile_Test_Temperature_Value": "",
+            "Tensile_Test_Temperature_Units": "",
+            "Deposit_Tensile_Test_Strain_Rate_Value": "",
+            "Deposit_Tensile_Test_Strain_Rate_Units": "",
+            "Deposit_Microhardness_System": "",
+            "Deposit_Microhardness_Indenter_Type": "",
+            "Deposit_Microhardness_Test_Load_Value": "0.1",
+            "Deposit_Microhardness_Test_Load_Units": "kgf",
+            "Deposit_Microhardness_Test_Dwell_Time_Value": "10",
+            "Deposit_Microhardness_Test_Dwell_Time_Units": "s",
+            "Deposit_Nanohardness_System": "",
+            "Deposit_Nanohardness_Indenter_Type": "",
+            "Deposit_Nanohardness_Test_Load_Value": "",
+            "Deposit_Nanohardness_Test_Load_Units": "",
+            "Deposit_Nanohardness_Test_Dwell_Time_Value": "",
+            "Deposit_Nanohardness_Test_Dwell_Time_Units": "",
+            "Microtensile_Binary": "False",
+            "Additional_Manufacturing_Processes_Description": ""
+        },
+
+        "resultsValues": {
+            "Porosity_Value": "0.8 ± 0.2",
+            "Porosity_Units": "%",
+            "Elastic_Modulus_Value": "74 ± 3",
+            "Elastic_Modulus_Units": "GPa",
+            "Yield_Strength_Value": "301 ± 7",
+            "Yield_Strength_Units": "MPa",
+            "Ultimate_Tensile_Strength_Value": "334 ± 6",
+            "Ultimate_Tensile_Strength_Units": "MPa",
+            "Elongation_at_Break_Value": "4.7 ± 0.8",
+            "Elongation_at_Break_Units": "%",
+            "Deposit_Microhardness_Value": "1.27 ± 0.05",
+            "Deposit_Microhardness_Units": "GPa",
+            "Deposit_Nanohardness_Value": "",
+            "Deposit_Nanohardness_Units": "",
+            "Deposition_Efficiency_Value": "",
+            "Deposition_Efficiency_Units": "",
+            "Grain_Size_Value": "",
+            "Grain_Size_Units": "",
+
+        "Notes": "Cold-sprayed Al F357 + 10 wt% Al2O3 deposit; powder degassed 385 °C × 6 h; post-spray T6-like heat treatment (610 °C/5 h → 530 °C/1 h + quench → 150 °C/1.5 h)"
+    }
+    }
+    ]
+}
+
+
+-----------------------------------------------------------------------------------
+IMPORTANT:
+
+Return only valid JSON, and do not include extra commentary. If data is missing, leave it as an empty string. If none of the fields in "resultsValues" are populated, do not include that experiment in the final output.
+
+Here is the article text to parse:
+
+{INSERT ARTICLE HERE}
