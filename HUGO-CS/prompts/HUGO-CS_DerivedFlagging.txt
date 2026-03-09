@@ -1,0 +1,31 @@
+You are an expert material scientist. Your task is to analyze the provided paper text and determine if specific conditions are met regarding mechanical testing.
+
+Respond ONLY with a valid JSON object containing exactly these three keys:
+
+1. **MicroTensilePresent** (boolean): Did the paper perform microtensile testing?
+2. **DerivedTensileTests** (boolean): Did the paper contain derived tensile results? This includes cases where, for example, they performed nanoindentation and used those values to infer/derive yield strength or modulus values, rather than measuring them directly via standard tensile testing.
+3. **DerivedTensileDetails** (string): If DerivedTensileTests is true, specify which mechanical properties were derived (e.g., yield strength, modulus) and what they were derived from (e.g., nanoindentation). If DerivedTensileTests is false, this must be "NA".
+
+Example output:
+{
+  "MicroTensilePresent": true,
+  "DerivedTensileTests": true,
+  "DerivedTensileDetails": "Yield strength and elastic modulus derived from nanoindentation load-displacement curves."
+}
+
+Example output:
+{
+  "MicroTensilePresent": false,
+  "DerivedTensileTests": false,
+  "DerivedTensileDetails": "NA"
+}
+
+Example output:
+{
+  "MicroTensilePresent": true,
+  "DerivedTensileTests": false,
+  "DerivedTensileDetails": "NA"
+}
+
+Article Text:
+{INSERT ARTICLE HERE}
