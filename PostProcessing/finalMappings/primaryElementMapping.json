@@ -1,0 +1,190 @@
+{
+  "": "[V] Not Reported",
+  "Silver": "Ag",
+  "silver": "Ag",
+
+  "Al2O3": "Al",
+  "AlN": "Al",
+  "Aluminium": "Al",
+  "aluminium": "Al",
+  "Aluminum": "Al",
+  "aluminum": "Al",
+
+  "Arsenic": "As",
+  "arsenic": "As",
+
+  "B4C": "B",
+  "Boron": "B",
+  "boron": "B",
+
+  "Barium": "Ba",
+  "barium": "Ba",
+
+  "Beryllium": "Be",
+  "beryllium": "Be",
+
+  "Carbon": "C",
+  "carbon": "C",
+
+  "Calcium": "Ca",
+  "calcium": "Ca",
+
+  "Cadmium": "Cd",
+  "cadmium": "Cd",
+
+  "Chlorine": "Cl",
+  "chlorine": "Cl",
+
+  "Cobalt": "Co",
+  "cobalt": "Co",
+
+  "Chromium": "Cr",
+  "chromium": "Cr",
+
+  "Copper": "Cu",
+  "copper": "Cu",
+
+  "Iron": "Fe",
+  "iron": "Fe",
+
+  "Gallium": "Ga",
+  "gallium": "Ga",
+
+  "Gadolinium": "Gd",
+  "gadolinium": "Gd",
+
+  "Germanium": "Ge",
+  "germanium": "Ge",
+
+  "Hydrogen": "H",
+  "hydrogen": "H",
+
+  "Hafnium": "Hf",
+  "hafnium": "Hf",
+
+  "Indium": "In",
+  "indium": "In",
+
+  "Potassium": "K",
+  "potassium": "K",
+
+  "Lanthanum": "La",
+  "lanthanum": "La",
+
+  "Magnesium": "Mg",
+  "magnesium": "Mg",
+
+  "Manganese": "Mn",
+  "manganese": "Mn",
+
+  "Molybdenum": "Mo",
+  "molybdenum": "Mo",
+  "MoS2": "Mo",
+
+  "Al, Co, Cr, Fe, Mo": "MPC: Al, Co, Cr, Fe, Mo",
+  "AlCoCrFeMo": "MPC: Al, Co, Cr, Fe, Mo",
+
+  "AlCoCrFeMoV": "MPC: Al, Co, Cr, Fe, Mo, V",
+
+  "AlCoCrFeMoW": "MPC: Al, Co, Cr, Fe, Mo, W",
+
+  "Al, Ni, Co, Fe, Cr": "MPC: Al, Co, Cr, Fe, Ni",
+
+  "Co, Cr, Fe, Mn, Ni": "MPC: Co, Cr, Fe, Mn, Ni",
+  "CoCrFeMnNi": "MPC: Co, Cr, Fe, Mn, Ni",
+  "CoCrFeNiMn": "MPC: Co, Cr, Fe, Mn, Ni",
+  "CrMnCoFeNi": "MPC: Co, Cr, Fe, Mn, Ni",
+  "Fe, Cr, Mn, Ni, Co": "MPC: Co, Cr, Fe, Mn, Ni",
+  "FeCoCrNiMn": "MPC: Co, Cr, Fe, Mn, Ni",
+  "FeCrMnNiCo": "MPC: Co, Cr, Fe, Mn, Ni",
+
+  "Co, Cr, Fe, Ni": "MPC: Co, Cr, Fe, Ni",
+  "Co/Cr/Fe/Ni": "MPC: Co, Cr, Fe, Ni",
+  "CoCrFeNi": "MPC: Co, Cr, Fe, Ni",
+
+  "Co, Cr, Fe, Ni, Mo": "MPC: Co, Cr, Fe, Ni, Mo",
+
+  "Co, Cr, Ni": "MPC: Co, Cr, Ni",
+
+  "Cr, Ni": "MPC: Cr, Ni",
+  "Ni, Cr": "MPC: Cr, Ni",
+
+  "B, N": "N",
+  "B,N": "N",
+  "BN": "N",
+  "Nitrogen": "N",
+  "nitrogen": "N",
+
+  "Sodium": "Na",
+  "sodium": "Na",
+
+  "Niobium": "Nb",
+  "niobium": "Nb",
+
+  "NI": "Ni",
+  "Nickel": "Ni",
+  "nickel": "Ni",
+
+  "Oxygen": "O",
+  "oxygen": "O",
+
+  "Phosphorus": "P",
+  "phosphorus": "P",
+
+  "Lead": "Pb",
+  "lead": "Pb",
+
+  "Palladium": "Pd",
+  "palladium": "Pd",
+
+  "Sulfur": "S",
+  "sulfur": "S",
+  "Sulphur": "S",
+  "sulphur": "S",
+
+  "Antimony": "Sb",
+  "antimony": "Sb",
+
+  "Scandium": "Sc",
+  "scandium": "Sc",
+
+  "SiC": "Si",
+  "Silicon": "Si",
+  "silicon": "Si",
+
+  "Tin": "Sn",
+  "tin": "Sn",
+
+  "Strontium": "Sr",
+  "strontium": "Sr",
+
+  "Tantalum": "Ta",
+  "tantalum": "Ta",
+
+  "TI": "Ti",
+  "TiC": "Ti",
+  "Titanium": "Ti",
+  "titanium": "Ti",
+
+  "Uranium": "U",
+  "uranium": "U",
+
+  "Vanadium": "V",
+  "vanadium": "V",
+
+  "Tungsten": "W",
+  "tungsten": "W",
+  "WC/Ni": "W",
+  "Wolfram": "W",
+  "wolfram": "W",
+
+  "Yttrium": "Y",
+  "yttrium": "Y",
+
+  "Zinc": "Zn",
+  "zinc": "Zn",
+
+  "Zirconium": "Zr",
+  "zirconium": "Zr",
+  "ZrO2": "Zr"
+}
