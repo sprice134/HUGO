@@ -1,7 +1,6 @@
 {
     "materialNamingConventions": {
         "": "[V] Not Reported",
-
         "Al 2024": "[V] Al 2024",
         "Al2024": "[V] Al 2024",
         "Aluminum 2024": "[V] Al 2024",
@@ -24,17 +23,13 @@
         "Spherical AA2024 powder": "[V] Al 2024",
         "AA2024 Al-Cu aluminum alloy": "[V] Al 2024",
         "Commercially spherical AA2024 powder": "[V] Al 2024",
-        
         "2219 aluminum alloy powder": "[V] Al 2219",
         "2219 Al alloy": "[V] Al 2219",
         "AA2219 powder": "[V] Al 2219",
-
         "Al2319": "[V] Al 2319",
         "Al 2618 alloy": "[V] Al 2618",
         "AA4145": "[V] Al 4145",
-
         "A5052 Al alloy": "[V] Al 5052",
-
         "Al 5056": "[V] Al 5056",
         "Al5056": "[V] Al 5056",
         "Aluminum 5056": "[V] Al 5056",
@@ -50,7 +45,6 @@
         "5056 Al alloy powder": "[V] Al 5056",
         "Al-5056": "[V] Al 5056",
         "AlMgSi (AA5056) powder": "[V] Al 5056",
-
         "Al 5083": "[V] Al 5083",
         "Al5083": "[V] Al 5083",
         "Aluminum 5083": "[V] Al 5083",
@@ -67,10 +61,8 @@
         "Al-5083": "[V] Al 5083",
         "AlMgSi (AA5083) powder": "[V] Al 5083",
         "n-5083 aluminum alloy": "[V] Al 5083",
-
         "Al5356": "[V] Al 5356",
         "Al5356 alloy": "[V] Al 5356",
-
         "Al 6061": "[V] Al 6061",
         "Al6061": "[V] Al 6061",
         "Aluminum 6061": "[V] Al 6061",
@@ -112,8 +104,6 @@
         "6061 Al powder": "[V] Al 6061",
         "AA6061 powder": "[V] Al 6061",
         "AM 6061 powder": "[V] Al 6061",
-
-
         "Al 6082": "[V] Al 6082",
         "Al6082": "[V] Al 6082",
         "Aluminum 6082": "[V] Al 6082",
@@ -131,7 +121,6 @@
         "AlMgSi (AA6082) powder": "[V] Al 6082",
         "Aluminum alloy 6082 powder": "[V] Al 6082",
         "Aluminum alloy 6082": "[V] Al 6082",
-
         "Al 7050": "[V] Al 7050",
         "Al7050": "[V] Al 7050",
         "Aluminum 7050": "[V] Al 7050",
@@ -149,9 +138,7 @@
         "AlZnMgCu (AA7050) powder": "[V] Al 7050",
         "7050 Al powder": "[V] Al 7050",
         "7050 aluminium alloy": "[V] Al 7050",
-        
         "7072 Al alloy": "[V] Al 7072",
-        
         "Al 7075": "[V] Al 7075",
         "Al7075": "[V] Al 7075",
         "Aluminum 7075": "[V] Al 7075",
@@ -177,8 +164,6 @@
         "7075 aluminum": "[V] Al 7075",
         "Al7075 ball-milled powder": "[V] Al 7075",
         "7075 Aluminum Alloy Powder": "[V] Al 7075",
-
-
         "Al A357": "[V] Al A357",
         "AlA357": "[V] Al A357",
         "Aluminum A357": "[V] Al A357",
@@ -198,8 +183,6 @@
         "A357 alloy powder": "[V] Al A357",
         "Al 357 alloy": "[V] Al A357",
         "A357 aluminum alloy powder": "[V] Al A357",
-
-
         "Al A380": "[V] Al A380",
         "AlA380": "[V] Al A380",
         "Aluminum A380": "[V] Al A380",
@@ -220,7 +203,6 @@
         "Al 380 alloy": "[V] Al A380",
         "A380 aluminum alloy powder": "[V] Al A380",
         "A380": "[V] Al A380",
-
         "Aluminum F357": "[V] Al F357",
         "Al F357": "[V] Al F357",
         "AlF357": "[V] Al F357",
@@ -238,12 +220,8 @@
         "F357 alloy powder": "[V] Al F357",
         "Al-F357 Powder": "[V] Al F357",
         "Al-F357 powder": "[V] Al F357",
-
         "Al C355": "[V] Al C355",
         "C355 Al alloy": "[V] Al C355",
-
-
-
         "Pure Al": "[V] Pure Al",
         "Pure aluminum": "[V] Pure Al",
         "Commercially pure aluminum (1100)": "[V] Pure Al",
@@ -307,10 +285,10 @@
         "1100 aluminum": "[V] Pure Al",
         "Aluminum H-10": "[V] Pure Al",
         "Aluminium powder": "[V] Pure Al",
-        "Irregular Al powder":  "[V] Pure Al",
-        "Aluminium":  "[V] Pure Al",
-        "Spherical Al powder":  "[V] Pure Al",
-        "Al 99.5%":  "[V] Pure Al",
+        "Irregular Al powder": "[V] Pure Al",
+        "Aluminium": "[V] Pure Al",
+        "Spherical Al powder": "[V] Pure Al",
+        "Al 99.5%": "[V] Pure Al",
         "CP-Al Al-104-3": "[V] Pure Al",
         "1100 Al": "[V] Pure Al",
         "Commercial pure Al": "[V] Pure Al",
@@ -336,10 +314,6 @@
         "Pure Al (Al-42)": "[V] Pure Al",
         "Pure Al (Al-11)": "[V] Pure Al",
         "Brodmann Flomaster": "[V] Pure Al",
-
-
-
-
         "Pure Cu": "[V] Pure Cu",
         "Pure Copper": "[V] Pure Cu",
         "Pure copper": "[V] Pure Cu",
@@ -407,250 +381,211 @@
         "Copper PMS-1": "[V] Pure Cu",
         "Copper (spherical)": "[V] Pure Cu",
         "GA Cu": "[V] Pure Cu",
-        "Electrolytic Cu powder":  "[V] Pure Cu",
-        "electroytic copper (E-Cu)":  "[V] Pure Cu",
-        "Spherical copper (S-Cu)":  "[V] Pure Cu",
-        "K-01-01 Cu":  "[V] Pure Cu",
-        "Cu-IR":  "[V] Pure Cu",
-        
-
-
-
-
-
-
-        "Pure Ni":               "[V] Pure Ni",
-        "Pure nickel":           "[V] Pure Ni",
-        "Nickel":                "[V] Pure Ni",
-        "Ni":                    "[V] Pure Ni",
-        "Commercially pure nickel":    "[V] Pure Ni",
-        "Commercial purity nickel":     "[V] Pure Ni",
-        "Commercial purity Ni":         "[V] Pure Ni",
-        "Ni powder":             "[V] Pure Ni",
-        "Pure Ni powder":        "[V] Pure Ni",
-        "Pure nickel powder":    "[V] Pure Ni",
+        "Electrolytic Cu powder": "[V] Pure Cu",
+        "electroytic copper (E-Cu)": "[V] Pure Cu",
+        "Spherical copper (S-Cu)": "[V] Pure Cu",
+        "K-01-01 Cu": "[V] Pure Cu",
+        "Cu-IR": "[V] Pure Cu",
+        "Pure Ni": "[V] Pure Ni",
+        "Pure nickel": "[V] Pure Ni",
+        "Nickel": "[V] Pure Ni",
+        "Ni": "[V] Pure Ni",
+        "Commercially pure nickel": "[V] Pure Ni",
+        "Commercial purity nickel": "[V] Pure Ni",
+        "Commercial purity Ni": "[V] Pure Ni",
+        "Ni powder": "[V] Pure Ni",
+        "Pure Ni powder": "[V] Pure Ni",
+        "Pure nickel powder": "[V] Pure Ni",
         "Pure Ni (as-received)": "[V] Pure Ni",
         "Pure Ni (ball-milled)": "[V] Pure Ni",
         "Pure Ni (spray-dried)": "[V] Pure Ni",
         "Nickel powder": "[V] Pure Ni",
         "Irregular Ni powder": "[V] Pure Ni",
-        "Nickel (Ni)":                "[V] Pure Ni",
+        "Nickel (Ni)": "[V] Pure Ni",
         "Gas atomized Nickel feedstock (Amperit 176)": "[V] Pure Ni",
-        "Commercial nickel powder":    "[V] Pure Ni",
-        "PNKUT-1 Ni powder":           "[V] Pure Ni",
-        "PNKUT-1 nickel powder":       "[V] Pure Ni",
-        "Nickel N5001":                "[V] Pure Ni",
+        "Commercial nickel powder": "[V] Pure Ni",
+        "PNKUT-1 Ni powder": "[V] Pure Ni",
+        "PNKUT-1 nickel powder": "[V] Pure Ni",
+        "Nickel N5001": "[V] Pure Ni",
         "Commercially pure gas atomized Ni": "[V] Pure Ni",
-        "Commercially pure Ni":  "[V] Pure Ni",
-        "Commercially pure Ni (4SP-10)":  "[V] Pure Ni",
-        "Ni micron powder":  "[V] Pure Ni",
-        "CP-Ni":  "[V] Pure Ni",
-        "Nickel (Metco 56F-NS and 56C-NS)":  "[V] Pure Ni",
-        "CP-Ni (Ni-1)":  "[V] Pure Ni",
-        "CP-Ni (Ni-2)":  "[V] Pure Ni",
-        "Ni (Amperit 176)":  "[V] Pure Ni",
-        "Ni (AMPERIT® 176)":  "[V] Pure Ni",
-        "CP–Ni":  "[V] Pure Ni",
-        "Nickel (Amperit 176)":  "[V] Pure Ni",
+        "Commercially pure Ni": "[V] Pure Ni",
+        "Commercially pure Ni (4SP-10)": "[V] Pure Ni",
+        "Ni micron powder": "[V] Pure Ni",
+        "CP-Ni": "[V] Pure Ni",
+        "Nickel (Metco 56F-NS and 56C-NS)": "[V] Pure Ni",
+        "CP-Ni (Ni-1)": "[V] Pure Ni",
+        "CP-Ni (Ni-2)": "[V] Pure Ni",
+        "Ni (Amperit 176)": "[V] Pure Ni",
+        "Ni (AMPERIT® 176)": "[V] Pure Ni",
+        "CP–Ni": "[V] Pure Ni",
+        "Nickel (Amperit 176)": "[V] Pure Ni",
         "CP-Ni-1": "[V] Pure Ni",
         "CP-Ni-2": "[V] Pure Ni",
         "SST-N5001": "[V] Pure Ni",
         "Ni nanoparticles": "[V] Pure Ni",
         "SST-N5001 nickel": "[V] Pure Ni",
         "Ni (NI-101)": "[V] Pure Ni",
-
-
-
-
-        "Pure Fe":               "[V] Pure Fe",
-        "Pure iron":             "[V] Pure Fe",
-        "Iron":                  "[V] Pure Fe",
-        "Fe":                    "[V] Pure Fe",
-        "Commercially pure iron":      "[V] Pure Fe",
-        "Commercial purity iron":       "[V] Pure Fe",
-        "Commercial purity Fe":         "[V] Pure Fe",
-        "Fe powder":             "[V] Pure Fe",
-        "Pure Fe powder":        "[V] Pure Fe",
-        "Pure iron powder":      "[V] Pure Fe",
+        "Pure Fe": "[V] Pure Fe",
+        "Pure iron": "[V] Pure Fe",
+        "Iron": "[V] Pure Fe",
+        "Fe": "[V] Pure Fe",
+        "Commercially pure iron": "[V] Pure Fe",
+        "Commercial purity iron": "[V] Pure Fe",
+        "Commercial purity Fe": "[V] Pure Fe",
+        "Fe powder": "[V] Pure Fe",
+        "Pure Fe powder": "[V] Pure Fe",
+        "Pure iron powder": "[V] Pure Fe",
         "Pure Fe (as-received)": "[V] Pure Fe",
         "Pure Fe (ball-milled)": "[V] Pure Fe",
         "Pure Fe (gas-atomized)": "[V] Pure Fe",
-        "Iron powder":                  "[V] Pure Fe",
-        "Pure iron milled powder":"[V] Pure Fe",
-        "As-received pure iron powder":"[V] Pure Fe",
+        "Iron powder": "[V] Pure Fe",
+        "Pure iron milled powder": "[V] Pure Fe",
+        "As-received pure iron powder": "[V] Pure Fe",
         "MM-treated pure iron powder": "[V] Pure Fe",
         "Pure iron as-received powder": "[V] Pure Fe",
         "Pure Iron (MM20)": "[V] Pure Fe",
         "Pure Iron (MM-treated + 20 mass% as-received)": "[V] Pure Fe",
         "Pure Iron (as-received)": "[V] Pure Fe",
-        
-
-
-
-        "Pure Nb":               "[V] Pure Nb",
-        "Pure niobium":          "[V] Pure Nb",
-        "Niobium":               "[V] Pure Nb",
-        "Nb":                    "[V] Pure Nb",
-        "Commercially pure niobium":    "[V] Pure Nb",
-        "Commercial purity niobium":     "[V] Pure Nb",
-        "Commercial purity Nb":          "[V] Pure Nb",
-        "Nb powder":             "[V] Pure Nb",
-        "Pure Nb powder":        "[V] Pure Nb",
-        "Pure niobium powder":   "[V] Pure Nb",
+        "Pure Nb": "[V] Pure Nb",
+        "Pure niobium": "[V] Pure Nb",
+        "Niobium": "[V] Pure Nb",
+        "Nb": "[V] Pure Nb",
+        "Commercially pure niobium": "[V] Pure Nb",
+        "Commercial purity niobium": "[V] Pure Nb",
+        "Commercial purity Nb": "[V] Pure Nb",
+        "Nb powder": "[V] Pure Nb",
+        "Pure Nb powder": "[V] Pure Nb",
+        "Pure niobium powder": "[V] Pure Nb",
         "Pure Nb (as-received)": "[V] Pure Nb",
         "Pure Nb (ball-milled)": "[V] Pure Nb",
         "Pure Nb (gas-atomized)": "[V] Pure Nb",
-        "Niobium powder":        "[V] Pure Nb",
-        
-        "Si":         "[V] Pure Si",
-
+        "Niobium powder": "[V] Pure Nb",
+        "Si": "[V] Pure Si",
         "Polycrystalline boron": "[V] Pure B",
-
         "V": "[V] Pure V",
-
-
-
-        "Pure Co":               "[V] Pure Co",
-        "Pure Cobalt":          "[V] Pure Co",
-        "Cobalt":               "[V] Pure Co",
-        "Co":                    "[V] Pure Co",
-        "Commercially pure cobalt":    "[V] Pure Co",
-        "Commercial purity cobalt":     "[V] Pure Co",
-        "Commercial purity Co":          "[V] Pure Co",
-        "Co powder":             "[V] Pure Co",
-        "Pure Co powder":        "[V] Pure Co",
-        "Pure cobalt powder":   "[V] Pure Co",
+        "Pure Co": "[V] Pure Co",
+        "Pure Cobalt": "[V] Pure Co",
+        "Cobalt": "[V] Pure Co",
+        "Co": "[V] Pure Co",
+        "Commercially pure cobalt": "[V] Pure Co",
+        "Commercial purity cobalt": "[V] Pure Co",
+        "Commercial purity Co": "[V] Pure Co",
+        "Co powder": "[V] Pure Co",
+        "Pure Co powder": "[V] Pure Co",
+        "Pure cobalt powder": "[V] Pure Co",
         "Pure Co (as-received)": "[V] Pure Co",
         "Pure Co (ball-milled)": "[V] Pure Co",
         "Pure Co (gas-atomized)": "[V] Pure Co",
-        "Cobalt powder":        "[V] Pure Co",
-
-
-        "Pure W":               "[V] Pure W",
-        "Pure Tungsten":          "[V] Pure W",
-        "Tungsten":               "[V] Pure W",
-        "W":                    "[V] Pure W",
-        "Commercially pure Tungsten":    "[V] Pure W",
-        "Commercial purity Tungsten":     "[V] Pure W",
-        "Commercial purity W":          "[V] Pure W",
-        "W powder":             "[V] Pure W",
-        "Pure W powder":        "[V] Pure W",
-        "Pure Tungsten powder":   "[V] Pure W",
+        "Cobalt powder": "[V] Pure Co",
+        "Pure W": "[V] Pure W",
+        "Pure Tungsten": "[V] Pure W",
+        "Tungsten": "[V] Pure W",
+        "W": "[V] Pure W",
+        "Commercially pure Tungsten": "[V] Pure W",
+        "Commercial purity Tungsten": "[V] Pure W",
+        "Commercial purity W": "[V] Pure W",
+        "W powder": "[V] Pure W",
+        "Pure W powder": "[V] Pure W",
+        "Pure Tungsten powder": "[V] Pure W",
         "Pure W (as-received)": "[V] Pure W",
         "Pure W (ball-milled)": "[V] Pure W",
         "Pure W (gas-atomized)": "[V] Pure W",
         "Tungsten powder": "[V] Pure W",
         "Tungsten (W)": "[V] Pure W",
         "Sintered W powder": "[V] Pure W",
-
-        "Pure Cr":               "[V] Pure Cr",
-        "Pure Chromium":          "[V] Pure Cr",
-        "Chromium":               "[V] Pure Cr",
-        "Cr":                    "[V] Pure Cr",
-        "Commercially pure Chromium":    "[V] Pure Cr",
-        "Commercial purity Chromium":     "[V] Pure Cr",
-        "Commercial purity Cr":          "[V] Pure Cr",
-        "Cr powder":             "[V] Pure Cr",
-        "Pure Cr powder":        "[V] Pure Cr",
-        "Pure Chromium powder":   "[V] Pure Cr",
+        "Pure Cr": "[V] Pure Cr",
+        "Pure Chromium": "[V] Pure Cr",
+        "Chromium": "[V] Pure Cr",
+        "Cr": "[V] Pure Cr",
+        "Commercially pure Chromium": "[V] Pure Cr",
+        "Commercial purity Chromium": "[V] Pure Cr",
+        "Commercial purity Cr": "[V] Pure Cr",
+        "Cr powder": "[V] Pure Cr",
+        "Pure Cr powder": "[V] Pure Cr",
+        "Pure Chromium powder": "[V] Pure Cr",
         "Pure Cr (as-received)": "[V] Pure Cr",
         "Pure Cr (ball-milled)": "[V] Pure Cr",
         "Pure Cr (gas-atomized)": "[V] Pure Cr",
         "Chromium powder": "[V] Pure Cr",
         "Cr nanoparticles": "[V] Pure Cr",
-
-        
-
-        "Pure Zn":               "[V] Pure Zn",
-        "Pure Zinc":          "[V] Pure Zn",
-        "Zinc":               "[V] Pure Zn",
-        "Zn":                    "[V] Pure Zn",
-        "Commercially pure Zinc":    "[V] Pure Zn",
-        "Commercial purity Zinc":     "[V] Pure Zn",
-        "Commercial purity Zn":          "[V] Pure Zn",
-        "Zn powder":             "[V] Pure Zn",
-        "Pure Zn powder":        "[V] Pure Zn",
-        "Pure Zinc powder":   "[V] Pure Zn",
+        "Pure Zn": "[V] Pure Zn",
+        "Pure Zinc": "[V] Pure Zn",
+        "Zinc": "[V] Pure Zn",
+        "Zn": "[V] Pure Zn",
+        "Commercially pure Zinc": "[V] Pure Zn",
+        "Commercial purity Zinc": "[V] Pure Zn",
+        "Commercial purity Zn": "[V] Pure Zn",
+        "Zn powder": "[V] Pure Zn",
+        "Pure Zn powder": "[V] Pure Zn",
+        "Pure Zinc powder": "[V] Pure Zn",
         "Pure Zn (as-received)": "[V] Pure Zn",
         "Pure Zn (ball-milled)": "[V] Pure Zn",
         "Pure Zn (gas-atomized)": "[V] Pure Zn",
         "Zinc powder": "[V] Pure Zn",
         "CP Zn powder": "[V] Pure Zn",
-
         "Palladium": "[V] Pure Pd",
-
         "Commercially pure zirconium": "[V] Pure Zr",
         "Zr": "[V] Pure Zr",
-
-
         "Ni + Fe": "[V] Ni + Fe",
         "WS2 + h-BN": "[V] WS2 + h-BN",
         "Ag + MoS2 + h-BN": "[V] Ag + MoS2 + h-BN",
         "Ag + MoS2": "[V] Ag + MoS2",
-        
-
-        "Pure Mg":               "[V] Pure Mg",
-        "Pure Magnesium":          "[V] Pure Mg",
-        "Magnesium":               "[V] Pure Mg",
-        "Mg":                    "[V] Pure Mg",
-        "Commercially pure Magnesium":    "[V] Pure Mg",
-        "Commercial purity Magnesium":     "[V] Pure Mg",
-        "Commercial purity Mg":          "[V] Pure Mg",
-        "Mg powder":             "[V] Pure Mg",
-        "Pure Mg powder":        "[V] Pure Mg",
-        "Pure Magnesium powder":   "[V] Pure Mg",
+        "Pure Mg": "[V] Pure Mg",
+        "Pure Magnesium": "[V] Pure Mg",
+        "Magnesium": "[V] Pure Mg",
+        "Mg": "[V] Pure Mg",
+        "Commercially pure Magnesium": "[V] Pure Mg",
+        "Commercial purity Magnesium": "[V] Pure Mg",
+        "Commercial purity Mg": "[V] Pure Mg",
+        "Mg powder": "[V] Pure Mg",
+        "Pure Mg powder": "[V] Pure Mg",
+        "Pure Magnesium powder": "[V] Pure Mg",
         "Pure Mg (as-received)": "[V] Pure Mg",
         "Pure Mg (ball-milled)": "[V] Pure Mg",
         "Pure Mg (gas-atomized)": "[V] Pure Mg",
         "Magnesium powder": "[V] Pure Mg",
-
-
-        "Sn":                      "[V] Pure Sn",
-        "Tin":                     "[V] Pure Sn",
-        "Pure Sn":                 "[V] Pure Sn",
-        "Pure tin":                "[V] Pure Sn",
-        "Sn powder":               "[V] Pure Sn",
-        "Sn Powder":               "[V] Pure Sn",
-        "Sn powders":               "[V] Pure Sn",
-        "Sn Powders":               "[V] Pure Sn",
-        "Commercially pure tin":   "[V] Pure Sn",
-        "Commercial purity tin":   "[V] Pure Sn",
-        "Gas-atomized Sn powder":  "[V] Pure Sn",
-        "Cryomilled tin":          "[V] Pure Sn",
-        "Tin (spherical)":          "[V] Pure Sn",
-
-        "Ag":                      "[V] Pure Ag",
-        "Silver":                  "[V] Pure Ag",
-        "Pure Ag":                 "[V] Pure Ag",
-        "Pure silver":             "[V] Pure Ag",
-        "Ag powder":               "[V] Pure Ag",
-        "Silver powder":           "[V] Pure Ag",
-        "Commercially pure silver":"[V] Pure Ag",
-        "Gas-atomized Ag powder":  "[V] Pure Ag",
-        "Spherical Ag powder":     "[V] Pure Ag",
-
-        "Pure Mo":                  "[V] Pure Mo",
-        "Sintered Mo powder":       "[V] Pure Mo",
-        "Mo":                       "[V] Pure Mo",
-
-
-        "Pure Ti":                        "[V] Pure Ti",
-        "Pure titanium":                  "[V] Pure Ti",
-        "Titanium":                       "[V] Pure Ti",
-        "Ti":                             "[V] Pure Ti",
-        "Commercially pure titanium":     "[V] Pure Ti",
-        "Commercial purity titanium":     "[V] Pure Ti",
-        "Commercial purity Ti":           "[V] Pure Ti",
-        "CP-Ti":                          "[V] Pure Ti",
-        "CP-Titanium":                    "[V] Pure Ti",
-        "Ti powder":                      "[V] Pure Ti",
-        "Pure Ti powder":                 "[V] Pure Ti",
-        "Pure Ti (as-received)":          "[V] Pure Ti",
-        "Pure Ti (ball-milled)":          "[V] Pure Ti",
-        "Commercial grade pure Ti":       "[V] Pure Ti",
-        "Titanium powder":                "[V] Pure Ti",
-        "Commercially-Pure Ti (CP-Ti)":   "[V] Pure Ti",
-        "Spherical Ti powder":            "[V] Pure Ti",
+        "Sn": "[V] Pure Sn",
+        "Tin": "[V] Pure Sn",
+        "Pure Sn": "[V] Pure Sn",
+        "Pure tin": "[V] Pure Sn",
+        "Sn powder": "[V] Pure Sn",
+        "Sn Powder": "[V] Pure Sn",
+        "Sn powders": "[V] Pure Sn",
+        "Sn Powders": "[V] Pure Sn",
+        "Commercially pure tin": "[V] Pure Sn",
+        "Commercial purity tin": "[V] Pure Sn",
+        "Gas-atomized Sn powder": "[V] Pure Sn",
+        "Cryomilled tin": "[V] Pure Sn",
+        "Tin (spherical)": "[V] Pure Sn",
+        "Ag": "[V] Pure Ag",
+        "Silver": "[V] Pure Ag",
+        "Pure Ag": "[V] Pure Ag",
+        "Pure silver": "[V] Pure Ag",
+        "Ag powder": "[V] Pure Ag",
+        "Silver powder": "[V] Pure Ag",
+        "Commercially pure silver": "[V] Pure Ag",
+        "Gas-atomized Ag powder": "[V] Pure Ag",
+        "Spherical Ag powder": "[V] Pure Ag",
+        "Pure Mo": "[V] Pure Mo",
+        "Sintered Mo powder": "[V] Pure Mo",
+        "Mo": "[V] Pure Mo",
+        "Pure Ti": "[V] Pure Ti",
+        "Pure titanium": "[V] Pure Ti",
+        "Titanium": "[V] Pure Ti",
+        "Ti": "[V] Pure Ti",
+        "Commercially pure titanium": "[V] Pure Ti",
+        "Commercial purity titanium": "[V] Pure Ti",
+        "Commercial purity Ti": "[V] Pure Ti",
+        "CP-Ti": "[V] Pure Ti",
+        "CP-Titanium": "[V] Pure Ti",
+        "Ti powder": "[V] Pure Ti",
+        "Pure Ti powder": "[V] Pure Ti",
+        "Pure Ti (as-received)": "[V] Pure Ti",
+        "Pure Ti (ball-milled)": "[V] Pure Ti",
+        "Commercial grade pure Ti": "[V] Pure Ti",
+        "Titanium powder": "[V] Pure Ti",
+        "Commercially-Pure Ti (CP-Ti)": "[V] Pure Ti",
+        "Spherical Ti powder": "[V] Pure Ti",
         "Commercial purity titanium (gas-atomised, AP&C)": "[V] Pure Ti",
         "Commercially pure Ti (CPTi)": "[V] Pure Ti",
         "Ti-SP": "[V] Pure Ti",
@@ -675,54 +610,49 @@
         "Titanium sponge": "[V] Pure Ti",
         "Pure α-Ti powder": "[V] Pure Ti",
         "Commercially Pure Ti powder": "[V] Pure Ti",
-        "CP Titanium powder":  "[V] Pure Ti",
-
-
-
-        "Grade 1 Ti":                     "[V] Ti Grade 1",
-        "Ti Grade 1":                     "[V] Ti Grade 1",
-        "Grade 1 Titanium":               "[V] Ti Grade 1",
-        "Titanium Grade 1":               "[V] Ti Grade 1",
-        "Ti (Grade 1)":                   "[V] Ti Grade 1",
-        "Titanium (Grade 1)":             "[V] Ti Grade 1",
-        "CP-Ti Grade 1":                  "[V] Ti Grade 1",
-        "Commercially pure titanium Grade 1":    "[V] Ti Grade 1",
-        "Commercial purity titanium Grade 1":     "[V] Ti Grade 1",
-        "Pure Ti Grade 1":                "[V] Ti Grade 1",
+        "CP Titanium powder": "[V] Pure Ti",
+        "Grade 1 Ti": "[V] Ti Grade 1",
+        "Ti Grade 1": "[V] Ti Grade 1",
+        "Grade 1 Titanium": "[V] Ti Grade 1",
+        "Titanium Grade 1": "[V] Ti Grade 1",
+        "Ti (Grade 1)": "[V] Ti Grade 1",
+        "Titanium (Grade 1)": "[V] Ti Grade 1",
+        "CP-Ti Grade 1": "[V] Ti Grade 1",
+        "Commercially pure titanium Grade 1": "[V] Ti Grade 1",
+        "Commercial purity titanium Grade 1": "[V] Ti Grade 1",
+        "Pure Ti Grade 1": "[V] Ti Grade 1",
         "Commercial purity titanium (Grade 1)": "[V] Ti Grade 1",
         "Grade 1 Ti powder": "[V] Ti Grade 1",
         "CP-Ti-G1": "[V] Ti Grade 1",
-        "Commercially pure titanium powder grade 1":"[V] Ti Grade 1",
-        "Grade 1 CP titanium":"[V] Ti Grade 1",
-        "Titanium (PTOM-1 grade)":"[V] Ti Grade 1",
+        "Commercially pure titanium powder grade 1": "[V] Ti Grade 1",
+        "Grade 1 CP titanium": "[V] Ti Grade 1",
+        "Titanium (PTOM-1 grade)": "[V] Ti Grade 1",
         "CP–Ti grade 1": "[V] Ti Grade 1",
         "CP-Ti (Grade 1)": "[V] Ti Grade 1",
         "Commercially-Pure Ti grade 1": "[V] Ti Grade 1",
-
-
-        "Grade 2 Ti":                     "[V] Ti Grade 2",
-        "Ti Grade 2":                     "[V] Ti Grade 2",
-        "Grade 2 Titanium":               "[V] Ti Grade 2",
-        "Titanium Grade 2":               "[V] Ti Grade 2",
-        "Ti (Grade 2)":                   "[V] Ti Grade 2",
-        "Titanium (Grade 2)":             "[V] Ti Grade 2",
-        "CP-Ti Grade 2":                  "[V] Ti Grade 2",
-        "Commercially pure titanium Grade 2":    "[V] Ti Grade 2",
-        "Commercial purity titanium Grade 2":     "[V] Ti Grade 2",
-        "Pure Ti Grade 2":                "[V] Ti Grade 2",
+        "Grade 2 Ti": "[V] Ti Grade 2",
+        "Ti Grade 2": "[V] Ti Grade 2",
+        "Grade 2 Titanium": "[V] Ti Grade 2",
+        "Titanium Grade 2": "[V] Ti Grade 2",
+        "Ti (Grade 2)": "[V] Ti Grade 2",
+        "Titanium (Grade 2)": "[V] Ti Grade 2",
+        "CP-Ti Grade 2": "[V] Ti Grade 2",
+        "Commercially pure titanium Grade 2": "[V] Ti Grade 2",
+        "Commercial purity titanium Grade 2": "[V] Ti Grade 2",
+        "Pure Ti Grade 2": "[V] Ti Grade 2",
         "Commercial purity titanium (Grade 2)": "[V] Ti Grade 2",
         "CP Grade 2 Titanium": "[V] Ti Grade 2",
         "Commercial-purity gas-atomised titanium Grade 2 (CP Ti)": "[V] Ti Grade 2",
         "Commercially pure grade 2 titanium": "[V] Ti Grade 2",
         "Commercial-purity gas-atomised titanium Grade 2": "[V] Ti Grade 2",
-        "TA2 titanium powder":                   "[V] Ti Grade 2",
-        "TA2 Titanium":                         "[V] Ti Grade 2",
-        "TA2 powder":                           "[V] Ti Grade 2",
-        "Commercially Pure Titanium (Grade 2)":     "[V] Ti Grade 2",
-        "Commercially pure titanium grade II":                   "[V] Ti Grade 2",
-        "Commercially pure titanium powder Grade 2":                   "[V] Ti Grade 2",
-        "CP titanium grade 2":                   "[V] Ti Grade 2",
-        "Commercially pure Titanium Grade 2":                   "[V] Ti Grade 2",
+        "TA2 titanium powder": "[V] Ti Grade 2",
+        "TA2 Titanium": "[V] Ti Grade 2",
+        "TA2 powder": "[V] Ti Grade 2",
+        "Commercially Pure Titanium (Grade 2)": "[V] Ti Grade 2",
+        "Commercially pure titanium grade II": "[V] Ti Grade 2",
+        "Commercially pure titanium powder Grade 2": "[V] Ti Grade 2",
+        "CP titanium grade 2": "[V] Ti Grade 2",
+        "Commercially pure Titanium Grade 2": "[V] Ti Grade 2",
         "Commercially pure titanium grade 2": "[V] Ti Grade 2",
         "CP Ti grade 2 (spherical)": "[V] Ti Grade 2",
         "CP Ti grade 2 (irregular)": "[V] Ti Grade 2",
@@ -732,35 +662,31 @@
         "Commercial purity Ti Grade 2": "[V] Ti Grade 2",
         "Titanium Grade 2 powder": "[V] Ti Grade 2",
         "TA2": "[V] Ti Grade 2",
-
-
-        "Grade 3 Ti":                     "[V] Ti Grade 3",
-        "Ti Grade 3":                     "[V] Ti Grade 3",
-        "Grade 3 Titanium":               "[V] Ti Grade 3",
-        "Titanium Grade 3":               "[V] Ti Grade 3",
-        "Ti (Grade 3)":                   "[V] Ti Grade 3",
-        "Titanium (Grade 3)":             "[V] Ti Grade 3",
-        "CP-Ti Grade 3":                  "[V] Ti Grade 3",
-        "Commercially pure titanium Grade 3":    "[V] Ti Grade 3",
-        "Commercial purity titanium Grade 3":     "[V] Ti Grade 3",
-        "Pure Ti Grade 3":                "[V] Ti Grade 3",
+        "Grade 3 Ti": "[V] Ti Grade 3",
+        "Ti Grade 3": "[V] Ti Grade 3",
+        "Grade 3 Titanium": "[V] Ti Grade 3",
+        "Titanium Grade 3": "[V] Ti Grade 3",
+        "Ti (Grade 3)": "[V] Ti Grade 3",
+        "Titanium (Grade 3)": "[V] Ti Grade 3",
+        "CP-Ti Grade 3": "[V] Ti Grade 3",
+        "Commercially pure titanium Grade 3": "[V] Ti Grade 3",
+        "Commercial purity titanium Grade 3": "[V] Ti Grade 3",
+        "Pure Ti Grade 3": "[V] Ti Grade 3",
         "Commercial purity titanium (Grade 3)": "[V] Ti Grade 3",
-
-        "Grade 4 Ti":                     "[V] Ti Grade 4",
-        "Ti Grade 4":                     "[V] Ti Grade 4",
-        "Grade 4 Titanium":               "[V] Ti Grade 4",
-        "Titanium Grade 4":               "[V] Ti Grade 4",
-        "Ti (Grade 4)":                   "[V] Ti Grade 4",
-        "Titanium (Grade 4)":             "[V] Ti Grade 4",
-        "CP-Ti Grade 4":                  "[V] Ti Grade 4",
-        "Commercially pure titanium Grade 4":    "[V] Ti Grade 4",
-        "Commercial purity titanium Grade 4":     "[V] Ti Grade 4",
-        "Pure Ti Grade 4":                "[V] Ti Grade 4",
+        "Grade 4 Ti": "[V] Ti Grade 4",
+        "Ti Grade 4": "[V] Ti Grade 4",
+        "Grade 4 Titanium": "[V] Ti Grade 4",
+        "Titanium Grade 4": "[V] Ti Grade 4",
+        "Ti (Grade 4)": "[V] Ti Grade 4",
+        "Titanium (Grade 4)": "[V] Ti Grade 4",
+        "CP-Ti Grade 4": "[V] Ti Grade 4",
+        "Commercially pure titanium Grade 4": "[V] Ti Grade 4",
+        "Commercial purity titanium Grade 4": "[V] Ti Grade 4",
+        "Pure Ti Grade 4": "[V] Ti Grade 4",
         "Commercial purity titanium (Grade 4)": "[V] Ti Grade 4",
-        "CP titanium, grade 4":  "[V] Ti Grade 4",
-        "CP Titanium grade 4":  "[V] Ti Grade 4",
+        "CP titanium, grade 4": "[V] Ti Grade 4",
+        "CP Titanium grade 4": "[V] Ti Grade 4",
         "Titanium Metco 4010C": "[V] Ti Grade 4",
-
         "Tantalum powder": "[V] Pure Ta",
         "Tantalum": "[V] Pure Ta",
         "Amperit 151.065 (pure tantalum powder)": "[V] Pure Ta",
@@ -781,38 +707,29 @@
         "Tantalum (Ta)": "[V] Pure Ta",
         "Tantalum (Ta": "[V] Pure Ta",
         "Amperit 151.065 Ta powder": "[V] Pure Ta",
-        
-
-        "AlSi10Mg":                "[V] AlSi10Mg",
-        "Al Si10 Mg":              "[V] AlSi10Mg",
-        "Al-Si10-Mg":              "[V] AlSi10Mg",
-        "AlSi10-Mg":               "[V] AlSi10Mg",
-        "AlSi10Mg alloy":          "[V] AlSi10Mg",
-        "AlSi10Mg powder":         "[V] AlSi10Mg",
-        "Al-10Si-0.3Mg":           "[V] AlSi10Mg",
+        "AlSi10Mg": "[V] AlSi10Mg",
+        "Al Si10 Mg": "[V] AlSi10Mg",
+        "Al-Si10-Mg": "[V] AlSi10Mg",
+        "AlSi10-Mg": "[V] AlSi10Mg",
+        "AlSi10Mg alloy": "[V] AlSi10Mg",
+        "AlSi10Mg powder": "[V] AlSi10Mg",
+        "Al-10Si-0.3Mg": "[V] AlSi10Mg",
         "Aluminum (AlSi10Mg) powder": "[V] AlSi10Mg",
-
-
         "AISI 304L stainless steel": "[V] 304L SS",
         "304L austenitic stainless steel powder": "[V] 304L SS",
         "SS304L": "[V] 304L SS",
-        "SS304L stainless steel powder" : "[V] 304L SS",
-        "304L austenitic stainless steel" : "[V] 304L SS",
+        "SS304L stainless steel powder": "[V] 304L SS",
+        "304L austenitic stainless steel": "[V] 304L SS",
         "304L stainless steel": "[V] 304L SS",
         "SS304L powder": "[V] 304L SS",
         "304L stainless steel powder": "[V] 304L SS",
         "SS304L stainless steel": "[V] 304L SS",
-
-
         "304 stainless steel": "[V] 304 SS",
         "304-A": "[V] 304 SS",
         "AISI 304 stainless steel": "[V] 304 SS",
         "AISI 304": "[V] 304 SS",
         "304 stainless steel balls": "[V] 304 SS",
         "304 SS": "[V] 304 SS",
-
-
-
         "316L stainless steel": "[V] 316L SS",
         "316L stainless steel (SS)": "[V] 316L SS",
         "316L SS": "[V] 316L SS",
@@ -838,10 +755,6 @@
         "Amperit 377 AISI 316L": "[V] 316L SS",
         "Steel (AISI316L) powder": "[V] 316L SS",
         "316L steel": "[V] 316L SS",
-
-
-
-
         "Stainless steel 316": "[V] 316 SS",
         "SS316": "[V] 316 SS",
         "AISI 316": "[V] 316 SS",
@@ -851,11 +764,6 @@
         "SS-316": "[V] 316 SS",
         "316 SS": "[V] 316 SS",
         "AISI316": "[V] 316 SS",
-
-    
-
-
-
         "410L stainless steel": "[V] 410L SS",
         "410L stainless steel (SS)": "[V] 410L SS",
         "410L SS": "[V] 410L SS",
@@ -873,9 +781,6 @@
         "AISI 410L": "[V] 410L SS",
         "410L steel": "[V] 410L SS",
         "410L ferritic stainless-steel powder": "[V] 410L SS",
-        
-       
-       
         "410SS": "[V] 410 SS",
         "Stainless steel 410": "[V] 410 SS",
         "SS410": "[V] 410 SS",
@@ -884,11 +789,7 @@
         "410-B": "[V] 410 SS",
         "410-C": "[V] 410 SS",
         "410 martensitic stainless steel": "[V] 410 SS",
-
         "430 stainless steel Martensitic": "[V] 430 SS",
-
-
-
         "Inconel 718 powder": "[V] IN 718",
         "IN718": "[V] IN 718",
         "Inconel 718": "[V] IN 718",
@@ -899,8 +800,6 @@
         "PG 718": "[V] IN 718",
         "IN718 (Diamalloy 1006)": "[V] IN 718",
         "IN 718": "[V] IN 718",
-        
-
         "Inconel 625 powder": "[V] IN 625",
         "IN625": "[V] IN 625",
         "Inconel 625": "[V] IN 625",
@@ -916,42 +815,23 @@
         "PG-AMP-1060 IN625 superalloy": "[V] IN 625",
         "Commercial Inconel 625 powder": "[V] IN 625",
         "PG-AMP-1060": "[V] IN 625",
-
         "Inconel 713LC": "[V] IN 713LC",
         "Inconel 713C": "[V] IN 713C",
-        
-
-
         "NARloy-Z": "[V] NARloy-Z",
-
-
         "Stellite 6": "[V] Stellite 6",
         "Stellite-6": "[V] Stellite 6",
         "Stellite-6 powder (Diamalloy 4060NS)": "[V] Stellite 6",
         "Diamalloy 4060 NS": "[V] Stellite 6",
         "Co-106": "[V] Stellite 6",
         "Stellite-6 (Diamalloy 4060NS)": "[V] Stellite 6",
-
         "Stellite 21": "[V] Stellite 21",
-
         "Co-103": "[V] Stellite 31",
-
-        
-
-
         "14YWT ODS steel": "[V] 14YWT ODS steel",
         "14YWT": "[V] 14YWT ODS steel",
         "KUAMET6B2": "[V] KUAMET6B2",
-        
-
-
         "Hydroxyapatite": "[V] Hydroxyapatite",
         "Hydroxyapatite (HA)": "[V] Hydroxyapatite",
         "Hydroxyapatite (HAP)": "[V] Hydroxyapatite",
-
-
-
-
         "Ti-6Al-4V": "[V] Ti-6Al-4V",
         "Ti-6Al-4V (HDH)": "[V] Ti-6Al-4V",
         "Ti-6Al-4V (PA)": "[V] Ti-6Al-4V",
@@ -963,67 +843,48 @@
         "Ti6Al4V (PG-AMP-1120)": "[V] Ti-6Al-4V",
         "Ti–6Al–4V": "[V] Ti-6Al-4V",
         "TC4 (Ti-6Al-4V)": "[V] Ti-6Al-4V",
-        "Ti-6Al-4V (Grade 5)":  "[V] Ti-6Al-4V",
-        "Ti6Al4V (Grade 5) spherical morphology":   "[V] Ti-6Al-4V",
-        "Ti6Al4V (Grade 5) irregular morphology":   "[V] Ti-6Al-4V",
-        "Ti-6Al-4V powder":                         "[V] Ti-6Al-4V",
-        "Titanium Grade 5":                         "[V] Ti-6Al-4V",
-        "TC4":                      "[V] Ti-6Al-4V",
-        "TC4 alloy":                "[V] Ti-6Al-4V",
-        "TC4 powder":               "[V] Ti-6Al-4V",
-        "Ti6Al4V TC4":              "[V] Ti-6Al-4V",
-        "Ti-6Al-4V TC4":            "[V] Ti-6Al-4V",
-        "Grade 5 TC4":              "[V] Ti-6Al-4V",
-        "Ti6Al4V (irregular)":      "[V] Ti-6Al-4V",
-        "Ti6Al4V (spherical)":      "[V] Ti-6Al-4V",
-        "Ti-6Al-4V 250/90":      "[V] Ti-6Al-4V",
+        "Ti-6Al-4V (Grade 5)": "[V] Ti-6Al-4V",
+        "Ti6Al4V (Grade 5) spherical morphology": "[V] Ti-6Al-4V",
+        "Ti6Al4V (Grade 5) irregular morphology": "[V] Ti-6Al-4V",
+        "Ti-6Al-4V powder": "[V] Ti-6Al-4V",
+        "Titanium Grade 5": "[V] Ti-6Al-4V",
+        "TC4": "[V] Ti-6Al-4V",
+        "TC4 alloy": "[V] Ti-6Al-4V",
+        "TC4 powder": "[V] Ti-6Al-4V",
+        "Ti6Al4V TC4": "[V] Ti-6Al-4V",
+        "Ti-6Al-4V TC4": "[V] Ti-6Al-4V",
+        "Grade 5 TC4": "[V] Ti-6Al-4V",
+        "Ti6Al4V (irregular)": "[V] Ti-6Al-4V",
+        "Ti6Al4V (spherical)": "[V] Ti-6Al-4V",
+        "Ti-6Al-4V 250/90": "[V] Ti-6Al-4V",
         "Ti6Al4V alloy (grade 5) powder": "[V] Ti-6Al-4V",
         "Ti-6Al-4V (TC4)": "[V] Ti-6Al-4V",
-
-
-        "Ti6Al4V ELI (Grade 23)":  "[V] Ti-6Al-4V (ELI - Grade 23)",
-        "Ti-6Al-4V ELI":  "[V] Ti-6Al-4V (ELI - Grade 23)",
-        "Ti6Al4V (ELI, Grade 23)":  "[V] Ti-6Al-4V (ELI - Grade 23)",
-        "Ti6Al4V Grade 23":  "[V] Ti-6Al-4V (ELI - Grade 23)",
-        "ELI Ti-6Al-4V":  "[V] Ti-6Al-4V (ELI - Grade 23)",
-        "Ti64 ELI Grade 23":  "[V] Ti-6Al-4V (ELI - Grade 23)",
-
-
-
-
-        "Ti2AlC":                  "[V] Ti2AlC",
-        "Ti 2 Al C":               "[V] Ti2AlC",
-        "Ti₂AlC":                  "[V] Ti2AlC",
-        "Ti2AlC MAX phase":        "[V] Ti2AlC",
+        "Ti6Al4V ELI (Grade 23)": "[V] Ti-6Al-4V (ELI - Grade 23)",
+        "Ti-6Al-4V ELI": "[V] Ti-6Al-4V (ELI - Grade 23)",
+        "Ti6Al4V (ELI, Grade 23)": "[V] Ti-6Al-4V (ELI - Grade 23)",
+        "Ti6Al4V Grade 23": "[V] Ti-6Al-4V (ELI - Grade 23)",
+        "ELI Ti-6Al-4V": "[V] Ti-6Al-4V (ELI - Grade 23)",
+        "Ti64 ELI Grade 23": "[V] Ti-6Al-4V (ELI - Grade 23)",
+        "Ti2AlC": "[V] Ti2AlC",
+        "Ti 2 Al C": "[V] Ti2AlC",
+        "Ti₂AlC": "[V] Ti2AlC",
+        "Ti2AlC MAX phase": "[V] Ti2AlC",
         "Titanium aluminum carbide": "[V] Ti2AlC",
         "Titanium aluminocarbide": "[V] Ti2AlC",
-
-
         "M2052": "[V] MnCuNiFe (M2052)",
         "M2052 powder": "[V] MnCuNiFe (M2052)",
-
-
-
-
-
-        "NiCrAl":            "[V] NiCrAl",
-        "Ni-Cr-Al":          "[V] NiCrAl",
-        "Ni Cr Al":          "[V] NiCrAl",
-        "NiCrAl alloy":      "[V] NiCrAl",
-        "NiCrAl powder":     "[V] NiCrAl",
-        "NiCrAl alloy powder":     "[V] NiCrAl",
-
+        "NiCrAl": "[V] NiCrAl",
+        "Ni-Cr-Al": "[V] NiCrAl",
+        "Ni Cr Al": "[V] NiCrAl",
+        "NiCrAl alloy": "[V] NiCrAl",
+        "NiCrAl powder": "[V] NiCrAl",
+        "NiCrAl alloy powder": "[V] NiCrAl",
         "Ni-20 wt% Sn": "[V] Ni-(X)Sn Alloy",
-
-
         "WC": "[V] WC",
         "Cast WC": "[V] WC",
         "WC-8245": "[V] WC",
         "Tungsten carbide powder": "[V] WC",
         "WC powder": "[V] WC",
-
-
-
         "WC-17Co": "[V] WC-(X)Co",
         "WC–17Co": "[V] WC-(X)Co",
         "WC-17Co cermet powder": "[V] WC-(X)Co",
@@ -1049,9 +910,6 @@
         "WC-15%Co": "[V] WC-(X)Co",
         "WC–12Co": "[V] WC-(X)Co",
         "WC–12%Co": "[V] WC-(X)Co",
-
-
-
         "17Ni-WC": "[V] WC-(X)Ni",
         "WC/Ni composite powder": "[V] WC-(X)Ni",
         "WC-Ni (4 wt% Ni)": "[V] WC-(X)Ni",
@@ -1062,25 +920,17 @@
         "Dense-coated Amperit 544 (17Ni-WC)": "[V] WC-(X)Ni",
         "WC/Ni (AMPERIT® 547)": "[V] WC-(X)Ni",
         "WCNi (Amperit 547)": "[V] WC-(X)Ni",
-
         "WCTi": "[V] WC-(X)Ti",
         "WC50Ti cermet powder": "[V] WC-(X)Ti",
         "Ti-WC": "[V] WC-(X)Ti",
-
-
         "WC-10Co-4Cr": "[V] WC-CoCr",
         "WC–10Co4Cr": "[V] WC-CoCr",
         "WC-CoCr": "[V] WC-CoCr",
         "WC-Co-Cr": "[V] WC-CoCr",
         "W121": "[V] WC-CoCr",
-
         "1Cr13 stainless steel": "[V] 1Cr13 SS",
-
         "1Cr18 stainless steel shot": "[V] 1Cr18 SS",
         "1Cr18 shot-peening particles": "[V] 1Cr18 SS",
-
-
-
         "NiCr": "[V] Ni-(X)Cr",
         "NiCr powder": "[V] Ni-(X)Cr",
         "Ni20Cr": "[V] Ni-(X)Cr",
@@ -1096,12 +946,6 @@
         "Ni-Cr (Amerit 251)": "[V] Ni-(X)Cr",
         "Ni–Cr": "[V] Ni-(X)Cr",
         "NiCr Powder (80% Ni, 20% Cr)": "[V] Ni-(X)Cr",
-        
-        
-
-        
-
-
         "Al-Cu aluminum alloy": "[V] Al-(X)Cu Alloy",
         "Al-Cu (2 wt.% Cu)": "[V] Al-(X)Cu Alloy",
         "Al-Cu (3 wt.% Cu)": "[V] Al-(X)Cu Alloy",
@@ -1112,26 +956,22 @@
         "Al-4Cu": "[V] Al-(X)Cu Alloy",
         "Al-5Cu": "[V] Al-(X)Cu Alloy",
         "Al2Cu": "[V] Al-(X)Cu Alloy",
-
-
         "Al-bronze": "[V] Al-Bronze",
         "Aluminum bronze": "[V] Al-Bronze",
         "BrAZhMts10-3-1.5 bronze": "[V] Al-Bronze",
         "High-aluminum bronze powder": "[V] Al-Bronze",
         "Nickel Aluminum Bronze": "[V] Ni-Al-Bronze",
         "Nickel Aluminum Bronze (NAB)": "[V] Ni-Al-Bronze",
-
-
-        "Al 12Si":          "[V] Al-(X)Si Alloy",
-        "Al12Si":           "[V] Al-(X)Si Alloy",
-        "Al-12 Si":         "[V] Al-(X)Si Alloy",
-        "12Si Al":          "[V] Al-(X)Si Alloy",
-        "12SiAl":           "[V] Al-(X)Si Alloy",
-        "Al-12%Si":         "[V] Al-(X)Si Alloy",
-        "Al 12% Si":        "[V] Al-(X)Si Alloy",
-        "AlSi12":           "[V] Al-(X)Si Alloy",
-        "alpha-AlSi12":     "[V] Al-(X)Si Alloy",
-        "Al-12Si":          "[V] Al-(X)Si Alloy",
+        "Al 12Si": "[V] Al-(X)Si Alloy",
+        "Al12Si": "[V] Al-(X)Si Alloy",
+        "Al-12 Si": "[V] Al-(X)Si Alloy",
+        "12Si Al": "[V] Al-(X)Si Alloy",
+        "12SiAl": "[V] Al-(X)Si Alloy",
+        "Al-12%Si": "[V] Al-(X)Si Alloy",
+        "Al 12% Si": "[V] Al-(X)Si Alloy",
+        "AlSi12": "[V] Al-(X)Si Alloy",
+        "alpha-AlSi12": "[V] Al-(X)Si Alloy",
+        "Al-12Si": "[V] Al-(X)Si Alloy",
         "Al-12Si alloy": "[V] Al-(X)Si Alloy",
         "Al-Si eutectic powder": "[V] Al-(X)Si Alloy",
         "Al-Si alloy": "[V] Al-(X)Si Alloy",
@@ -1139,41 +979,24 @@
         "Al-5Si": "[V] Al-(X)Si Alloy",
         "Al-5Si alloy": "[V] Al-(X)Si Alloy",
         "Al–11.6 wt% Si pre-alloyed powder": "[V] Al-(X)Si Alloy",
-        "Al–12Si":"[V] Al-(X)Si Alloy",
-
+        "Al–12Si": "[V] Al-(X)Si Alloy",
         "Al-5at%V": "[V] Al-(X)V Alloy",
-
-        "Ni–5 wt.% Al":"[V] Ni-(X)Al Alloy",
-
-
-
-
-        "Al-10Sn":          "[V] Al-(X)Sn Alloy",
-        "Al–10Sn":           "[V] Al-(X)Sn Alloy",
-        "Al–5Sn":         "[V] Al-(X)Sn Alloy",
-        "Al–20Sn":          "[V] Al-(X)Sn Alloy",
-        "Al-5Sn":          "[V] Al-(X)Sn Alloy",
-
-        "Al-15Zn":           "[V] Al-(X)Zn Alloy",
-        "AlZn":         "[V] Al-(X)Zn Alloy",
-        "Al–15Zn composite powder":    "[V] Al-(X)Zn Alloy",
-
-
+        "Ni–5 wt.% Al": "[V] Ni-(X)Al Alloy",
+        "Al-10Sn": "[V] Al-(X)Sn Alloy",
+        "Al–10Sn": "[V] Al-(X)Sn Alloy",
+        "Al–5Sn": "[V] Al-(X)Sn Alloy",
+        "Al–20Sn": "[V] Al-(X)Sn Alloy",
+        "Al-5Sn": "[V] Al-(X)Sn Alloy",
+        "Al-15Zn": "[V] Al-(X)Zn Alloy",
+        "AlZn": "[V] Al-(X)Zn Alloy",
+        "Al–15Zn composite powder": "[V] Al-(X)Zn Alloy",
         "Zn–Al alloy": "[V] Zn-(X)Al",
         "Zn-6Cu alloy powder": "[V] Zn-(X)Cu",
         "Zn–Fe composite powder": "[V] Zn-Fe",
-
-        
-
-
         "Cu2.2Al": "[V] Cu-(X)Al Alloy",
         "Cu7.5Al": "[V] Cu-(X)Al Alloy",
-
         "Cu-20 at.% In": "[V] Cu-(X)In Alloy",
         "Cu-In": "[V] Cu-(X)In Alloy",
-
-
-
         "Cu-Ag": "[V] Cu-(X)Ag Alloy",
         "Cu-0.1Ag": "[V] Cu-(X)Ag Alloy",
         "Cu-0.1Ag (wt.%)": "[V] Cu-(X)Ag Alloy",
@@ -1181,9 +1004,6 @@
         "Cu-0.1 Ag": "[V] Cu-(X)Ag Alloy",
         "Cu-23.7Ag": "[V] Cu-(X)Ag Alloy",
         "Cu-5.7Ag": "[V] Cu-(X)Ag Alloy",
-        
-
-
         "Cu-5Sn": "[V] Cu-(X)Sn Alloy",
         "90Cu-10Sn [DT31]": "[V] Cu-(X)Sn Alloy",
         "Cu-10wt%Sn": "[V] Cu-(X)Sn Alloy",
@@ -1193,24 +1013,14 @@
         "Tin bronze (QSn10-1)": "[V] Cu-(X)Sn Alloy",
         "CuSn5": "[V] Cu-(X)Sn Alloy",
         "90Cu-10Sn": "[V] Cu-(X)Sn Alloy",
-
         "CuZn35": "[V] Cu-(X)Zn Alloy",
         "Cu60Zn40": "[V] Cu-(X)Zn Alloy",
         "Muntz alloy Cu60Zn40": "[V] Cu-(X)Zn Alloy",
         "Cu-Zn": "[V] Cu-(X)Zn Alloy",
         "Muntz alloy": "[V] Cu-(X)Zn Alloy",
-
         "Cu-38Ni": "[V] Cu-(X)Ni Alloy",
         "Cu-10wt%Ni": "[V] Cu-(X)Ni Alloy",
         "Ni-Cu alloy": "[V] Cu-(X)Ni Alloy",
-        
-
-
-        
-
-
-
-
         "Al-7Mg": "[V] Al-(X)Mg Alloy",
         "Al-10Mg": "[V] Al-(X)Mg Alloy",
         "Al-5.0 Mg": "[V] Al-(X)Mg Alloy",
@@ -1222,16 +1032,11 @@
         "Al-5.0Mg": "[V] Al-(X)Mg Alloy",
         "Al-2.5Mg": "[V] Al-(X)Mg Alloy",
         "Al-1.7Mg": "[V] Al-(X)Mg Alloy",
-
-
         "CuCrZr": "[V] CuCrZr",
         "CuCrZr (C18150)": "[V] CuCrZr",
         "CuCrZr powder": "[V] CuCrZr",
         "CuCr1Zr MC powder": "[V] CuCrZr",
         "CuCr1Zr NC powder": "[V] CuCrZr",
-        
-
-
         "Cr3C2-25(Ni20Cr)": "[V] Cr3C2-(X)NiCr",
         "Cr3C2-25(Ni20Cr) (Diamalloy 3004)": "[V] Cr3C2-(X)NiCr",
         "Cr3C2-25(Ni20Cr) Diamalloy 3004": "[V] Cr3C2-(X)NiCr",
@@ -1250,66 +1055,46 @@
         "CrC-425": "[V] Cr3C2-(X)NiCr",
         "CrC-410": "[V] Cr3C2-(X)NiCr",
         "CrC/NiCr": "[V] Cr3C2-(X)NiCr",
-        
-
         "Cr3C2-15 wt.% Ni": "[V] Cr3C2-(X)Ni",
-        "Cr3C2-18 wt.% Ni":   "[V] Cr3C2-(X)Ni",
+        "Cr3C2-18 wt.% Ni": "[V] Cr3C2-(X)Ni",
         "Cr3C2-25 wt.% Ni": "[V] Cr3C2-(X)Ni",
         "Ni–CrC composite powder": "[V] Cr3C2-(X)Ni",
         "Ni-CrC": "[V] Cr3C2-(X)Ni",
         "WIP-C1": "[V] Cr3C2-(X)Ni",
         "WIP-BC1": "[V] Cr3C2-(X)Ni",
         "Ni–CrC": "[V] Cr3C2-(X)Ni",
-
-
-
         "Cr3C2": "[V] Cr3C2",
         "Cr₃C₂": "[V] Cr3C2",
         "Chromium Carbide (CrC)": "[V] Cr3C2",
         "Cr3C2 (CRC-105)": "[V] Cr3C2",
         "CrC": "[V] Cr3C2",
-        
-
         "AZ91D": "[V] AZ91D",
         "AZ91D powder": "[V] AZ91D",
-
         "Stainless steel shot": "[V] Unspecified Stainless Steel",
         "Stainless steel": "[V] Unspecified Stainless Steel",
-
         "L605 Co alloy": "[V] Co-L605",
         "L605 alloy": "[V] Co-L605",
         "L605": "[V] Co-L605",
-
         "WS2": "[V] WS2",
         "Tungsten disulfide (WS2)": "[V] WS2",
-
         "CuO": "[V] CuO",
-
         "AlN": "[V] AlN",
         "AlN powder": "[V] AlN",
-
         "SiO2": "[V] SiO2",
         "SiO2 Glass beads": "[V] SiO2",
-
-
-        "FeMnCrSi":                "[V] FeMnCrSi",
-        "Fe-Mn-Cr-Si":             "[V] FeMnCrSi",
-        "Fe Mn Cr Si":             "[V] FeMnCrSi",
-        "FeMnCrSi alloy":          "[V] FeMnCrSi",
-        "FeMnCrSi powder":         "[V] FeMnCrSi",
-
-        
-
-        "Invar 36":                "[V] Invar 36",
-        "Invar36":                 "[V] Invar 36",
-        "Fe-36Ni":                 "[V] Invar 36",
-        "Fe36Ni":                  "[V] Invar 36",
-        "36Ni-Fe alloy":           "[V] Invar 36",
-        "INVAR-36":                "[V] Invar 36",
-        "Invar 36 alloy":          "[V] Invar 36",
-        "Fe64Ni36 (Invar 36)":      "[V] Invar 36",
-
-
+        "FeMnCrSi": "[V] FeMnCrSi",
+        "Fe-Mn-Cr-Si": "[V] FeMnCrSi",
+        "Fe Mn Cr Si": "[V] FeMnCrSi",
+        "FeMnCrSi alloy": "[V] FeMnCrSi",
+        "FeMnCrSi powder": "[V] FeMnCrSi",
+        "Invar 36": "[V] Invar 36",
+        "Invar36": "[V] Invar 36",
+        "Fe-36Ni": "[V] Invar 36",
+        "Fe36Ni": "[V] Invar 36",
+        "36Ni-Fe alloy": "[V] Invar 36",
+        "INVAR-36": "[V] Invar 36",
+        "Invar 36 alloy": "[V] Invar 36",
+        "Fe64Ni36 (Invar 36)": "[V] Invar 36",
         "Al2O3": "[V] Al2O3",
         "α-Al2O3": "[V] Al2O3",
         "spherical Al2O3": "[V] Al2O3",
@@ -1334,26 +1119,18 @@
         "CP Al2O3 powder": "[V] Al2O3",
         "Bulk Alumina powder": "[V] Al2O3",
         "AEROXIDE® Alu130": "[V] Al2O3",
-
         "Al2O3 + 70 wt% of Ni": "[V] Al2O3 + Ni",
         "Al2O3 + 80 wt% Ni": "[V] Al2O3 + Ni",
         "Ni-Al2O3": "[V] Al2O3 + Ni",
         "K32 (Al2O3 + 50 wt% of Ni)": "[V] Al2O3 + Ni",
-
         "Cu–Al2O3 powder": "[V] Cu + Al2O3",
         "Cu-Al2O3 raw powders": "[V] Cu + Al2O3",
         "Alumina dispersion-strengthened copper": "[V] Cu + Al2O3",
         "Alumina dispersion-strengthened Cu (ADS Cu)": "[V] Cu + Al2O3",
         "ADS Cu-Al2O3 powder": "[V] Cu + Al2O3",
-
         "Cu-Zn-Al2O3": "[V] Cu + Zn + Al2O3",
-
-
-        
         "Ni-based (Ni/Zn/Al2O3 mixture)": "[V] Al2O3 + Ni + Zn",
         "Ni-Zn-Al2O3": "[V] Al2O3 + Ni + Zn",
-
-
         "B4C": "[V] B4C",
         "B4C powder": "[V] B4C",
         "Boron carbide (µB4C)": "[V] B4C",
@@ -1362,75 +1139,56 @@
         "Fine B4C": "[V] B4C",
         "Coarse B4C": "[V] B4C",
         "nanometric boron carbide (nB4C)": "[V] B4C",
-
         "4 mol% YSZ (Yttria-Stabilized Zirconia": "[V] YZS",
         "Yttria-stabilized zirconia (YSZ)": "[V] YZS",
         "YSZ": "[V] YZS",
         "4 mol% YSZ (Yttria-Stabilized Zirconia)": "[V] YZS",
         "YZ100": "[V] YZS",
         "YZ50": "[V] YZS",
-        
-
         "SiC": "[V] SiC",
         "SiCp": "[V] SiC",
         "SiC powder": "[V] SiC",
         "micro-SiC": "[V] SiC",
         "nano-SiC": "[V] SiC",
         "Nano SiC": "[V] SiC",
-
-        "TiO2":                    "[V] TiO2",
-        "TiO₂":                    "[V] TiO2",
-        "Titanium dioxide":        "[V] TiO2",
-        "Rutile TiO2":             "[V] TiO2",
-        "Anatase TiO2":            "[V] TiO2",
-        "nano-TiO2":               "[V] TiO2",
-        "micro-TiO2":              "[V] TiO2",
-        "TiO2 powder":             "[V] TiO2",
-        "Amorphous TiO2":          "[V] TiO2",
-        "Amorphous TiO2 powder":   "[V] TiO2",
-        "Anatase TiO2 powder":     "[V] TiO2",
-        "Rutile TiO2 powder":      "[V] TiO2",
+        "TiO2": "[V] TiO2",
+        "TiO₂": "[V] TiO2",
+        "Titanium dioxide": "[V] TiO2",
+        "Rutile TiO2": "[V] TiO2",
+        "Anatase TiO2": "[V] TiO2",
+        "nano-TiO2": "[V] TiO2",
+        "micro-TiO2": "[V] TiO2",
+        "TiO2 powder": "[V] TiO2",
+        "Amorphous TiO2": "[V] TiO2",
+        "Amorphous TiO2 powder": "[V] TiO2",
+        "Anatase TiO2 powder": "[V] TiO2",
+        "Rutile TiO2 powder": "[V] TiO2",
         "Anatase TiO2 nanopowder": "[V] TiO2",
-
-
         "TiC": "[V] TiC",
         "TiC powder": "[V] TiC",
         "Titanium Carbide (TiC)": "[V] TiC",
-
         "Ti-TiC": "[V] Ti-TiC",
         "Ti-TiC satellite powder": "[V] Ti-TiC",
         "Ti-TiC satellite": "[V] Ti-TiC",
         "Ti-TiC nanostructured powder": "[V] Ti-TiC",
-        
         "Titanium diboride (TiB2)": "[V] TiB2",
         "TiB2": "[V] TiB2",
-
         "TiAl3": "[V] TiAl3",
         "TiAl": "[V] TiAl3",
-
         "Ti3SiC2": "[V] Ti3SiC2",
         "Ti3SiC2 powders": "[V] Ti3SiC2",
-
         "Ti3AlC2": "[V] Ti3AlC2",
         "Ti3AlC2 powder": "[V] Ti3AlC2",
-
         "TiN Powder": "[V] TiN",
-
         "ZrO2": "[V] ZrO2",
         "Zirshot 210 ZrO2 beads": "[V] ZrO2",
-
         "ZrC": "[V] ZrC",
-
         "MoS2": "[V] MoS2",
         "Molybdenum Disulphide": "[V] MoS2",
-
         "Cu2O": "[V] Cu2O",
         "SnO2": "[V] SnO2",
         "Yttria (Y2O3)": "[V] Y2O3",
         "ZrN": "[V] ZrN",
-
-
-
         "AlMg6/C60": "[V] AlMg6 + C60",
         "AlSi10Mg+TiB2": "[V] AlSi10Mg + TiB2",
         "TiB2/AlSi10Mg composite": "[V] AlSi10Mg + TiB2",
@@ -1489,10 +1247,6 @@
         "Fe–Si": "[V] FeSi",
         "Cr (AlCrCoFe1NiCu)": "[V] AlCrCoFe1NiCu",
         "Electrostatic spray coating powder (green powder)": "[V] Resin",
-
-
-
-
         "cBN": "[V] BN (Boron Nitride)",
         "cubic boron nitride (cBN)": "[V] BN (Boron Nitride)",
         "BN nanosheets": "[V] BN (Boron Nitride)",
@@ -1503,39 +1257,26 @@
         "BN": "[V] BN (Boron Nitride)",
         "c-BN": "[V] BN (Boron Nitride)",
         "boron nitride nanoplatelets": "[V] BN (Boron Nitride)",
-
         "P92 powder": "[V] P92",
         "GRCop-42": "[V] GRCop-42",
         "HR-1": "[V] HR-1",
         "NASA HR-1": "[V] HR-1",
-
         "Ni60": "[V] Ni60",
         "Ni60 powder": "[V] Ni60",
         "Ni60 alloy": "[V] Ni60",
-
         "Cu-4Cr-2Nb": "[V] CuCrNb",
-
-
         "CoNiCrAlY": "[V] CoNiCrAlY",
         "Co-NiCrAlY": "[V] CoNiCrAlY",
-
-
         "Cu-0.5Cr-0.05Zr": "[V] CuCrZr",
         "50 wt% WS2 + 50 wt% h-BN": "[V] WS2 + BN",
         "Mixing Ratio: 5.8 wt% Ni, 6.8 wt% Fe": "[V] Ni + Fe",
-
         "CoCrNi MEA": "[V] CoCrNi",
         "CoCrNi": "[V] CoCrNi",
-
         "AlNiCoFeCr HEA": "[V] AlNiCoFeCr",
         "AlNiCoFeCr": "[V] AlNiCoFeCr",
-
-
         "FeCoCrMoBCY amorphous alloy": "[V] FeCoCrMoBCY",
         "FeCoCrMoBCY amorphous alloy powder": "[V] FeCoCrMoBCY",
         "FeCoCrMoBCY metallic glass": "[V] FeCoCrMoBCY",
-
-
         "17-4PH stainless steel": "[V] 17-4PH SS",
         "15-5 PH stainless steel": "[V] 15-5PH SS",
         "420 stainless steel": "[V] 420 SS",
@@ -1545,12 +1286,9 @@
         "MS300": "[V] Maraging Steel 300",
         "H13 tool steel": "[V] H13 Tool Steel",
         "M2 tool steel": "[V] M2 Tool Steel",
-
-
         "Sn–Sb–Cu Babbitt B-83-100-40": "[V] SnSbCu",
         "SnSb11Cu6 Tin-based Babbitt alloy powder": "[V] SnSbCu",
         "Sn-Sb-Cu": "[V] SnSbCu",
-
         "Ni-25Graphite": "[V] Ni-Graphite",
         "Ni-Gr": "[V] Ni-Graphite",
         "Ni-25Graphite (Durabrade 2221)": "[V] Ni-Graphite",
@@ -1558,17 +1296,12 @@
         "Ni25C": "[V] Ni-Graphite",
         "Ni25C Durabrade 2221": "[V] Ni-Graphite",
         "Durabrade 2221": "[V] Ni-Graphite",
-
-        
-
-
         "Diamond": "[V] Diamond",
         "Diamond (MD)": "[V] Diamond",
         "Nanodiamond": "[V] Diamond",
         "PCD": "[V] Diamond",
         "Diamond-like carbon": "[V] Diamond",
         "Micron Diamond": "[V] Diamond",
-
         "Graphene": "[V] Graphene",
         "Graphene nanoplatelets": "[V] Graphene",
         "Graphene-nanosheet": "[V] Graphene",
@@ -1576,36 +1309,28 @@
         "Graphene nanosheets powder": "[V] Graphene",
         "Graphene (reduced GO)": "[V] Graphene",
         "Graphen Nanoplatelets (GNPs)": "[V] Graphene",
-
         "Carbon nanotubes": "[V] CNT",
         "Multi-walled Carbon Nanotubes (MWCNTs)": "[V] CNT",
         "Multi-walled carbon nanotubes": "[V] CNT",
         "Multi-walled CNTs": "[V] CNT",
         "MWCNT": "[V] CNT",
         "MWCNTs": "[V] CNT",
-
         "Herringbone Carbon Nanofibers (HCNFs)": "[V] Carbon Nanofibers",
         "HCNFs": "[V] Carbon Nanofibers",
         "CNF": "[V] Carbon Nanofibers",
-
         "C60 fullerenes": "[V] Fullerenes",
         "Carbon black": "[V] Carbon Black",
         "C": "[V] Pure C",
-
-
-
         "Al0.4CoCrFeNi": "[V] AlCoCrFeNi",
         "Al0.7CoCrFeNi": "[V] AlCoCrFeNi",
         "AlCoCrFeNi": "[V] AlCoCrFeNi",
         "AlCoCrFeNi2.1": "[V] AlCoCrFeNi",
-
         "CoCrFeNi HEAs": "[V] CoCrFeNi",
         "CoCrFeNi high-entropy alloy": "[V] CoCrFeNi",
         "CoCrFeNi": "[V] CoCrFeNi",
         "CoCrFeNi HEA": "[V] CoCrFeNi",
         "CoCrFeNi high entropy alloy": "[V] CoCrFeNi",
         "CoCrFeNi high entropy alloy powder": "[V] CoCrFeNi",
-
         "CoCrFeMnNi HEA": "[V] CoCrFeMnNi",
         "CoCrFeNiMn": "[V] CoCrFeMnNi",
         "CoCrFeNiMn HEA powder": "[V] CoCrFeMnNi",
@@ -1630,26 +1355,20 @@
         "CoCrFeMnNi": "[V] CoCrFeMnNi",
         "FeCoNiCrMn HEA powder": "[V] CoCrFeMnNi",
         "FeCoCrNiMn high entropy alloy": "[V] CoCrFeMnNi",
-
         "AlMgScZr": "[V] AlMgScZr",
         "Scalmalloy": "[V] AlMgScZr",
-
         "Al86Ni7Y5Co1La1": "[V] AlNiYCoLa",
         "Al-Cu-Mg-Fe-Ni-Sc": "[V] AlCuMgFeNiSc",
         "Cu50Ti20Ni30": "[V] CuTiNi",
         "Cu50Ti20Ni30 Metallic Glassy Powder": "[V] CuTiNi",
         "Cu50Ti20Ni30 metallic glassy alloy powder": "[V] CuTiNi",
         "CuAl10Fe3Mn2 bronze": "[V] CuAlFeMn",
-        
-        
         "Al94Fe3Cr3": "[V] AlFeCr",
-
         "La0.8Sr0.2Ga0.8Mg0.2O3": "[V] LaSrGaMgO",
         "AlCoCrFeMo HEA powder": "[V] AlCoCrFeMo",
         "Fe-12Cr-2.4B-0.5C": "[V] FeCrBC",
         "Al0.5CoCrFeNi2Ti0.5 high-entropy alloy": "[V] AlCoCrFeNiTi",
         "Al0.5CoCrFeNi2Ti0.5 HEA powder": "[V] AlCoCrFeNiTi",
-
         "Al–4.4Y–4.3Ni–0.9Co–0.35Sc": "[V] AlCoNiScY",
         "Al90.05Y4.4Ni4.3Co0.9Sc0.35": "[V] AlCoNiScY",
         "Fe44Co6Cr15Mo14C15B6": "[V] FeCoCrMoBC",
@@ -1657,8 +1376,6 @@
         "Fe91Ni8Zr1 ODS powder": "[V] FeNiZr",
         "Fe–Ni–Zr ODS steel powder": "[V] FeNiZr",
         "GARS ODS steel powder": "[V] FeNiZr",
-
-
         "Fe48Cr15Mo14C15B6Y2": "[V] FeCrMoCBY",
         "Co31.5Cr7Fe30Ni31.5": "[V] CoCrFeNi",
         "Al90.05Ni4.3Y4.4Co0.9Sc0.35": "[V] AlNiYCoSc",
@@ -1702,7 +1419,6 @@
         "CoCrFeMoNb": "[V] CoCrFeMoNb",
         "FeCoCrAlCu": "[V] AlCoCrCuFe",
         "FeCoCrMoBC": "[V] FeCoCrMoBC",
-
         "FeCrAl": "[V] FeCrAl",
         "FeCrAl (Fe-10Cr-6Al & Fe-20Cr-5Al)": "[V] FeCrAl",
         "Cu-Ni-Al composite": "[V] CuNiAl",
@@ -1710,12 +1426,8 @@
         "Fe60Al40 metastable solid solution": "[V] FeAl",
         "Fe–40 at.% Al": "[V] FeAl",
         "FeAl alloy": "[V] FeAl",
-
         "F75 CoCrMo": "[V] CoCrMo",
         "CoCr ASTM F75": "[V] CoCrMo",
-
-
-
         "GUR4170": "[V] UHMW-PE",
         "UHMWPE": "[V] UHMW-PE",
         "Ultra-high molecular weight polyethylene": "[V] UHMW-PE",
@@ -1723,13 +1435,10 @@
         "Polyurethane": "[V] Polyurethane",
         "Polyamide 12": "[V] Polyamide 12",
         "Polystyrene": "[V] Polystyrene",
-
-
-
         "Ni-plated graphite": "[V] Graphite (Ni Coated)",
         "Ni-Coated Graphite powder": "[V] Graphite (Ni Coated)",
         "Graphite coated with 4–8 µm Ni film": "[V] Graphite (Ni Coated)",
-        "Ni-coated Al":"[V] Al (Ni Coated)",
+        "Ni-coated Al": "[V] Al (Ni Coated)",
         "Ni-coated Al2O3": "[V] Al2O3 (Ni Coated)",
         "WC-12Co + Ni Cladding": "[V] WC-(X)Co (Ni Coated)",
         "WC bonded with Ni binder": "[V] WC-(X)Co (Ni Coated)",
@@ -1746,9 +1455,6 @@
         "Ni@W powder": "[V] W (Ni Coated)",
         "1% hBN-encapsulated Ni": "[V] Ni (hBN Encapsulated)",
         "10% hBN-encapsulated Ni": "[V] Ni (hBN Encapsulated)"
-        
-
-
     },
     "elementMapping": {
         "Silver": "Ag",
@@ -1851,10 +1557,8 @@
         "zinc": "Zn",
         "Zirconium": "Zr",
         "zirconium": "Zr",
-
         "NI": "Ni",
         "TI": "Ti",
-
         "B4C": "B",
         "SiC": "Si",
         "BN": "N",
@@ -1866,14 +1570,12 @@
         "WC/Ni": "W",
         "ZrO2": "Zr",
         "MoS2": "Mo",
-
-
         "Co/Cr/Fe/Ni": "MPC: Co, Cr, Fe, Ni",
         "Co, Cr, Fe, Ni": "MPC: Co, Cr, Fe, Ni",
-        "CrMnCoFeNi":  "MPC: Co, Cr, Fe, Mn, Ni",
-        "CoCrFeNiMn":  "MPC: Co, Cr, Fe, Mn, Ni",
-        "CoCrFeMnNi":  "MPC: Co, Cr, Fe, Mn, Ni",
-        "FeCoCrNiMn":  "MPC: Co, Cr, Fe, Mn, Ni",
+        "CrMnCoFeNi": "MPC: Co, Cr, Fe, Mn, Ni",
+        "CoCrFeNiMn": "MPC: Co, Cr, Fe, Mn, Ni",
+        "CoCrFeMnNi": "MPC: Co, Cr, Fe, Mn, Ni",
+        "FeCoCrNiMn": "MPC: Co, Cr, Fe, Mn, Ni",
         "FeCrMnNiCo": "MPC: Co, Cr, Fe, Mn, Ni",
         "Fe, Cr, Mn, Ni, Co": "MPC: Co, Cr, Fe, Mn, Ni",
         "Co, Cr, Fe, Mn, Ni": "MPC: Co, Cr, Fe, Mn, Ni",
@@ -1886,183 +1588,127 @@
         "AlCoCrFeMo": "MPC: Al, Co, Cr, Fe, Mo",
         "Al, Co, Cr, Fe, Mo": "MPC: Al, Co, Cr, Fe, Mo",
         "AlCoCrFeMoV": "MPC: Al, Co, Cr, Fe, Mo, V",
-        "AlCoCrFeMoW": "MPC: Al, Co, Cr, Fe, Mo, W"   
-
-        
+        "AlCoCrFeMoW": "MPC: Al, Co, Cr, Fe, Mo, W"
     },
     "tensileStandardMapping": {
         "": "[V] Not Reported",
-
         "ASTM E8": "[V] ASTM E8",
         "ATSM E8": "[V] ASTM E8",
         "ASTM E-8": "[V] ASTM E8",
         "ASTM E-8 ": "[V] ASTM E8",
         "ASTM E8 (modified)": "[V] ASTM E8 (modified)",
         "ASTM E8 (miniature geometry)": "[V] ASTM E8  (miniature)",
-
         "ASTM E8M": "[V] ASTM E8 (E8M)",
-
         "ASTM E8/E8M": "[V] ASTM E8 (E8M)",
         "ASTM (E8-E8M)": "[V] ASTM E8 (E8M)",
         "ASTM E8, ASTM E111": "[V] ASTM E8 (E8M)",
-
         "ASTM E8/E8M-08": "[V] ASTM E8 (E8M-08)",
         "ASTM-E8/E8M-08": "[V] ASTM E8 (E8M-08)",
-
         "ASTM E8/E8M-09": "[V] ASTM E8 (E8M-09)",
-
         "ASTM: E8/E8M-11": "[V] ASTM E8 (E8M-11)",
-
         "ASTM E8/E8M-16": "[V] ASTM E8 (E8M-16)",
-
         "ASTM E8/E8M-16a": "[V] ASTM E8 (E8M-16a)",
         "ASTM E8/E8M–16a": "[V] ASTM E8 (E8M-16a)",
         "ASTM E8/E8M-16a standard": "[V] ASTM E8 (E8M-16a)",
-
         "ASTM E8/E8M-13": "[V] ASTM E8 (E8M-13)",
         "ASTM Standard E8/E8M-13a": "[V] ASTM E8 (E8M-13a)",
-
         "ASTM E8/E8M–15a": "[V] ASTM E8 (E8M-15a)",
         "ASTM E8/EM8-21": "[V] ASTM E8 (E8M-21)",
         "ASTM 38/EM8-21": "[V] ASTM E8 (E8M-21)",
-
         "ASTM E8/E8M—21": "[V] ASTM E8 (E8M-21)",
         "ASTM E8/E8M-21": "[V] ASTM E8 (E8M-21)",
-
         "ASTM E8-04": "[V] ASTM E8-04",
         "ASTM E8–04": "[V] ASTM E8-04",
         "ASTM E08-04": "[V] ASTM E8-04",
         "ASTME8M-04": "[V] ASTM E8 (E8M-04)",
         "ASTM E8M-04": "[V] ASTM E8 (E8M-04)",
-
         "AS 1391-2007, EN ISO 6892-1:2016 and ASTM E8/E8M-16": "[V] ASTM E8 (E8M-16) / EN ISO 6892-1:2016 / AS 1391-2007",
-
         "ASTM E8-00b": "[V] ASTM E8-00b",
         "ASTM Standard E8-16": "[V] ASTM E8-16",
         "ASTM C633": "[V] ASTM C633",
         "ASTM C-633": "[V] ASTM C633",
         "ASTM C633 (adhesive bond strength)": "[V] ASTM C633",
         "ASTM C633 (adhesion tensile test for coatings)": "[V] ASTM C633",
-
         "ASTM C633-01": "[V] ASTM C633-01",
         "ASTM C-633-01": "[V] ASTM C633-01",
-
         "ASTM C633-08": "[V] ASTM C633-08",
-
         "ASTM C633-13": "[V] ASTM C633-13",
-
         "ASTM C633-2013": "[V] ASTM C633-13",
         "ASTM C663-79": "[V] ASTM C633-79",
-
         "ASTM C633-79": "[V] ASTM C633-79",
         "ASTM C-633-79": "[V] ASTM C633-79",
         "ASTM C-633-79 standard": "[V] ASTM C633-79",
-
         "ASTM C-633-99": "[V] ASTM C633-99",
-
         "EN ISO 6892": "[V] EN ISO 6892",
         "EN ISO 6892-1": "[V] EN ISO 6892-1",
         "DIN EN ISO 6892-1": "[V] EN ISO 6892-1",
         "NF EN ISO 6892-1 (October 2009) for dog bones; NOL ring tensile testing also used": "[V] EN ISO 6892-1",
-
         "ISO 6892-1": "[V] ISO 6892-1",
         "ISO 6892-1 standard": "[V] ISO 6892-1",
         "ISO 6892-1:2009": "[V] ISO 6892-1:2009",
-
         "EN 10002-1": "[V] EN 10002-1",
         "EN 10002–1": "[V] EN 10002-1",
-
         "GB/T228-2010": "[V] GB/T 228-2010",
         "GB/T228–2010": "[V] GB/T 228-2010",
-
         "GB/T228.1-2010": "[V] GB/T 228.1-2010",
         "GB/228.1–2010": "[V] GB/T 228.1-2010",
-
         "EN582": "[V] EN 582",
         "PN-EN 582": "[V] EN 582",
         "DIN EN 582": "[V] EN 582",
-
         "EN ISO 4136–2012": "[V] EN ISO 4136-2012",
-
         "ASTM-B557M-07": "[V] ASTM B557M-07",
         "ASTM B557M-10": "[V] ASTM B557M-10",
-
         "ASTM D882": "[V] ASTM D882",
-
         "ASTM F1147": "[V] ASTM F1147",
-
         "No. 14B according to JIS Z2201": "[V] JIS Z2201 No. 14B specimen",
         "No. 14B, JIS Z2201": "[V] JIS Z2201 No. 14B specimen",
         "No. 14B": "[V] JIS Z2201 No. 14B specimen",
-
         "NOL ring tensile testing": "[V] NOL ring tensile",
         "NOL ring specimen testing": "[V] NOL ring tensile",
-
         "Micro-flat tensile": "[V] Micro-flat tensile",
-
         "ISO 4624, ASTM D4541": "[V] ISO 4624 / ASTM D4541 (pull-off adhesion)",
         "Pull-off Strength Test Method standard": "[V] Pull-off adhesion (unspecified std)",
-
         "IEC 62917:2016": "[V] IEC 62917:2016",
-
         "JIS K5600-5-6": "[V] JIS K5600-5-6",
-
         "ISO 6507": "[V] ISO 6507",
-
         "ASTM E384 (2011)": "[V] ASTM E384-11",
         "ASTM E384-11": "[V] ASTM E384-11",
         "ASTM E384–99": "[V] ASTM E384-99",
-
         "ASTM E92–17": "[V] ASTM E92-17",
-
         "ASTM E1876-99": "[V] ASTM E1876-99",
         "ASTM E1876-99 (resonance frequency)": "[V] ASTM E1876-99",
-
         "GB/T 16865-2013": "[V] GB/T 16865-2013",
-
         "MIL-J-24445A": "[V] MIL-J-24445A",
-
         "GB8642-88": "[V] GB 8642-88",
-
         "MTS universal tensile test platform": "[V] Tensile test machine (MTS)",
         "Zwick Z100/SN3A": "[V] Tensile test machine (Zwick)"
     },
     "gasMapping": {
         "": "[V] Not Reported",
-
         "N2": "[V] N2",
         "Nitrogen": "[V] N2",
         "N₂": "[V] N2",
         "Nitrogen (oxygen-free)": "[V] N2",
         "Air or N2": "[V] N2",
-
-
         "He": "[V] He",
         "Helium": "[V] He",
         "He (main)": "[V] He",
-        
-
-
         "Compressed Air": "[V] Compressed Air",
         "Compressed air": "[V] Compressed Air",
         "compressed air": "[V] Compressed Air",
         "Air (compressed air)": "[V] Compressed Air",
         "Air": "[V] Compressed Air",
-        "air": "[V] Compressed Air", 
-        "Air/air": "[V] Compressed Air", 
-        "Compressed": "[V] Compressed Air", 
+        "air": "[V] Compressed Air",
+        "Air/air": "[V] Compressed Air",
+        "Compressed": "[V] Compressed Air",
         "dry compressed air": "[V] Compressed Air",
         "compressed air (78 vol% N2, 21 vol% O2 and 1 vol% other gases)": "[V] Compressed Air",
-
-
         "Ar": "[V] Ar",
         "Argon": "[V] Ar",
         "Air (accelerating), Ar (carrier)": "[V] Ar",
-
         "O2": "[V] O2",
         "Oxygen": "[V] O2",
         "Methane/Oxygen": "[V] O2",
-
         "90% He / 10% N2": "[V] He/N2",
         "95% He / 5% N2": "[V] He/N2",
         "He/N2 (75 vol% He, 25 vol% N2)": "[V] He/N2",
@@ -2090,23 +1736,17 @@
         "15.5% N2, 84.5% He": "[V] He/N2",
         "He (main) / N₂ (powder carrier)": "[V] He/N2",
         "He (main spray gas); N2 used for powder feed": "[V] He/N2",
-
         "Compressed air (accelerating), Argon (carrier)": "[V] Air/Ar",
         "Air (main); Ar (carrier)": "[V] Air/Ar",
         "Air (accelerating), Argon (carrier)": "[V] Air/Ar",
         "Air and Argon": "[V] Air/Ar",
-       
         "Nitrogen, Oxygen , Kerosene": "[V] Combustion Gas",
         "Nitrogen , Oxygen , Kerosene": "[V] Combustion Gas",
         "Nitrogen, Oxygen , Karosene": "[V] Combustion Gas",
         "N2 + combustion gas": "[V] Combustion Gas"
-        
-
     },
-    "systemNameMapping":{
+    "systemNameMapping": {
         "": "[V] Not Reported",
-
-
         "VRC Gen III": "[V] VRC Gen III",
         "VRC Metal Systems Gen III": "[V] VRC Gen III",
         "VRC Gen 3": "[V] VRC Gen III",
@@ -2131,7 +1771,7 @@
         "VRC Metal Systems Gen III High-Pressure Cold Spray System": "[V] VRC Gen III",
         "VRC Gen III CS system": "[V] VRC Gen III",
         "VRC Gen 3 system": "[V] VRC Gen III",
-        "VRC Gen III high pressure cold spray system":  "[V] VRC Gen III",
+        "VRC Gen III high pressure cold spray system": "[V] VRC Gen III",
         "VRC metal systems cold spray": "[V] VRC Gen III",
         "Gen III High-Pressure Portable Cold Spray System": "[V] VRC Gen III",
         "VRC Gen III high-pressure cold spray system": "[V] VRC Gen III",
@@ -2146,26 +1786,17 @@
         "VRC Gen III (Elsworth, Sd, USA)": "[V] VRC Gen III",
         "Gen III high pressure cold spray system": "[V] VRC Gen III",
         "VRC Gen III CS system (Pacific Northwest National Laboratory (PNNL)": "[V] VRC Gen III",
-        
-
-
-
         "VRC Gen III Max": "[V] VRC Gen III Max",
         "VRC Gen III MAX": "[V] VRC Gen III Max",
         "VRC® Gen III Max": "[V] VRC Gen III Max",
         "VRC Gen III Max (VRC Metal Systems, Rapid City, SD)": "[V] VRC Gen III Max",
         "VRC Gen III Max high pressure cold spray system": "[V] VRC Gen III Max",
-
-
         "Raptor (VRC Metal Systems)": "[V] VRC Raptor",
         "Raptor, VRC Metal Systems": "[V] VRC Raptor",
         "VRC Raptor": "[V] VRC Raptor",
         "Raptor high-pressure cold spray system (VRC Metal Systems)": "[V] VRC Raptor",
         "Raptor (VRC Metal Systems, USA)": "[V] VRC Raptor",
         "VRC Raptor high pressure cold spray system": "[V] VRC Raptor",
-
-
-
         "Plasma Giken PCS-1000": "[V] Plasma Giken PCS-1000",
         "PCS-1000": "[V] Plasma Giken PCS-1000",
         "PCS-1000 (Plasma Giken, Japan)": "[V] Plasma Giken PCS-1000",
@@ -2176,8 +1807,8 @@
         "PCS-1000 type (Plasma Giken, Japan)": "[V] Plasma Giken PCS-1000",
         "PCS-1000 type, Plasma Giken Co., Japan": "[V] Plasma Giken PCS-1000",
         "PCS-1000 (Plasma Giken Co., Ltd.)": "[V] Plasma Giken PCS-1000",
-        "PCS-1000 (Plasma Giken Co., Ltd., Japan)":  "[V] Plasma Giken PCS-1000",
-        "PCS-1000 (Plasma Giken)":  "[V] Plasma Giken PCS-1000",
+        "PCS-1000 (Plasma Giken Co., Ltd., Japan)": "[V] Plasma Giken PCS-1000",
+        "PCS-1000 (Plasma Giken)": "[V] Plasma Giken PCS-1000",
         "PCSS11000": "[V] Plasma Giken PCS-1000",
         "commercial cold spray system (PCS-1000, Plasma Giken Co.,Ltd.)": "[V] Plasma Giken PCS-1000",
         "PCS-1000 L": "[V] Plasma Giken PCS-1000",
@@ -2213,22 +1844,20 @@
         "PCS-1000, Plasma Giken": "[V] Plasma Giken PCS-1000",
         "IMR3000/PCS-1000": "[V] Plasma Giken PCS-1000",
         "PCS 1000": "[V] Plasma Giken PCS-1000",
-
-
-
         "PCS 100 system (Plasma Giken)": "[V] Plasma Giken PCS-100",
         "PCS-100 (Plasma Giken Co., Ltd., Saitama, Japan)": "[V] Plasma Giken PCS-100",
         "PCS100 (Plasma Giken, Saitama, Japan)": "[V] Plasma Giken PCS-100",
         "PCS100": "[V] Plasma Giken PCS-100",
         "PCS-100 high-pressure cold spray system": "[V] Plasma Giken PCS-100",
-        "PCS 100 (Plasma Giken Co. Ltd., Japan)":  "[V] Plasma Giken PCS-100",
+        "PCS 100 (Plasma Giken Co. Ltd., Japan)": "[V] Plasma Giken PCS-100",
         "PCS-100 (Plasma Giken, Japan)": "[V] Plasma Giken PCS-100",
         "PCS 100 (Plasma Giken Co. Ltd.)": "[V] Plasma Giken PCS-100",
         "PCS 100 (Plasma Giken, Yorii, Japan)": "[V] Plasma Giken PCS-100",
-        "PCS-100":  "[V] Plasma Giken PCS-100",
-        "Plasma Giken PCS100":  "[V] Plasma Giken PCS-100",
+        "PCS-100": "[V] Plasma Giken PCS-100",
+        "Plasma Giken PCS100": "[V] Plasma Giken PCS-100",
         "PCS-100 cold spray system": "[V] Plasma Giken PCS-100",
-        "Plasma Giken PCS 100":  "[V] Plasma Giken PCS-100",
+        "Plasma Giken PCS 100": "[V] Plasma Giken PCS-100",
+        "PS 100 MHDS": "[V] Plasma Giken PCS-100",
         "PCS-100, Plasma Giken Co. Ltd., Japan": "[V] Plasma Giken PCS-100",
         "Plasma Giken PCS-100": "[V] Plasma Giken PCS-100",
         "PCS-100 (Plasma Giken Co., Tokyo, Japan)": "[V] Plasma Giken PCS-100",
@@ -2239,12 +1868,7 @@
         "High-pressure CS Plasma Giken PCS 100": "[V] Plasma Giken PCS-100",
         "PCS 100": "[V] Plasma Giken PCS-100",
         "PCS-100 cold spraying equipment": "[V] Plasma Giken PCS-100",
-        "PCS-100 (Plasma Giken Co., Ltd., Japan)":  "[V] Plasma Giken PCS-100",
-        
-
-        
-
-
+        "PCS-100 (Plasma Giken Co., Ltd., Japan)": "[V] Plasma Giken PCS-100",
         "Plasma Giken PCS-800": "[V] Plasma Giken PCS-800",
         "PCS-800": "[V] Plasma Giken PCS-800",
         "PCS 800 (Plasma Giken Co., Ltd.)": "[V] Plasma Giken PCS-800",
@@ -2264,8 +1888,6 @@
         "Plasma Giken PCS-800 cold spray system": "[V] Plasma Giken PCS-800",
         "PCS-800, PLASMA GIKEN Co. LTD., Japan": "[V] Plasma Giken PCS-800",
         "PCS-800, Plasma Giken, Japan": "[V] Plasma Giken PCS-800",
-
-
         "Plasma Giken Kinetik": "[V] Unspecified Plasma Giken PCS",
         "PCS-304 (Plasma Giken)": "[V] Unspecified Plasma Giken PCS",
         "PCS-203": "[V] Unspecified Plasma Giken PCS",
@@ -2278,8 +1900,6 @@
         "PCS high-pressure CS system (Plasma Giken, Japan)": "[V] Unspecified Plasma Giken PCS",
         "Plasma Giken": "[V] Unspecified Plasma Giken PCS",
         "PCS-H10": "[V] Unspecified Plasma Giken PCS",
-
-
         "CGTK-2000": "[V] CGT K-2000",
         "ACGT Kinetiks-2000": "[V] CGT K-2000",
         "CGT K-2000 cold spray torch": "[V] CGT K-2000",
@@ -2292,8 +1912,6 @@
         "CGT Kinetics-2000": "[V] CGT K-2000",
         "Kinetic-2000": "[V] CGT K-2000",
         "(CS-2000) Cold spraying system": "[V] CGT K-2000",
-    
-
         "CGT4000/47 cold spray system": "[V] CGT K-4000",
         "CGT 4000-47 kW": "[V] CGT K-4000",
         "CGT-Sulzer Kinetic 4000": "[V] CGT K-4000",
@@ -2366,7 +1984,6 @@
         "High-pressure CGT 4000 cold spray system (CGT Technologies, Munich, Germany)": "[V] CGT K-4000",
         "Kinetic 4000 cold spray gun": "[V] CGT K-4000",
         "KINETICS®4000 (Cold Gas Technology)": "[V] CGT K-4000",
-
         "CGT-Kinetiks 3000": "[V] CGT K-3000",
         "CGT 3000": "[V] CGT K-3000",
         "CGT Kinetic 3000": "[V] CGT K-3000",
@@ -2400,13 +2017,6 @@
         "KINETICS 3000, CGT, Germany": "[V] CGT K-3000",
         "KINETICS 3000, CGT, Germany.": "[V] CGT K-3000",
         "CGT Kinetics 3000M (Oerlikon, Switzerland)": "[V] CGT K-3000",
-        
-        
-        
-        
-
-        
-    
         "CGT-Oerlikon Metco Kinetics 8000": "[V] CGT K-8000",
         "Oerlikon Metco Kinetics 8000": "[V] CGT K-8000",
         "HSU prototype CGT Kinetiks 8000": "[V] CGT K-8000",
@@ -2417,7 +2027,6 @@
         "CGT-Oerlikon Metco Kinetics® 8000 highpressure cold spray system": "[V] CGT K-8000",
         "HSU prototype for the Kinetics 8000×cold spray system from CGT, Ampfing, Germany": "[V] CGT K-8000",
         "Kinetics 8000X cold spray system (CGT, Ampfing, Germany)": "[V] CGT K-8000",
-
         "CGT GmbH": "[V] Unspecified CGT",
         "CGT": "[V] Unspecified CGT",
         "CGT GmbH commercial cold spray gun": "[V] Unspecified CGT",
@@ -2425,9 +2034,6 @@
         "CGT GmbH 24 TC gun": "[V] Unspecified CGT",
         "CGT cold spray system (standard gun)": "[V] Unspecified CGT",
         "CGT cold spray system with newly developed 17 kW gun": "[V] Unspecified CGT",
-
-
-
         "IMR-6000": "[V] IMR-6000",
         "IMR6000": "[V] IMR-6000",
         "IMR-6000, IMR, China": "[V] IMR-6000",
@@ -2437,11 +2043,8 @@
         "IMR-6000 (IMR, China)": "[V] IMR-6000",
         "in-house CS system (IMR-600)": "[V] IMR-6000",
         "M6000": "[V] IMR-6000",
-        "Homemade CS system (IMR6000, IMR, China)": "[V] IMR-6000", 
+        "Homemade CS system (IMR6000, IMR, China)": "[V] IMR-6000",
         "IMR6000 (home-made)": "[V] IMR-6000",
-
-    
-
         "LERMPS, UTBM, France": "[V] LERMPS-UTBM",
         "LERMPS-UTBM": "[V] LERMPS-UTBM",
         "LERMPS": "[V] LERMPS-UTBM",
@@ -2451,8 +2054,6 @@
         "LERMPS-UTBM high-pressure cold spray system": "[V] LERMPS-UTBM",
         "LERMPS homemade CS system": "[V] LERMPS-UTBM",
         "LERMPS (in-house cold-spray system, UTBM, France)": "[V] LERMPS-UTBM",
-        
-
         "Custom University of Ottawa CGDS system": "[V] University of Ottawa Custom System",
         "University of Ottawa Cold Spray Laboratory system": "[V] University of Ottawa Custom System",
         "University of Ottawa Cold Spray Laboratory CGDS system": "[V] University of Ottawa Custom System",
@@ -2465,15 +2066,12 @@
         "CS system from University of Ottawa Cold Spray Laboratory": "[V] University of Ottawa Custom System",
         "Universitiy of Ottawa in-house cold spray system": "[V] University of Ottawa Custom System",
         "University of Ottawa Cold Spray Coating System": "[V] University of Ottawa Custom System",
-
         "Custom cold spray system, Northwestern Polytechnical University": "[V] Northwestern Polytechnic Institute (China) Custom System",
         "Home-built cold spray system (Northwestern Polytechnical University, China)": "[V] Northwestern Polytechnic Institute (China) Custom System",
         "In-house cold spray system, Northwestern Polytechnical University, China": "[V] Northwestern Polytechnic Institute (China) Custom System",
         "In-house cold spray system (Northwestern Polytechnical University)": "[V] Northwestern Polytechnic Institute (China) Custom System",
         "Commercial high-pressure cold spray system (Northwestern Polytechnical University, China)": "[V] Northwestern Polytechnic Institute (China) Custom System",
         "In-house cold spray system (Northwestern Polytechnical University, China)": "[V] Northwestern Polytechnic Institute (China) Custom System",
-
-
         "Xi'an Jiaotong University cold spraying system": "[V] Xi'an Jiaotong University Custom System",
         "Custom cold-spray system assembled by Xi'an Jiaotong University": "[V] Xi'an Jiaotong University Custom System",
         "Home-installed cold spraying system (Xi'an Jiaotong University)": "[V] Xi'an Jiaotong University Custom System",
@@ -2490,8 +2088,6 @@
         "A cold spraying system developed at Xi’an Jiaotong University": "[V] Xi'an Jiaotong University Custom System",
         "CS-2000, Xi’an Jiaotong University, China": "[V] Xi'an Jiaotong University Custom System",
         "CS-2000, Xi’an Jiaotong University, Xi’an, China": "[V] Xi'an Jiaotong University Custom System",
-
-
         "In-house cold spray system": "[V] In-House System",
         "In-house developed cold spray system": "[V] In-House System",
         "in-house developed cold spray system": "[V] In-House System",
@@ -2532,13 +2128,13 @@
         "In-house developed CS system": "[V] In-House System",
         "Kinetic spray (cold gas-dynamic spray) system with de Laval-type nozzle": "[V] In-House System",
         "CGT system and new spray gun developed at Helmut Schmidt University": "[V] In-House System",
-        "In-house built cold spray system (University of Nottingham)":  "[V] In-House System",
-        "In-house CS system (Trinity College Dublin)":  "[V] In-House System",
-        "In-house CSAM setup":  "[V] In-House System",
-        "In-house built cold spray system":  "[V] In-House System",
-        "In-house cold spray coating deposition system":  "[V] In-House System",
-        "In-house built system by Surface Engineering of Materials Division, IMR, CAS":  "[V] In-House System",
-        "in-house CGDS system":  "[V] In-House System",
+        "In-house built cold spray system (University of Nottingham)": "[V] In-House System",
+        "In-house CS system (Trinity College Dublin)": "[V] In-House System",
+        "In-house CSAM setup": "[V] In-House System",
+        "In-house built cold spray system": "[V] In-House System",
+        "In-house cold spray coating deposition system": "[V] In-House System",
+        "In-house built system by Surface Engineering of Materials Division, IMR, CAS": "[V] In-House System",
+        "in-house CGDS system": "[V] In-House System",
         "Novel CSAM system": "[V] In-House System",
         "Indigenously developed cold spray system (ARCI, Hyderabad)": "[V] In-House System",
         "Custom-built cold spray system (per [31])": "[V] In-House System",
@@ -2596,10 +2192,6 @@
         "modified HVOF equipment Jp5000, Praxait Technology Inc, USA": "[V] In-House System",
         "Custom CS system": "[V] In-House System",
         "cold spray in-house facility": "[V] In-House System",
-
-
-
-
         "Impact Spray System (ISS) 5/11": "[V] Impact Spray System (ISS) 5/11",
         "Impact Innovations ISS 5/11": "[V] Impact Spray System (ISS) 5/11",
         "Impact Spray System 5/11": "[V] Impact Spray System (ISS) 5/11",
@@ -2658,8 +2250,6 @@
         "Impact 5/11 Cold Gas Spray": "[V] Impact Spray System (ISS) 5/11",
         "Impact Spray System 5/11, Impact Innovation, Germany": "[V] Impact Spray System (ISS) 5/11",
         "Impact 5/11 type spraying equipment": "[V] Impact Spray System (ISS) 5/11",
-
-
         "Impact Spray System 5/8 (60 bar upgrade, Impact Innovations GmbH, Germany)": "[V] Impact Spray System (ISS) 5/8",
         "Impact cold spray gun 5/8": "[V] Impact Spray System (ISS) 5/8",
         "Impact Innovations 5/8 cold spraying system": "[V] Impact Spray System (ISS) 5/8",
@@ -2680,11 +2270,9 @@
         "Impact Innovations 5/8 cold spraying system equipped with a Fanuc M-20iA robot": "[V] Impact Spray System (ISS) 5/8",
         "Impact Innovations 5/8 Cold Spray System (Impact-Innovations GmbH, Rattenkirchen, Germany)": "[V] Impact Spray System (ISS) 5/8",
         "5/8 Impact high-pressure cold spray system": "[V] Impact Spray System (ISS) 5/8",
-
         "6/11 EvoCSII Impact Innovations GmbH high-pressure cold spray system": "[V] Impact Spray System (ISS) 6/11",
         "Impact 6/11 gun (Impact Innovations GmbH) high-pressure system": "[V] Impact Spray System (ISS) 6/11",
         "6/11 EvoCSII": "[V] Impact Spray System (ISS) 6/11",
-
         "Impact Innovations high-pressure cold spray system": "[V] Unspecified Impact Spray System",
         "Impact Innovations CS system": "[V] Unspecified Impact Spray System",
         "Impact Innovations 5/11-6/10, Germany": "[V] Unspecified Impact Spray System",
@@ -2695,7 +2283,6 @@
         "Impact Innovations GmbH": "[V] Unspecified Impact Spray System",
         "Impact Innovations GmbH high-pressure cold spray system": "[V] Unspecified Impact Spray System",
         "Impact Innovations GmbH (5–11/6–10-Bavaria)": "[V] Unspecified Impact Spray System",
-
         "Pulsed Gas Dynamic Spraying (PGDS)": "[V] PGDS System",
         "Pulsed Gas Dynamic Spray": "[V] PGDS System",
         "Pulsed Gas Dynamic Spraying": "[V] PGDS System",
@@ -2705,7 +2292,6 @@
         "WaveRider PGDS": "[V] PGDS System",
         "WaveRider PGDS (Centerline, Canada)": "[V] PGDS System",
         "Wave-Rider (PGDS)": "[V] PGDS System",
-
         "DW2000, Dewei Automation Ltd., Xi'an, China": "[V] Dewei DW2000",
         "DW2000": "[V] Dewei DW2000",
         "Dewei DW2000": "[V] Dewei DW2000",
@@ -2714,25 +2300,19 @@
         "DWAUTO": "[V] Dewei DWAUTO",
         "DW Auto": "[V] Dewei DWAUTO",
         "Dewei DWAUTO": "[V] Dewei DWAUTO",
-
         "Dycomet D523": "[V] Dycomet D523",
         "DYCOMET D523": "[V] Dycomet D523",
         "D523 (Dycomet)": "[V] Dycomet D523",
         "Dycomet model D523": "[V] Dycomet D523",
-
         "Oerlikon-Metco Diamond Jet™ 2700 HVOF gun": "[V] Oerlikon Metco Diamond Jet 2700",
         "Oerlikon Metco Diamond Jet 2700": "[V] Oerlikon Metco Diamond Jet 2700",
         "Diamond Jet 2700": "[V] Oerlikon Metco Diamond Jet 2700",
         "Diamond Jet™ 2700": "[V] Oerlikon Metco Diamond Jet 2700",
         "DJ2702 diamond jet system": "[V] Oerlikon Metco Diamond Jet 2700",
-
         "Oerlikon Metco 6P-II oxy-acetylene powder flame spray torch": "[V] Oerlikon Metco 6P-II Flame Spray Torch",
         "Oerlikon Metco 6P-II": "[V] Oerlikon Metco 6P-II Flame Spray Torch",
         "Metco 6P-II": "[V] Oerlikon Metco 6P-II Flame Spray Torch",
         "6P-II flame spray torch": "[V] Oerlikon Metco 6P-II Flame Spray Torch",
-
-
-
         "Ktech Corporation custom cold-spray system": "[V] Ktech System",
         "Custom Ktech cold spray system": "[V] Ktech System",
         "Custom cold spray system by Ktech Corp.": "[V] Ktech System",
@@ -2740,20 +2320,10 @@
         "Custom Ktech Corp cold spray system": "[V] Ktech System",
         "Ktech high-pressure stationary cold spray system": "[V] Ktech System",
         "In-house cold spray system (Ktech Corp. Albuquerque, NM)": "[V] Ktech System",
-
-
-
-
         "API Defense Systems cold spray system": "[V] API Defense Systems cold spray system",
-    
-
-        
-
         "RUSONIC Model K-201": "[V] RUSONIC K-201",
         "K-201, Rus Sonic Technology, USA": "[V] RUSONIC K-201",
         "Rus Sonic Inc. Model no: K205/407R": "[V] RUSONIC K-201",
-    
-
         "Series P low-pressure cold spray system (Centreline, Windsor Limited, Windsor, ON, Canada)": "[V] SST Series P",
         "SST series P": "[V] SST Series P",
         "Centerline SST Series P": "[V] SST Series P",
@@ -2798,27 +2368,16 @@
         "SST Series P (Centerline Ltd., Canada)": "[V] SST Series P",
         "Portable cold-spray system (SST series P, CenterLine, Ltd., Windsor, ON, Canada)": "[V] SST Series P",
         "low-pressure CS system (the Supersonic Spray Technologies (SST) Series P manufactured by Centerline Ltd.)": "[V] SST Series P",
- 
-
-
-
-
         "Centerline SST Model Series C": "[V] SST series C",
         "Series C cabinet cold spray system (CenterLine SST, Canada)": "[V] SST series C",
         "SST model-C, Centerline (Windsor) Ltd., Windsor, Canada": "[V] SST series C",
         "Series C cabinet cold spray system (Supersonic Spray Technologies, SST)": "[V] SST series C",
-
-
-
         "LP-TCY-III": "[V] LP-TCY-III",
         "TCY-LP-III": "[V] LP-TCY-III",
         "TECHNY LP-TCY-III": "[V] LP-TCY-III",
         "LP-TCY-III cold spray platform": "[V] LP-TCY-III",
-
         "LP-TCY-II": "[V] LP-TCY-II",
         "LP-TCY-II (Beijing Tian Cheng Yu New Material Technology Co., Ltd., Beijing, China)": "[V] LP-TCY-II",
-    
-
         "Kinetic Metallization (KM) system (Inovati, Santa Barbara, CA, USA)": "[V] Kinetic Metallization (KM) system",
         "Inovati kinetic metallization": "[V] Kinetic Metallization (KM) system",
         "Kinetic Metallization (KM)": "[V] Kinetic Metallization (KM) system",
@@ -2839,7 +2398,6 @@
         "Inovati (KM-CDS)": "[V] Kinetic Metallization (KM) system",
         "Inovati cold spray system using Kinetic Metallization": "[V] Kinetic Metallization (KM) system",
         "Kinetic Metallization cold spray system (Inovati)": "[V] Kinetic Metallization (KM) system",
-        
         "DYMET 403": "[V] DYMET 403",
         "DYMET 403J": "[V] DYMET 403",
         "DYMET403J": "[V] DYMET 403",
@@ -2849,10 +2407,8 @@
         "Dimet-403": "[V] DYMET 403",
         "Dymet system model 403": "[V] DYMET 403",
         "Low-pressure CS system (DYMET 403 J (Obninsk-Center for Powder Spraying, Russia)": "[V] DYMET 403",
-        "Dimet 403":  "[V] DYMET 403",
+        "Dimet 403": "[V] DYMET 403",
         "Dymet 403J (Obninsk Center for Powder Spraying (OCPS), Russia)": "[V] DYMET 403",
-
-        
         "Dymet 423": "[V] DYMET 423",
         "DYMET423# (Obninsk Center for Powder Spraying)": "[V] DYMET 423",
         "DYMET 423# (Obninsk Center for Powder Spraying)": "[V] DYMET 423",
@@ -2872,50 +2428,33 @@
         "DYMET 423 (OCPS, Obninsk, Russia)": "[V] DYMET 423",
         "DYMET model 423": "[V] DYMET 423",
         "portable DYMET 423 system": "[V] DYMET 423",
-        "low-pressure cold spray system (DYMET 423#)":  "[V] DYMET 423",
-        "DYMET 423 low-pressure cold spraying equipment":  "[V] DYMET 423",
+        "low-pressure cold spray system (DYMET 423#)": "[V] DYMET 423",
+        "DYMET 423 low-pressure cold spraying equipment": "[V] DYMET 423",
         "DYMET 423 low-pressure cold spraying equipment (Obninsk Center for Powder Spraying, Obninsk, Russia)": "[V] DYMET 423",
-
-
-
         "DYMET 413": "[V] DYMET 413",
         "Dymet 413": "[V] DYMET 413",
         "DYMET-413": "[V] DYMET 413",
         "low pressure DYMET 413": "[V] DYMET 413",
         "DYMET 413 (Dycomet Europe BV, Akkrum, The Netherlands)": "[V] DYMET 413",
-        "DYMET 413 (Obninsk Center for Powder Spraying, Obninsk, Russia)":  "[V] DYMET 413",
+        "DYMET 413 (Obninsk Center for Powder Spraying, Obninsk, Russia)": "[V] DYMET 413",
         "Low-pressure unit, DYMET 413 (Obninsk Center forowder Spraying, Obninsk, Russia)": "[V] DYMET 413",
         "LPCS instrument (DYMET 413, Obninsk, Russia)": "[V] DYMET 413",
-
-
         "DYMET 304 K": "[V] DYMET 304 K",
         "DYMET 405": "[V] DYMET 405",
         "Dimet-405 CS system": "[V] DYMET 405",
         "DYMET 412K": "[V] DYMET 412K",
         "DYMET 420": "[V] DYMET 420",
-
         "DIMET": "[V] Unspecified Dymet",
-
-        
         "TKF-9000": "[V] TKF-9000",
-
         "VCS-2000": "[V] VCS-2000",
         "VCS-2000 vacuum cold spray system": "[V] VCS-2000",
-
         "Dual Flow Cold Spray 1000 (Tessonics Inc.)": "[V] Dual Flow Tessonics 1000",
         "Dual Flow Cold Spray 1000": "[V] Dual Flow Tessonics 1000",
-
         "P800Q2-II automatic portable cold-spraying equipment": "[V] P800Q2-II",
-
         "Series P Spray Gun and X-Feeder (Centerline Supersonic Spray Technologies)": "[V] Centerline Series P",
         "Supersonic Spray Technologies Series P (CenterLine Ltd.)": "[V] Centerline Series P",
-        
-    
-
-        
-
         "LightSPEE3D": "[V] LightSPEE3D",
-        "SPEE3D": "[V] LightSPEE3D", 
+        "SPEE3D": "[V] LightSPEE3D",
         "WarpSPEE3D": "[V] LightSPEE3D",
         "LightSPEE3D CSAM system": "[V] LightSPEE3D",
         " LightSPEE3D cold spray metal printer": "[V] LightSPEE3D",
@@ -2923,14 +2462,7 @@
         "LightSPEE3D cold spray metal printer": "[V] LightSPEE3D",
         "LightSPEE3D CSAM printer": "[V] LightSPEE3D",
         "LightSPEE3D™ CSAM system (3D-print)": "[V] LightSPEE3D",
-        
-    
-
         "In-house warm spray system": "[V] High Temperature CS System",
-        
-
-
-        
         "High-temperature high-pressure cold spray equipment": "[V] High Temperature High Pressure CS System",
         "High-pressure cold spray facility (ITAM SB RAS, Russia)": "[V] High Pressure CS System",
         "High-pressure cold spray": "[V] High Pressure CS System",
@@ -2953,7 +2485,7 @@
         "Low-pressure cold spray system": "[V] Low Pressure CS System",
         "Low-pressure cold spray system (Tyontech Co., Ltd, Xi’an, China)": "[V] Low Pressure CS System",
         "Home‐made medium‐low pressure cold spray setup": "[V] Low Pressure CS System",
-        "Home-made medium-low pressure cold spray system":      "[V] Low Pressure CS System",
+        "Home-made medium-low pressure cold spray system": "[V] Low Pressure CS System",
         "Self-developed low pressure cold spraying equipment, Jihua laboratory": "[V] Low Pressure CS System",
         "[V] Low-pressure cold spray system": "[V] Low Pressure CS System",
         "Centerline low-pressure cold spray deposition system": "[V] Low Pressure CS System",
@@ -2976,13 +2508,13 @@
         "Tae-Kwang Tech": "[V] High Pressure CS System",
         "Cold spraying shot peening system": "[V] High Pressure CS System",
         "Startack cold spray system (Startack Co. Ltd., Japan)": "[V] High Pressure CS System",
-        "Cold spray system (Taekwang Tech Co., Korea)": "[V] High Pressure CS System"
-        
+        "Cold spray system (Taekwang Tech Co., Korea)": "[V] High Pressure CS System",
+        "Airbrush NX-A / NX-B (NEW YORK)": "[V] Airbrush NX-A / NX-B",
+        "AK-06 (Kermetico company, Benicia, CA, USA)": "[V] AK-06"
     },
     "powderManufacturing": {
         "": "[V] Not Reported",
-
-        "Gas atomization": "[V] Gas atomized",       
+        "Gas atomization": "[V] Gas atomized",
         "Inert gas atomization": "[V] Gas atomized",
         "gas atomization": "[V] Gas atomized",
         "Gas atomized": "[V] Gas atomized",
@@ -2998,14 +2530,14 @@
         "High-pressure gas atomization": "[V] Gas atomized",
         "Gas atomization (Ti powder)": "[V] Gas atomized",
         "Gas atomisation (Al-Si) followed by spray drying; pure Al gas-atomised": "[V] Gas atomized",
-        "EIGA gas atomization":                          "[V] Gas atomized",
-        "Gas-atomized":                                  "[V] Gas atomized",
-        "gas-atomization":                               "[V] Gas atomized",
-        "Gas atomisation":                               "[V] Gas atomized",
-        "gas atomization (in-situ reaction)":            "[V] Gas atomized",
+        "EIGA gas atomization": "[V] Gas atomized",
+        "Gas-atomized": "[V] Gas atomized",
+        "gas-atomization": "[V] Gas atomized",
+        "Gas atomisation": "[V] Gas atomized",
+        "gas atomization (in-situ reaction)": "[V] Gas atomized",
         "Gas atomization combined with internal oxidation": "[V] Gas atomized",
-        "Gas atomization reaction synthesis (GARS)":     "[V] Gas atomized",
-        "Vacuum inert gas atomization":                  "[V] Gas atomized",
+        "Gas atomization reaction synthesis (GARS)": "[V] Gas atomized",
+        "Vacuum inert gas atomization": "[V] Gas atomized",
         "High pressure inert gas atomization": "[V] Gas atomized",
         "Gas atomization (CuCrZr); fused (Al2O3)": "[V] Gas atomized",
         "Gas atomization with post-processing": "[V] Gas atomized",
@@ -3035,7 +2567,7 @@
         "Gas atomization for Al; W and B4C unspecified": "[V] Gas atomized",
         "Gas atomization for Al and W; B4C unspecified": "[V] Gas atomized",
         "Gas-atomised": "[V] Gas atomized",
-        "Gas atomized; copper powders sieved using a sieve shaker system (Retsch, Germany) to obtain size cuts":  "[V] Gas atomized",
+        "Gas atomized; copper powders sieved using a sieve shaker system (Retsch, Germany) to obtain size cuts": "[V] Gas atomized",
         "gas atomized, reinforcing particle": "[V] Gas atomized",
         "High-pressure inert gas atomization": "[V] Gas atomized",
         "Gas atomisation (A380) and unspecified for alumina": "[V] Gas atomized",
@@ -3045,17 +2577,13 @@
         "inert close coupled gas atomization": "[V] Gas atomized",
         "aluminum bronze was manufactured by atomization": "[V] Gas atomized",
         "Electrode induction-melting gas atomization": "[V] Gas atomized",
-        
-
-
-
         "Argon gas atomization": "[V] Gas atomized - Argon",
         "High-pressure inert gas atomization (argon)": "[V] Gas atomized - Argon",
-        "Inert gas (argon) atomization":                 "[V] Gas atomized - Argon",
-        "Inert gas atomization (argon)":                 "[V] Gas atomized - Argon",
-        "Argon gas atomization (Nanoval process)":       "[V] Gas atomized - Argon",
-        "Gas atomization (Ar)":                          "[V] Gas atomized - Argon",
-        "Gas atomization in argon atmosphere":           "[V] Gas atomized - Argon",
+        "Inert gas (argon) atomization": "[V] Gas atomized - Argon",
+        "Inert gas atomization (argon)": "[V] Gas atomized - Argon",
+        "Argon gas atomization (Nanoval process)": "[V] Gas atomized - Argon",
+        "Gas atomization (Ar)": "[V] Gas atomized - Argon",
+        "Gas atomization in argon atmosphere": "[V] Gas atomized - Argon",
         "Ar gas atomization": "[V] Gas atomized - Argon",
         "Argon atomization": "[V] Gas atomized - Argon",
         "High-pressure gas atomization (Ar)": "[V] Gas atomized - Argon",
@@ -3068,16 +2596,15 @@
         "Gas atomized in 700°C Ar": "[V] Gas atomized - Argon",
         "Gas atomized in argon atmosphere": "[V] Gas atomized - Argon",
         "Gas atomized in argon atomphere": "[V] Gas atomized - Argon",
-        
         "Nitrogen atomization (gas atomization)": "[V] Gas atomized - Nitrogen",
         "6061Al: nitrogen spray atomization; CoCrFeNi: vacuum induction melting gas atomization": "[V] Gas atomized - Nitrogen",
         "Nitrogen atomization (Al powder)": "[V] Gas atomized - Nitrogen",
         "Nitrogen atomization (Al 2024 powder)": "[V] Gas atomized - Nitrogen",
         "Nitrogen atomization (Al5083 powder)": "[V] Gas atomized - Nitrogen",
         "Nitrogen gas atomization followed by internal oxidation and hydrogen reduction": "[V] Gas atomized - Nitrogen",
-        "Nitrogen atomization":                          "[V] Gas atomized - Nitrogen",
+        "Nitrogen atomization": "[V] Gas atomized - Nitrogen",
         "Nitrogen spray atomization (6061Al) and vacuum induction melting gas atomization (CoCrFeNi)": "[V] Gas atomized - Nitrogen",
-        "Gas atomization (nitrogen atomization) and internal oxidation":                                          "[V] Gas atomized - Nitrogen",
+        "Gas atomization (nitrogen atomization) and internal oxidation": "[V] Gas atomized - Nitrogen",
         "Atomization in nitrogen atmosphere": "[V] Gas atomized - Nitrogen",
         "Nitrogen gas atomization": "[V] Gas atomized - Nitrogen",
         "Nitrogen atomized": "[V] Gas atomized - Nitrogen",
@@ -3089,9 +2616,7 @@
         "Nitrogen gas atomisation of Cu-0.5 wt% Al followed by internal oxidation and hydrogen reduction": "[V] Gas atomized - Nitrogen",
         "Nitrogen-atomized": "[V] Gas atomized - Nitrogen",
         "Vacuum atomization under high pressure nitrogen atmosphere": "[V] Gas atomized - Nitrogen",
-        "atomized in nitrogen atmosphere":  "[V] Gas atomized - Nitrogen",
-        
-        
+        "atomized in nitrogen atmosphere": "[V] Gas atomized - Nitrogen",
         "Water atomization": "[V] Water Atomized",
         "Water Atomized": "[V] Water Atomized",
         "Water-atomisation": "[V] Water Atomized",
@@ -3110,8 +2635,6 @@
         "CuSn10: water atomized; WC-17Co: sintering/sintered powder": "[V] Water Atomized",
         "Water atomized (commercially water-atomized CuSn10 powder)": "[V] Water Atomized",
         "water-atomized (Ti)": "[V] Water Atomized",
-
-
         "Plasma atomization": "[V] Plasma Atomized",
         "Plasma spheroidization": "[V] Plasma Atomized",
         "Plasma atomisation": "[V] Plasma Atomized",
@@ -3122,8 +2645,6 @@
         "Plasma rotating electrode process atomization": "[V] Plasma Atomized",
         "Plasma wire spraying": "[V] Plasma Atomized",
         "Plasma prepared to reduce oxygen content using spheroidized feedstock": "[V] Plasma Atomized",
-
-
         "Atomized": "[V] Unknown Atomization Process",
         "Atomisation": "[V] Unknown Atomization Process",
         "atomization": "[V] Unknown Atomization Process",
@@ -3139,11 +2660,9 @@
         "LERMPS atomization tower": "[V] Unknown Atomization Process",
         "Melt spray technique": "[V] Unknown Atomization Process",
         "Wire electrical explosion (WEE)": "[V] Unknown Atomization Process",
+        "wire electrical explosion (WEE) method": "[V] Unknown Atomization Process",
         "Close coupled atomization": "[V] Unknown Atomization Process",
         "Vacuum atomization": "[V] Unknown Atomization Process",
-
-
-
         "Inert gas atomization followed by LN2 ball milling": "[V] Gas atomized + Milled",
         "Gas atomization followed by cryomilling (attritor, 8 h, 180rpm, liquid N2)": "[V] Gas atomized + Milled",
         "Gas atomization; cryomilling in Union Process 01-ST attritor": "[V] Gas atomized + Milled",
@@ -3153,7 +2672,6 @@
         "Spray atomized then cryomilled (Union Process attrition milling under liquid nitrogen)": "[V] Gas atomized + Milled",
         "gas atomization (Al); crushing (Si)": "[V] Gas atomized + Milled",
         "gas-atomized powder ball milled with FeO": "[V] Gas atomized + Milled",
-
         "Planetary ball milling": "[V] Ball milled",
         "High-energy ball milling": "[V] Ball milled",
         "High energy ball milling": "[V] Ball milled",
@@ -3198,7 +2716,6 @@
         "mixed with pure Cu powders in mass fraction of 25 % using a QM-QX-4L MITR planetary ball mill": "[V] Ball milled",
         "mixed with pure Cu powders in mass fraction of 35 % using a QM-QX-4L MITR planetary ball mill": "[V] Ball milled",
         "mixed with pure Cu powders in mass fraction of 5 % using a QM-QX-4L MITR planetary ball mill": "[V] Ball milled",
-
         "Mechanical alloying": "[V] Mechanically alloyed",
         "Mechanical alloying of equiatomic HEA powders for 5 h, then ball milling HEA and TiB2 for 2 h": "[V] Mechanically alloyed",
         "Mechanical alloying (planetary ball mill)": "[V] Mechanically alloyed",
@@ -3214,7 +2731,6 @@
         "Mechanical alloying (48 h high-energy planetary ball milling, Retsch PM-400)": "[V] Mechanically alloyed",
         "Mechanical alloying (ball milling) and annealing": "[V] Mechanically alloyed",
         "Mechanical alloying (step-fashion)": "[V] Mechanically alloyed",
-
         "Agglomeration and sintering": "[V] Agglomerated and sintered",
         "Agglomerated and sintered": "[V] Agglomerated and sintered",
         "Agglomerated and sintered process": "[V] Agglomerated and sintered",
@@ -3232,12 +2748,9 @@
         "Half-sintered": "[V] Agglomerated and sintered",
         "agglomerated-and-sintered": "[V] Agglomerated and sintered",
         "mechanically agglomerated and sintered": "[V] Agglomerated and sintered",
-        
-
         "Spray drying": "[V] Spray dried",
         "Spray drying (agglomerated)": "[V] Spray dried",
         "Spray drying + granulation": "[V] Spray dried",
-
         "Electrolytic": "[V] Electrolytic",
         "Electrolysis": "[V] Electrolytic",
         "Electrolysis process": "[V] Electrolytic",
@@ -3250,7 +2763,6 @@
         "fabricated using electrolysis": "[V] Electrolytic",
         "Electroless plating": "[V] Electrolytic",
         "electroless plating": "[V] Electrolytic",
-
         "Hydride–dehydride": "[V] Hydride–dehydride processed",
         "Hydride/de-hydride chemical process": "[V] Hydride–dehydride processed",
         "Hydride–dehydride process": "[V] Hydride–dehydride processed",
@@ -3264,7 +2776,6 @@
         "hydride de-hydride (higher-temp)": "[V] Hydride–dehydride processed",
         "Hydrite–dehydrite process": "[V] Hydride–dehydride processed",
         "hydride-dihydride method": "[V] Hydride–dehydride processed",
-
         "sol-gel": "[V] Chemically synthesized",
         "Reduction of K2(TaF7) with sodium metal": "[V] Chemically synthesized",
         "Hydrogenation and dehydrogenation process": "[V] Chemically synthesized",
@@ -3284,7 +2795,6 @@
         "Thermal decomposition": "[V] Chemically synthesized",
         "Reduction of K2(TaF7) with sodium metal (reaction provided in paper).": "[V] Chemically synthesized",
         "prepared by nickel hydrogen reduction method in the autoclave. Ammonium sulfate, nickel sulfate hexahydrate and ammonia were used in the synthesis as starting materials. The starting products were prepared as aqueous solution with pH ≈ 8. Alumina powder (KOS, Koło, Poland) was poured in the autoclave and activated with palladium chloride and anthraquinone. The cladding process was carried out under hydrogen pressure of 3 MPa at chamber temperature of 453 K": "[V] Chemically synthesized",
-
         "Electrolytic process followed by impact milling and blending": "[V] Mixed processes",
         "Molten metal spraying (Al), ball milling (Al2O3), CVD (CNF)": "[V] Mixed processes",
         "Oxide powders fabricated by solid-phase sintering and ball milling; feedstock mixed by high-energy ball milling": "[V] Mixed processes",
@@ -3334,7 +2844,6 @@
         "Ultrasound mixed for 30 min in an ethanol bath then dried for 4-5 hrs, then fully sintered": "[V] Mixed processes",
         "Plasma atomization (Ti64), electrode induction-melting gas atomization (CoCr)": "[V] Mixed processes",
         "gas-atomized, shot peened, mechanically mixed": "[V] Mixed processes",
-
         "Mechanical mixing": "[V] Mechanically mixed",
         "Mechanical blending of Cu (milled), Zn (gas atomized), and Al2O3 (crushed)": "[V] Mechanically mixed",
         "Blending of crushed carbide with gas-atomised Ni20Cr powder": "[V] Mechanically mixed",
@@ -3359,7 +2868,6 @@
         "Mechanically mixed Zn and Ni at 1:4 ratio then blended with 30 vol.% Al.": "[V] Mechanically mixed",
         "Mechanically mixed Zn and Ni at 1:3 ratio then blended with 30 vol.% Al.": "[V] Mechanically mixed",
         "Blended in mixer for one hour for homogenous mixture.": "[V] Mechanically mixed",
-
         "Armstrong Process": "[V] Armstrong Process",
         "produced via the Armstrong process": "[V] Armstrong Process"
     },
@@ -3409,8 +2917,6 @@
         "Heat treated in at 400C invacuum furnace with temperature 5.09x10-4 bars for 20 hours": "[V] Annealing",
         "Heat treated in at 400C invacuum furnace with temperature 5.09x10-4 bars for 4 hours": "[V] Annealing",
         "Heat treated in at 400C invacuum furnace with temperature 5.09x10-4 bars for 8 hours": "[V] Annealing",
-        
-
         "two sequential HTs in a GHA 12/450 tubular furnace in an argon atmosphere": "[V] Specialized Heating/Processing",
         "two sequential HTs in a GHA 12/450 tubular furnace in an argon atmosphere (only 700 for this one)": "[V] Specialized Heating/Processing",
         "Pulsed current treatment condition EH-1 (RMS current density 123.2 A/mm2; duration 30 s; Tmax 831.9 °C)": "[V] Specialized Heating/Processing",
@@ -3422,29 +2928,21 @@
         "Spark plasma sintering treatment at 200 °C for 5 min without applied pressure": "[V] Specialized Heating/Processing",
         "Spark plasma sintering treatment at 300 °C for 5 min without applied pressure": "[V] Specialized Heating/Processing",
         "Spark plasma sintering treatment at 400 °C for 5 min without applied pressure": "[V] Specialized Heating/Processing",
-        
         "Spark plasma sintering (SPS700)": "[V] Specialized Heating/Processing",
         "Spark plasma sintering (SPS740)": "[V] Specialized Heating/Processing",
         "Spark plasma sintering (SPS786)": "[V] Specialized Heating/Processing",
-
         "Annealed at 450°C for 50 minutes in a muffle furnace. Then, rolled with a thickness reduction of 50% after pre-heating at 380°C for 8 minutes.": "[V] Thermo-Mechanical Treatments",
         "Deposit as annealed at 450°C for 50 minutes in a muffle furnace. An 1060 Al substrate plate with no deposits was also annealed at 450°C for 50 minutes in a muffle furnace before being used for the rolling process. The annealed deposit was stacked under the annealed substrate plate. Both layers underwent wire brushing surface treatment before. The layers were riveted together and pre-heated in a muffle furnace at 380°C for 8 minutes. Accumulative roll bonding (ARB) was performed using a two-high rolling mill with a 170 mm diameter roller, where the sample was rolled with 50% reduction in one-pass without lubricant. Cooled to room temperature.": "[V] Thermo-Mechanical Treatments",
         "Deposit as annealed at 450°C for 50 minutes in a muffle furnace. An 1060 Al substrate plate with no deposits was also annealed at 450°C for 50 minutes in a muffle furnace before being used for the rolling process. The annealed deposit was stacked under the annealed substrate plate. Both layers underwent wire brushing surface treatment before. The layers were riveted together and pre-heated in a muffle furnace at 380°C for 8 minutes. Accumulative roll bonding (ARB) was performed using a two-high rolling mill with a 170 mm diameter roller, where the sample was rolled with 50% reduction in one-pass without lubricant. Cooled to room temperature. The sample was cut into two pieces with equal dimensions, and the preheating and rolling process was repeated with the two pieces, and this was done three times, increasing the layers by a factor of 8 from ARB0.": "[V] Thermo-Mechanical Treatments",
         "Deposit as annealed at 450°C for 50 minutes in a muffle furnace. An 1060 Al substrate plate with no deposits was also annealed at 450°C for 50 minutes in a muffle furnace before being used for the rolling process. The annealed deposit was stacked under the annealed substrate plate. Both layers underwent wire brushing surface treatment before. The layers were riveted together and pre-heated in a muffle furnace at 380°C for 8 minutes. Accumulative roll bonding (ARB) was performed using a two-high rolling mill with a 170 mm diameter roller, where the sample was rolled with 50% reduction in one-pass without lubricant. Cooled to room temperature. The sample was cut into two pieces with equal dimensions, and the preheating and rolling process was repeated with the two pieces, and this was done twice, quadrupling the layers from ARB0.": "[V] Thermo-Mechanical Treatments",
         "Deposit as annealed at 450°C for 50 minutes in a muffle furnace. An 1060 Al substrate plate with no deposits was also annealed at 450°C for 50 minutes in a muffle furnace before being used for the rolling process. The annealed deposit was stacked under the annealed substrate plate. Both layers underwent wire brushing surface treatment before. The layers were riveted together and pre-heated in a muffle furnace at 380°C for 8 minutes. Accumulative roll bonding (ARB) was performed using a two-high rolling mill with a 170 mm diameter roller, where the sample was rolled with 50% reduction in one-pass without lubricant. Cooled to room temperature. The sample was cut into two pieces with equal dimensions, and the preheating and rolling process was repeated with the two pieces, doubling the layers from ARB0.": "[V] Thermo-Mechanical Treatments",
-        
         "HIP": "[V] High-Pressure/Temperature Treatments",
-
-
-
         "Laser remelting at a scan speed of 25 mm/s, heat input 28.0 J/mm in Ar shielding": "[V] Surface Modification Treatments",
         "Laser remelting at a scan speed of 30 mm/s, heat input 23.3 J/mm in Ar shielding": "[V] Surface Modification Treatments",
         "Laser remelting at a scan speed of 35 mm/s, heat input 20.0 J/mm in Ar shielding": "[V] Surface Modification Treatments",
         "Laser remelting at a scan speed of 40 mm/s, heat input 17.5 J/mm in Ar shielding": "[V] Surface Modification Treatments",
         "Laser remelting at a scan speed of 45 mm/s, heat input 15.5 J/mm in Ar shielding": "[V] Surface Modification Treatments",
         "Laser remelting at a scan speed of 50 mm/s, heat input 14.0 J/mm in Ar shielding": "[V] Surface Modification Treatments",
-
-
         "Annealed at 1100 °C for 5 h in argon atmosphere, furnace-cooled": "[V] Annealing",
         "Annealed in vacuum tube furnace at 950 °C for 10 h": "[V] Annealing",
         "Heat treatment at 800 °C for 3 h in argon protective gas": "[V] Annealing",
@@ -3691,7 +3189,8 @@
         "Annealed at 470°C for 3h in a muffle furnace and cooled to room temperature within the furnace. Then, heated to 470°C and held for 15 minutes, and then compressed along the impact direction at a rate of 1 mm/min, achieving 50% (2.5 mm) reduction. Then, subjected to solution treatment at 470°C for 2 hours and artificial aging after water quenching. Artificial aging was performed in the oil bath furnace at 160°C for 12h.": "[V] Annealing",
         "Annealed at 470°C for 3h in a muffle furnace and cooled to room temperature within the furnace. Then, heated to 470°C and held for 15 minutes, and then compressed along the impact direction at a rate of 1 mm/min, achieving 50% (2.5 mm) reduction. Then, subjected to solution treatment at 470°C for 2 hours and artificial aging after water quenching. Artificial aging was performed in the oil bath furnace at 160°C for 24h.": "[V] Annealing",
         "Annealed at 650 °C for 12 h under N2 atmosphere": "[V] Annealing",
-        "Annealed at 650 °C for 1 h under N2 atmosphere": "[V] Annealing","Heat treatment at 400 °C for 2 h": "[V] Annealing",
+        "Annealed at 650 °C for 1 h under N2 atmosphere": "[V] Annealing",
+        "Heat treatment at 400 °C for 2 h": "[V] Annealing",
         "Heat treated in an electrical furnace at 250°C for 2h under a vacuum": "[V] Annealing",
         "Heat treated in an electrical furnace at 350°C for 2h under a vacuum": "[V] Annealing",
         "Heat treated in an electrical furnace at 450°C for 2h under a vacuum": "[V] Annealing",
@@ -3787,10 +3286,6 @@
         "coupons were placed inside the furnace and heated at a slow rate of around 10 ◦C/min until the temperature reached 600◦C. We soaked the coupons at this temperature for 1 hour after which the temperature was gradually cooled down to room temperature": "[V] Annealing",
         "heat treated at 320°C using a tube furnace in a vacuum environment at 5 K/min for 2h, followed by air cooling.": "[V] Annealing",
         "heat treated at 380°C using a tube furnace in a vacuum environment at 5 K/min for 2h, followed by air cooling.": "[V] Annealing",
-        
-
-
-
         "Laser remelting at 2 kW, 75 mm/s in Ar atmosphere": "[V] Surface Modification Treatments",
         "Focused IR heat treatment using Au-coated reflector at 100 W (127 W/cm²) for 1 cycle": "[V] Surface Modification Treatments",
         "Focused IR heat treatment using Au-coated reflector at 100 W (127 W/cm²) for 5 cycles": "[V] Surface Modification Treatments",
@@ -3812,8 +3307,6 @@
         "exposed to high energy IR radiation with a power density of 22.5 W/cm^2 for 60s with a standoff distance of 40 mm in ambient atmosphere in the deposition chamber.": "[V] Surface Modification Treatments",
         "exposed to high energy IR radiation with a power density of 22.5 W/cm^2 for 180s with a standoff distance of 40 mm in ambient atmosphere in the deposition chamber.": "[V] Surface Modification Treatments",
         "exposed to high energy IR radiation with a power density of 22.5 W/cm^2 for 300s with a standoff distance of 40 mm in ambient atmosphere in the deposition chamber.": "[V] Surface Modification Treatments",
-
-
         "Solution treatment and ageing in a vacuum condition at 940°C for 1h then argon fast cooling, then aging for 8h at 480°C followed by furnace cooling to room temp (20-25°C)": "[V] Precipitation Hardening",
         "Solutionizing at 540 °C for 1 h; boiling water quench; and artificial aging at 175 °C for 8 h": "[V] Precipitation Hardening",
         "Stress-relief treatment at 400°C for 1h, followed by homogenization at 1000°C for 14h, then solutionising at 900°C for 2.5h, and lastly oil quenching at 20°C to reach room temperature.": "[V] Precipitation Hardening",
@@ -3829,14 +3322,10 @@
         "Annealed at temperature for 4h, then aged for 6 h": "[V] Precipitation Hardening",
         "Annealed at temperature for 4h, then aged for 12h": "[V] Precipitation Hardening",
         "Annealed at temperature for 4h, then aged for 18h": "[V] Precipitation Hardening",
-        
-
-
         "solution treatment performed at 500°C for 4h followed by water quenching": "[V] Precipitation Hardening",
         "solution treatment performed at 500°C for 4h followed by water quenching. Then, aged for 12h at 190°C.": "[V] Precipitation Hardening",
         "solution treatment performed at 500°C for 4h followed by water quenching. Then, aged for 18h at 190°C.": "[V] Precipitation Hardening",
         "solution treatment performed at 500°C for 4h followed by water quenching. Then, aged for 6h at 190°C.": "[V] Precipitation Hardening",
-
         "Heat treatment was conducted at 500°C for 1h and cooled with flowing argon gas in a Carbolite HST 12/900 horizontal tube furnace with an inert argon gas atmosphere.": "[V] Specialized Heating/Processing",
         "Heat treatment was conducted at 900°C for 1h and cooled with flowing argon gas in a Carbolite HST 12/900 horizontal tube furnace with an inert argon gas atmosphere.": "[V] Specialized Heating/Processing",
         "in a vacuum furnace (5 mPa), deposits began with a warm-up treatment from room temperature up to 1100°C at a rate of 15°C/min, and held at 1100°C for 2h. Argon gas flooded the chamber to cool down the samples using an internal fan.": "[V] Specialized Heating/Processing",
@@ -3864,11 +3353,8 @@
         "Sintering treatment performed at 1250°C in a vacuum furnace equipped with a diffusion pump for 180 minutes at a heating rate of 5°C/min, then furnace cooled to room temperature": "[V] Specialized Heating/Processing",
         "Sintering treatment performed at 1250°C in a vacuum furnace equipped with a diffusion pump for 60 minutes at a heating rate of 5°C/min, then furnace cooled to room temperature. solution treatment temperature was set at 980°C and held for 60 min, followed by a rapid cooling (400°C/min between 980 °C and 600 °C). For aging, samples were soaked at 720°C held for 8 h, furnace cooled (50 °C/h) to 625°C and held for 8 h before cooling (50°C/min) to room temperature.": "[V] Specialized Heating/Processing",
         "Sintering treatment performed at 1250°C in a vacuum furnace equipped with a diffusion pump for 180 minutes at a heating rate of 5°C/min, then furnace cooled to room temperature. solution treatment temperature was set at 980°C and held for 60 min, followed by a rapid cooling (400°C/min between 980 °C and 600 °C). For aging, samples were soaked at 720°C held for 8 h, furnace cooled (50 °C/h) to 625°C and held for 8 h before cooling (50°C/min) to room temperature.": "[V] Specialized Heating/Processing",
-
         "Prior to cycling, coatings were heat treated at 800°C for an unspecified amount of time. In a thermal cyclic furnace, the sample was heated from room temperature up to 900°C in 20 mins, then held at 900°C for 60 mins, and cooled back to room temp in 20 mins. This cycle was repeated 150 times. after analysis every 50 cycles, another set of heat cycles were performed. the sample was heated from room temperature up to 1100°C in 20 mins, held at 1100°C for 40 mins, and the cooled to room temp in 10 mins. This cycle was repeated 735 times. Estimated time under high temperature is 1100h.": "[V] Specialized Heating/Processing",
         "mechanical and diffusion pump to reach the high vacuum of 5 × 10–3Pa. Different heating parameters such as heating rate, working temperature, holding time, and cooling rate are adjusted via the display control unit. All heat-treatment experiments were  performed at a heating rate of 15°C/min and a hold time of 1h.": "[V] Specialized Heating/Processing",
-
-
         "heat treatments were in an electrical furnace under laboratory atmosphere with a temperature accuracy of ±5°C. Treated at 215°C for 4h then cooled under quiet air.": "[V] Annealing",
         "heat treatments were in an electrical furnace under laboratory atmosphere with a temperature accuracy of ±5°C. Treated at 255°C for 4h then cooled under quiet air.": "[V] Annealing",
         "heat treatments were in an electrical furnace under laboratory atmosphere with a temperature accuracy of ±5°C. Treated at 470°C for 4h then cooled under quiet air.": "[V] Annealing",
@@ -3891,14 +3377,11 @@
         "specimens were introduced to the furnace at ambient temperature and heated to 1200°C at a rate of 2.3 °C/min. Held at 1200°C for 6h followed by furnace cooling at an average rate of 1.23 °C/min cooling. carried out within a crucible filled with argon gas, hermetically sealed with steel lids. only a rapid and less controlled cooling rate was achievable.": "[V] Annealing",
         "specimens were introduced to the furnace at ambient temperature and heated to 1200°C at a rate of 2.3 °C/min. Held at 1200°C for 15h followed by furnace cooling at an average rate of 1.23 °C/min cooling. carried out within a crucible filled with argon gas, hermetically sealed with steel lids. only a rapid and less controlled cooling rate was achievable.": "[V] Annealing",
         "specimens were introduced to the furnace at room temperature and heated to 1200°C at a rate of 5.8  °C/min. Held at 1200°C for 4h followed by furnace cooling at an average rate of 56.8 °C/min cooling. carried out within a crucible filled with argon gas, hermetically sealed with steel lids.": "[V] Annealing",
-
-
         "HIP at 530 °C & 160 MPa × 3 h, followed by solution-aging 530 °C × 1 h + 175 °C × 8 h": "[V] High-Pressure/Temperature Treatments",
         "HIP at 600 °C & 160 MPa × 3 h, followed by solution-aging 530 °C × 1 h + 175 °C × 8 h": "[V] High-Pressure/Temperature Treatments",
         "HIP at 530 °C & 160 MPa × 3 h, followed by annealing 413 °C × 1 h": "[V] High-Pressure/Temperature Treatments",
         "HIP at 600 °C & 160 MPa × 3 h, followed by annealing 413 °C × 1 h": "[V] High-Pressure/Temperature Treatments",
         "HIP at 1100 °C, 100 MPa for 3 h in Ar, heating/cooling 10 °C/min": "[V] High-Pressure/Temperature Treatments",
-
         "Stress relief performed at 982°C for 1.5h in an argon atmosphere using a sealed tube furnace. Followed by furnace cooling. Then, solutionizing was performed at 954°C for 2h, followed by forced quenching with Ar gas. Then, a two-step aging treatment was performed, where the samples were heat treated at 691°C for 16 h, followed by furnace cooling to 621°C and aged for an additional 16 h, and then furnace cooled": "[V] Precipitation Hardening",
         "Annealed in a furnace, within a N2-purged glove box to prevent oidation, annealed at either 700 C or 1000 C, for 2 h, then left inside furnace to cooled": "[V] Annealing",
         "HIP and heat treatment cycles in low o2 environment": "[V] High-Pressure/Temperature Treatments",
@@ -3923,9 +3406,6 @@
         "Conventional heat treatment at 700 °C for 2 h": "[V] Annealing",
         "Laser surface melting with TRUMPF TLF 6000 TURBO (4 kW) CO₂ laser": "[V] Surface Modification Treatments",
         "Annealed in air for 1 h at 1000 °C, heating rate 30 °C/min, furnace cooling": "[V] Annealing",
-
-
-
         "Solutionizing at 540 °C for 1 h, water quench, aging at 175 °C for 8 h": "[V] Precipitation Hardening",
         "NA": "[V] Not Reported",
         "In Air": "[V] Not Reported",
@@ -4339,20 +3819,16 @@
         "RD/TD (identical)": "[V] [0, 90, 90]",
         "In line": "[V] [0, 90, 90]",
         "Spray direction": "[V] [90, 90, 0]",
-
         "X: Parellel to scan track and parallel to build direction": "[V] [0, 90, 90]",
         "Y: Perpendicular to scan track and parallel to build direction": "[V] [90, 0, 90]",
         "Z: Thorugh thickness, normal to build direction": "[V] [90, 90, 0]",
-
         "parallel to scan direction": "[V] [0, 90, 90]",
-
         "Tensile axis at 0° to spray traverse direction": "[V] [0, 90, 90]",
         "Tensile axis at 15° to spray traverse direction": "[V] [15, 75, 90]",
         "Tensile axis at 30° to spray traverse direction": "[V] [30, 60, 90]",
         "Tensile axis at 45° to spray traverse direction": "[V] [45, 45, 90]",
         "Tensile axis at 60° to spray traverse direction": "[V] [60, 30, 90]",
         "Tensile axis at 90° to spray traverse direction": "[V] [90, 0, 90]",
-
         "V-face: parallel to spray direction.": "[V] [90, 90, 0]",
         "In-plane (deposition plane), parallel to spray path (0° from spray path)": "[V] [0, 90, 90]",
         "In-plane (deposition plane), 45° from spray path": "[V] [45, 45, 90]",
@@ -4364,7 +3840,6 @@
         "60° in-plane relative to spray path (parallel to deposit surface)": "[V] [60, 30, 90]",
         "90° in-plane, perpendicular to spray path (parallel to deposit surface)": "[V] [90, 0, 90]",
         "transverse direction": "[V] [90, 0, 90]"
-
     },
     "chemicalCompositionMapping": {
         "": "[V] Not Reported",
@@ -4372,10 +3847,10 @@
             "Majority_Powder_Ag_Percentage": "",
             "Majority_Powder_Al_Percentage": "",
             "Majority_Powder_As_Percentage": "",
-            "Majority_Powder_B_Percentage":  "",
+            "Majority_Powder_B_Percentage": "",
             "Majority_Powder_Ba_Percentage": "",
             "Majority_Powder_Be_Percentage": "",
-            "Majority_Powder_C_Percentage":  "",
+            "Majority_Powder_C_Percentage": "",
             "Majority_Powder_Ca_Percentage": "",
             "Majority_Powder_Cd_Percentage": "",
             "Majority_Powder_Cl_Percentage": "",
@@ -10641,7 +10116,7 @@
             "Majority_Powder_Zr_Percentage": "",
             "Majority_Powder_Other_Percentage": "0.0"
         },
-        "Purity 99.99 wt% (EFF071 batch) or 99.9 wt% (EGK022 batch); oxygen 120–140 ppm":{
+        "Purity 99.99 wt% (EFF071 batch) or 99.9 wt% (EGK022 batch); oxygen 120–140 ppm": {
             "Majority_Powder_Ag_Percentage": "",
             "Majority_Powder_Al_Percentage": "",
             "Majority_Powder_As_Percentage": "",
@@ -14217,8 +13692,8 @@
             "Majority_Powder_Zn_Percentage": "",
             "Majority_Powder_Zr_Percentage": "",
             "Majority_Powder_Other_Percentage": "0.0"
-    },
-    "Al 90.29 wt%, Zn 5.40 wt%, Mg 2.11 wt%, Cu 1.56 wt%, Si 0.22 wt%, Cr 0.24 wt%, Fe 0.06 wt%, Mn 0.01 wt%, Ti 0.07 wt%": {
+        },
+        "Al 90.29 wt%, Zn 5.40 wt%, Mg 2.11 wt%, Cu 1.56 wt%, Si 0.22 wt%, Cr 0.24 wt%, Fe 0.06 wt%, Mn 0.01 wt%, Ti 0.07 wt%": {
             "Majority_Powder_Ag_Percentage": "",
             "Majority_Powder_Al_Percentage": "90.29",
             "Majority_Powder_As_Percentage": "",
@@ -16569,7 +16044,7 @@
             "Majority_Powder_Zn_Percentage": "0.0",
             "Majority_Powder_Zr_Percentage": "0.0",
             "Majority_Powder_Other_Percentage": "0.0"
-        }, 
+        },
         "49.17 wt.% Ni, 19.06wt.% Cr, 17.33wt.% Fe, 4.69wt.% C, 4.69wt.% Nb, 3.02wt.% Mo, 1.05wt.% Al, 0.99 wt.% Ti": {
             "Majority_Powder_Ag_Percentage": "",
             "Majority_Powder_Al_Percentage": "1.05",
@@ -35876,7 +35351,7 @@
             "Majority_Powder_Zn_Percentage": "",
             "Majority_Powder_Zr_Percentage": "",
             "Majority_Powder_Other_Percentage": "0.004"
-        }, 
+        },
         "Ti2AlC": {
             "Majority_Powder_Ag_Percentage": "",
             "Majority_Powder_Al_Percentage": "20.03",
@@ -50530,7 +50005,6 @@
             "Majority_Powder_Zr_Percentage": "",
             "Majority_Powder_Other_Percentage": "0.00"
         },
-
         "Al 90.05 at. %, Ni 4.3 at. %, Y 4.4 at. %, Co 0.9 at. %, Sc 0.35 at. %": {
             "Majority_Powder_Ag_Percentage": "",
             "Majority_Powder_Al_Percentage": "90.05",
@@ -51660,7 +51134,7 @@
             "Majority_Powder_Zr_Percentage": "",
             "Majority_Powder_Other_Percentage": "0"
         },
-         "[V] 304L SS": {
+        "[V] 304L SS": {
             "Majority_Powder_Ag_Percentage": "",
             "Majority_Powder_Al_Percentage": "",
             "Majority_Powder_As_Percentage": "",
@@ -55959,7 +55433,7 @@
         "Co-fed to yield 28 vol% WC in coating": "72:28",
         "Co-fed to yield 30 vol% WC in coating": "70:30",
         "50 at% Ni, 50 at% Ti": "55.06:44.94",
-        "50 wt% Ti, 50 wt% Ni (equiatomic)":"55.06:44.94",
+        "50 wt% Ti, 50 wt% Ni (equiatomic)": "55.06:44.94",
         "70 wt% Copper, 30 wt% Alumina": "70:30",
         "0.1 wt% Ag, Bal. Cu": "99.9:0.1",
         "3 wt% Ag, 0.5 wt% Zr, Bal. Cu": "96.5:3:0.5",
@@ -56049,16 +55523,16 @@
         "10 wt% TiC, 90 wt% Ti": "90:10",
         "10 wt% TiB2, 90 wt% Ti": "90:10",
         "10 wt% W, 90 wt% Ti": "90:10",
-        "50 wt.% Al2O3/Ni, 50 wt.% K32":  "50:50",
-        "33 wt.% Al2O3/Ni, 67 wt.% K32":  "33:67",
-        "80 wt.% Al2O3/Ni, 20 wt.% K32":  "80:20",
-        "70 wt.% Al2O3/Ni, 30 wt.% K32":  "70:30",
-        "60 wt.% Al2O3/Ni, 40 wt.% K32":  "60:40",
-        "75 wt.% Al2O3/Ni, 25 wt.% K32":  "75:25",
-        "67 wt.% Al2O3/Ni, 33 wt.% K32":  "67:33",
+        "50 wt.% Al2O3/Ni, 50 wt.% K32": "50:50",
+        "33 wt.% Al2O3/Ni, 67 wt.% K32": "33:67",
+        "80 wt.% Al2O3/Ni, 20 wt.% K32": "80:20",
+        "70 wt.% Al2O3/Ni, 30 wt.% K32": "70:30",
+        "60 wt.% Al2O3/Ni, 40 wt.% K32": "60:40",
+        "75 wt.% Al2O3/Ni, 25 wt.% K32": "75:25",
+        "67 wt.% Al2O3/Ni, 33 wt.% K32": "67:33",
         "85 wt% NiMoAl, 5 wt% Ag, 10 wt% WS2/h-BN": "85:10:5",
-        "Al 44.2 vol. %, Zn 26.7 vol. %, Al2O3 29.1 vol. %":     "44.2:29.1:26.7",
-        "Ni 38.7 vol. %, Zn 12.4 vol. %, Al2O3 48.9 vol. %":     "38.7:12.4:48.",
+        "Al 44.2 vol. %, Zn 26.7 vol. %, Al2O3 29.1 vol. %": "44.2:29.1:26.7",
+        "Ni 38.7 vol. %, Zn 12.4 vol. %, Al2O3 48.9 vol. %": "38.7:12.4:48.",
         "Ni 37.6 vol. %, Al2O3 62.4 vol. %": "37.6:62.4",
         "Zn 33.5 vol. %, Al2O3 66.5 vol. %": "33.5:66.5",
         "Al 16.4 vol. %, Al2O3 83.6 vol. %": "16.4:83.6",
@@ -56134,45 +55608,34 @@
         "80 wt% Cu, 20 wt% Cu2O": "80:20",
         "65% Al2O3 balance CuCrZr": "65:35",
         "80% Al2O3 balance CuCrZr": "80:20",
-
         "5wt.% Ni-25Graphite balance with Cr3C2-Ni20Cr": "95:5",
         "10wt.% Ni-25Graphite balance with Cr3C2-Ni20Cr": "90:10",
         "15wt.% Ni-25Graphite balance with Cr3C2-Ni20Cr": "85:15",
         "10.5wt.% Ni-25Graphite balance with Cr3C2-Ni20Cr": "89.5:10.5",
-
         "70 wt.% Ni, 30 wt.% B4C": "70:30",
         "30 wt.% Ni, 70 wt.% B4C": "70:30",
         "50 wt.% Ni, 50 wt.% B4C": "50:50",
-
         "40 wt.% WC, 60 wt.% (0.94 Ti + 0.06 Al)": "60:40",
-
         "10 vol% Al2O3, 90 vol% 2024 Al": "90:10",
         "20 vol% Al2O3, 80 vol% 2024 Al": "80:20",
         "30 vol% Al2O3, 70 vol% 2024 Al": "70:30",
         "40 vol% Al2O3, 60 vol% 2024 Al": "60:40",
         "50 vol% Al2O3, 50 vol% 2024 Al": "50:50",
-
         "25wt.% Al2O3 balance Al": "75:25",
         "50wt.% Al2O3 balance Al": "50:50",
         "75wt.% Al2O3 balance Al": "75:25",
         "90wt.% Al2O3 balance Al": "90:10",
         "95wt.% Al2O3 balance Al": "95:5",
-
         "25.6 mass% YSZ, Bal. CoNiCrAlY": "74.4:25.6",
         "49.9 mass% YSZ, Bal. CoNiCrAlY": "50.1:49.9",
         "69.8 mass% YSZ, Bal. CoNiCrAlY": "69.8:30.2",
-
         "Per 100 g feedstock: 70 wt% Ni, 5 wt% Mo, 10 wt% Al, 5 wt% Ag, 5 wt% WS2, 5 wt% h-BN": "85:5:10",
-
         "95 wt% pure Cu, 5 wt% Fe-based metallic glass": "95:5",
         "85 wt% pure Cu, 15 wt% Fe-based metallic glass": "85:15",
         "75 wt% pure Cu, 25 wt% Fe-based metallic glass": "75:25",
-
         "Cr3C2 blended with Ni to make Cr3C2-Ni (25 wt% Ni)": "75:25",
-
         "P1 + 20 wt.% P2": "80:20",
         "P1 + 20 wt.% P3": "80:20",
-
         "5% TiAl3, balance 95% Ti.": "95:5",
         "10% TiAl3, balance 90% Ti.": "90:10",
         "15% TiAl3, balance 85% Ti.": "85:15",
@@ -56183,12 +55646,10 @@
         "40% TiAl3, balance 60% Ti.": "60:40",
         "45% TiAl3, balance 55% Ti.": "55:45",
         "50% TiAl3, balance 50% Ti.": "50:50",
-
         "5% TiAl3, balance Ti": "95:5",
         "20% TiAl3, balance Ti": "80:20",
         "30% TiAl3, balance Ti": "70:30",
         "50% TiAl3, balance Ti": "50:50",
-
         "5% BN, balance 95% NiCrAl.": "95:5",
         "10% BN, balance 90% NiCrAl.": "90:10",
         "15% BN, balance 85% NiCrAl.": "85:15",
@@ -56199,32 +55660,26 @@
         "40% BN, balance 60% NiCrAl.": "60:40",
         "45% BN, balance 55% NiCrAl.": "55:45",
         "50% BN, balance 50% NiCrAl.": "50:50",
-
         "5% BN, balance NiCrAl": "95:5",
         "15% BN, balance NiCrAl": "85:15",
         "30% BN, balance NiCrAl": "70:30",
         "50% BN, balance NiCrAl": "50:50",
-
         "CP Ti + 10 vol% 1Cr13": "90:10",
         "CP Ti + 30 vol% 1Cr13": "70:30",
         "CP Ti + 50 vol% 1Cr13": "50:50",
         "CP Ti + 70 vol% 1Cr13": "30:70",
-
         "Ti-6Al-4V + 10 vol% 1Cr13": "90:10",
         "Ti-6Al-4V + 30 vol% 1Cr13": "70:30",
         "Ti-6Al-4V + 50 vol% 1Cr13": "50:50",
         "Ti-6Al-4V + 70 vol% 1Cr13": "30:70",
-
         "30vol% Mo and balance Cu": "70:30",
         "50vol% Mo and balance Cu": "50:50",
         "60vol% Mo and balance Cu": "60:40",
         "70vol% Mo and balance Cu": "70:30",
-
         "30vol% W and balance Cu": "70:30",
         "50vol% W and balance Cu": "50:50",
         "60vol% W and balance Cu": "60:40",
         "70vol% W and balance Cu": "70:30",
-
         "1:1 wt% (43.55 vol% Al2O3, 56.45 vol% Al)": "50:50",
         "4:1 ratio of AA2024 to Al2O3": "80:20",
         "4wt% Aeroxide, balance GUR4170": "96:4",
