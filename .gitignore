@@ -1,5 +1,16 @@
 openAiToken.txt
 MinerU/
-
+HUGO-CS/Dataset/IP_Replace/
+Extraction/outputs/
+HUGO-CS/Dataset/AlternateVersions/Extracted-6-10-25.json
+HUGO-CS/Dataset/AlternateVersions/Extracted-6-10-25_gt_remapped.json
+HUGO-CS/Dataset/AlternateVersions/Extracted-6-10-25_gt_remapped_swapped.json
+HUGO-CS/Dataset/AlternateVersions/Extracted-6-10-25_gt_remapped_swapped_deleted_filled.json
+HUGO-CS/Dataset/AlternateVersions/Extracted-6-10-25_gt_remapped_swapped_deleted_filled_sorted_powderClass.json
+HUGO-CS/Dataset/AlternateVersions/Extracted-6-10-25_gt_remapped_swapped_deleted_filled_sorted_powderClass_grouped_imputed.json
+HUGO-CS/Dataset/AlternateVersions/Extracted-6-10-25_gt_remapped_swapped_deleted_filled_sorted_powderClass_grouped_imputed_blended.json
+HUGO-CS/Dataset/AlternateVersions/Extracted-6-10-25_gt_remapped_swapped_deleted_filled_sorted_powderClass_grouped_imputed_blended_treatment_standardized.json
+SourceArticles/Analysis/Extracted-6-10-25.json
 SourceArticles/Extractions/*
 SourceArticles/PDFs/*
+HUGO-CS/Dataset/AlternateVersions/toCSV.py

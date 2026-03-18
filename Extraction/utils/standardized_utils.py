@@ -1,12 +1,12 @@
+# Created by Kyle Miller on March 18th, 2026
+# Released under the Apache 2.0 License
+
 import numpy as np
 import re
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.stats import zscore
 import argparse
-
-# from utils.scraping import parse_values_and_units # At some point, we should move this to a separate file so that we can import it from all cleaning scripts
-
 
 def parse_nonnumerical_values(row, target_key):
     """Parse a non-numerical value.

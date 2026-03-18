@@ -1,4 +1,6 @@
-# cleaning_utils.py
+# Created by Stephen Price on March 18th, 2026
+# Released under the Apache 2.0 License
+
 
 import os
 import re
